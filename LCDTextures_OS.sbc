@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LCDTextures>
+    <LCDTextureDefinition>
+      <Id>
+        <TypeId>LCDTextureDefinition</TypeId>
+        <SubtypeId>OS_Test</SubtypeId>
+      </Id>
+      <LocalizationId>LCD_OSTest</LocalizationId>
+     <TexturePath>Textures\OS\OS_Test.dds</TexturePath>
+    </LCDTextureDefinition>
+    <LCDTextureDefinition>
+      <Id>
+        <TypeId>LCDTextureDefinition</TypeId>
+        <SubtypeId>OS_Test2</SubtypeId>
+      </Id>
+      <LocalizationId>LCD_OSTest2</LocalizationId>
+     <TexturePath>Textures\OS\OS_Test2.dds</TexturePath>
+    </LCDTextureDefinition>
+    <LCDTextureDefinition>
+      <Id>
+        <TypeId>LCDTextureDefinition</TypeId>
+        <SubtypeId>OS_Test3</SubtypeId>
+      </Id>
+      <LocalizationId>LCD_OSTest3</LocalizationId>
+     <TexturePath>Textures\OS\OS_Test3.dds</TexturePath>
+    </LCDTextureDefinition>
+    <LCDTextureDefinition>
+      <Id>
+        <TypeId>LCDTextureDefinition</TypeId>
+        <SubtypeId>OS_Test4</SubtypeId>
+      </Id>
+      <LocalizationId>LCD_OSTest4</LocalizationId>
+     <TexturePath>Textures\OS\OS_Test4.dds</TexturePath>
+    </LCDTextureDefinition>
+  </LCDTextures>
+</Definitions>

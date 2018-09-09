@@ -1,0 +1,460 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BlueprintClasses>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>Components</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_BlueprintClass_Components</DisplayName>
+      <Icon>Textures\GUI\Icons\buttons\component.dds</Icon>
+      <HighlightIcon>Textures\GUI\Icons\buttons\component_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>Tools</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_BlueprintClass_Tools</DisplayName>
+      <Icon>Textures\GUI\Icons\buttons\tool.dds</Icon>
+      <HighlightIcon>Textures\GUI\Icons\buttons\tool_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>WeaponParts</SubtypeId>
+      </Id>
+      <DisplayName>Weapon Parts</DisplayName>
+      <Icon>Textures\Icons\buttons\rifleparts.dds</Icon>
+      <HighlightIcon>Textures\Icons\buttons\rifleparts_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>ADVWeaponParts</SubtypeId>
+      </Id>
+      <DisplayName>Advanced Weapon Parts</DisplayName>
+      <Icon>Textures\Icons\buttons\rifleparts.dds</Icon>
+      <HighlightIcon>Textures\Icons\buttons\rifleparts_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>MSTWeaponParts</SubtypeId>
+      </Id>
+      <DisplayName>HighTech Weapon Parts</DisplayName>
+      <Icon>Textures\Icons\buttons\rifleparts.dds</Icon>
+      <HighlightIcon>Textures\Icons\buttons\rifleparts_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>Rifles</SubtypeId>
+      </Id>
+      <DisplayName>Small Arms</DisplayName>
+      <Icon>Textures\Icons\buttons\riflesicon.dds</Icon>
+      <HighlightIcon>Textures\Icons\buttons\riflesicon_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>RifleParts</SubtypeId>
+      </Id>
+      <DisplayName>Small Arms Parts</DisplayName>
+      <Icon>Textures\Icons\buttons\rifleparts.dds</Icon>
+      <HighlightIcon>Textures\Icons\buttons\rifleparts_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>ADVRifleParts</SubtypeId>
+      </Id>
+      <DisplayName>Advanced Small Arms Parts</DisplayName>
+      <Icon>Textures\Icons\buttons\rifleparts.dds</Icon>
+      <HighlightIcon>Textures\Icons\buttons\rifleparts_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>C1Ammo</SubtypeId>
+      </Id>
+      <DisplayName>Class 1 Ammunition</DisplayName>
+      <Icon>Textures\Icons\buttons\ammo.dds</Icon>
+      <HighlightIcon>Textures\Icons\buttons\ammo_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>C2Ammo</SubtypeId>
+      </Id>
+      <DisplayName>Class 2 Ammunition</DisplayName>
+      <Icon>Textures\Icons\buttons\ammo.dds</Icon>
+      <HighlightIcon>Textures\Icons\buttons\ammo_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>C3Ammo</SubtypeId>
+      </Id>
+      <DisplayName>Class 3 Ammunition</DisplayName>
+      <Icon>Textures\Icons\buttons\ammo.dds</Icon>
+      <HighlightIcon>Textures\Icons\buttons\ammo_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>Ammo</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_BlueprintClass_Ammo</DisplayName>
+      <Icon>Textures\Icons\buttons\ammo.dds</Icon>
+      <HighlightIcon>Textures\Icons\buttons\ammo_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>Data</SubtypeId>
+      </Id>
+      <DisplayName>Software</DisplayName>
+      <Icon>Textures\Icons\buttons\tech.dds</Icon>
+      <HighlightIcon>Textures\Icons\buttons\tech_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>Research</SubtypeId>
+      </Id>
+      <DisplayName>Technologies</DisplayName>
+      <Icon>Textures\Icons\buttons\chem.dds</Icon>
+      <HighlightIcon>Textures\Icons\buttons\chem_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>Keys</SubtypeId>
+      </Id>
+	  <Public>false</Public>
+      <DisplayName>Encryption Keys</DisplayName>
+      <Icon>Textures\GUI\Icons\buttons\component.dds</Icon>
+      <HighlightIcon>Textures\GUI\Icons\buttons\component_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>ToolParts1</SubtypeId>
+      </Id>
+      <DisplayName>Tool Parts 1</DisplayName>
+      <Icon>Textures\Icons\buttons\tools.dds</Icon>
+      <HighlightIcon>Textures\Icons\buttons\tools_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+	<Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>ToolParts2</SubtypeId>
+      </Id>
+      <DisplayName>Tool Parts 2</DisplayName>
+      <Icon>Textures\Icons\buttons\tools.dds</Icon>
+      <HighlightIcon>Textures\Icons\buttons\tools_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>ToolParts3</SubtypeId>
+      </Id>
+      <DisplayName>Tool Parts 3</DisplayName>
+      <Icon>Textures\Icons\buttons\tools.dds</Icon>
+      <HighlightIcon>Textures\Icons\buttons\tools_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>	
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>ToolParts4</SubtypeId>
+      </Id>
+      <DisplayName>Tool Parts</DisplayName>
+      <Icon>Textures\Icons\buttons\tools.dds</Icon>
+      <HighlightIcon>Textures\Icons\buttons\tools_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+	
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>Tools2</SubtypeId>
+      </Id>
+      <DisplayName>Tools</DisplayName>
+      <Icon>Textures\GUI\Icons\buttons\tool.dds</Icon>
+      <HighlightIcon>Textures\GUI\Icons\buttons\tool_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>BaseComponents2</SubtypeId>
+      </Id>
+      <DisplayName>Base Components</DisplayName>
+      <Icon>Textures\Icons\buttons\gears.dds</Icon>
+      <HighlightIcon>Textures\Icons\buttons\gears_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>Chemistry</SubtypeId>
+      </Id>
+      <DisplayName>Advanced Chemistry</DisplayName>
+      <Icon>Textures\Icons\buttons\chem.dds</Icon>
+      <HighlightIcon>Textures\Icons\buttons\chem_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>Electronics2</SubtypeId>
+      </Id>
+      <DisplayName>Electronics</DisplayName>
+      <Icon>Textures\Icons\buttons\tech.dds</Icon>
+      <HighlightIcon>Textures\Icons\buttons\tech_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>ParticlePhysics</SubtypeId>
+      </Id>
+      <DisplayName>Particle Physics</DisplayName>
+      <Icon>Textures\Icons\buttons\atom.dds</Icon>
+      <HighlightIcon>Textures\Icons\buttons\atom_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>SAlien</SubtypeId>
+      </Id>
+      <DisplayName>Salvaged Alien Equipment</DisplayName>
+      <Icon>Textures\Icons\buttons\salien.dds</Icon>
+      <HighlightIcon>Textures\Icons\buttons\salien_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>RAlien</SubtypeId>
+      </Id>
+      <DisplayName>Refurbished Alien Equipment</DisplayName>
+      <Icon>Textures\Icons\buttons\repair.dds</Icon>
+      <HighlightIcon>Textures\Icons\buttons\repair_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>HC3</SubtypeId>
+      </Id>
+      <DisplayName>HydroCarbons</DisplayName>
+      <Icon>Textures\GUI\Icons\buttons\large_block.dds</Icon>
+      <HighlightIcon>Textures\GUI\Icons\buttons\large_block_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ore.dds</InputConstraintIcon>
+      <OutputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</OutputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>Liquids</SubtypeId>
+      </Id>
+      <DisplayName>Liquids</DisplayName>
+      <Icon>Textures\GUI\Icons\buttons\large_block.dds</Icon>
+      <HighlightIcon>Textures\GUI\Icons\buttons\large_block_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ore.dds</InputConstraintIcon>
+      <OutputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</OutputConstraintIcon>
+    </Class>
+  </BlueprintClasses>
+  <BlueprintClassEntries>
+    <Entry Class="Tools2" BlueprintSubtypeId="EmergencyBlaster_BP" />
+	<Entry Class="Rifles" BlueprintSubtypeId="EmergencyBlaster_BP" />
+	<Entry Class="Tools" BlueprintSubtypeId="EmergencyBlaster_BP" />
+	<Entry Class="Rifles" BlueprintSubtypeId="Bullpup_Rifle_BP" />
+	<Entry Class="Rifles" BlueprintSubtypeId="Bullpup_Rifle_Picatinny_BP" />
+	<Entry Class="Rifles" BlueprintSubtypeId="Bullpup_Rifle_Picatinny_Laser_BP" />
+	<Entry Class="Rifles" BlueprintSubtypeId="Bullpup_Rifle_Picatinny_Grip_BP" />
+	<Entry Class="Rifles" BlueprintSubtypeId="Bullpup_Rifle_Picatinny_Grip_Laser_BP" />
+	<Entry Class="Tools2" BlueprintSubtypeId="Bullpup_Rifle_BP" />
+	<Entry Class="Tools2" BlueprintSubtypeId="Bullpup_Rifle_Picatinny_BP" />
+	<Entry Class="Tools2" BlueprintSubtypeId="Bullpup_Rifle_Picatinny_Laser_BP" />
+	<Entry Class="Tools2" BlueprintSubtypeId="Bullpup_Rifle_Picatinny_Grip_BP" />
+	<Entry Class="Tools2" BlueprintSubtypeId="Bullpup_Rifle_Picatinny_Grip_Laser_BP" />
+    <Entry Class="Rifles" BlueprintSubtypeId="AutomaticRifle" />
+    <Entry Class="Rifles" BlueprintSubtypeId="RapidFireAutomaticRifle" />
+    <Entry Class="Rifles" BlueprintSubtypeId="PreciseAutomaticRifle" />
+    <Entry Class="Rifles" BlueprintSubtypeId="UltimateAutomaticRifle" />
+	<Entry Class="ADVRifleParts" BlueprintSubtypeId="Eotech_BP" />
+	<Entry Class="RifleParts" BlueprintSubtypeId="BufferSpring_BP" />
+	<Entry Class="RifleParts" BlueprintSubtypeId="STrigger_BP" />
+	<Entry Class="RifleParts" BlueprintSubtypeId="ATrigger_BP" />
+	<Entry Class="ADVRifleParts" BlueprintSubtypeId="MBolt_BP" />
+	<Entry Class="RifleParts" BlueprintSubtypeId="GBolt_BP" />
+	<Entry Class="ADVRifleParts" BlueprintSubtypeId="PEQ62_BP" />
+	<Entry Class="RifleParts" BlueprintSubtypeId="ForeGrip_BP" />
+	<Entry Class="RifleParts" BlueprintSubtypeId="ConvKit_BP" />
+	<Entry Class="RifleParts" BlueprintSubtypeId="SAWPN_BP" />
+	
+	<Entry Class="ADVRifleParts" BlueprintSubtypeId="BufferSpring_BP" />
+	<Entry Class="ADVRifleParts" BlueprintSubtypeId="STrigger_BP" />
+	<Entry Class="ADVRifleParts" BlueprintSubtypeId="ATrigger_BP" />
+	<Entry Class="ADVRifleParts" BlueprintSubtypeId="GBolt_BP" />
+	<Entry Class="ADVRifleParts" BlueprintSubtypeId="ForeGrip_BP" />
+	<Entry Class="ADVRifleParts" BlueprintSubtypeId="ConvKit_BP" />
+	<Entry Class="ADVRifleParts" BlueprintSubtypeId="SAWPN_BP" />
+	
+	<Entry Class="WeaponParts" BlueprintSubtypeId="HeavyWPN_BP" />
+	<Entry Class="WeaponParts" BlueprintSubtypeId="WPN_BP" />
+	<Entry Class="ADVWeaponParts" BlueprintSubtypeId="HeavyWPN_BP" />
+	<Entry Class="ADVWeaponParts" BlueprintSubtypeId="WPN_BP" />	
+	<Entry Class="MSTWeaponParts" BlueprintSubtypeId="HeavyWPN_BP" />
+	<Entry Class="MSTWeaponParts" BlueprintSubtypeId="WPN_BP" />
+	<Entry Class="ADVWeaponParts" BlueprintSubtypeId="ADVHeavyWPN_BP" />
+	<Entry Class="ADVWeaponParts" BlueprintSubtypeId="ADVWPN_BP" />
+	<Entry Class="MSTWeaponParts" BlueprintSubtypeId="ADVHeavyWPN_BP" />
+	<Entry Class="MSTWeaponParts" BlueprintSubtypeId="ADVWPN_BP" />
+	<Entry Class="MSTWeaponParts" BlueprintSubtypeId="MSTHeavyWPN_BP" />
+	<Entry Class="MSTWeaponParts" BlueprintSubtypeId="MSTWPN_BP" />
+	
+	<Entry Class="C1Ammo" BlueprintSubtypeId="Class1PlasmaMagazine" />
+	<Entry Class="C2Ammo" BlueprintSubtypeId="Class2PlasmaMagazine" />
+	<Entry Class="C2Ammo" BlueprintSubtypeId="Class1PlasmaMagazine" />
+	<Entry Class="C3Ammo" BlueprintSubtypeId="Class2PlasmaMagazine" />
+	<Entry Class="C3Ammo" BlueprintSubtypeId="Class3PlasmaMagazine" />
+	<Entry Class="C3Ammo" BlueprintSubtypeId="Class1PlasmaMagazine" />
+	
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="InteriorTurret/CythonLargeBlockSmallPlasmaTurret" />
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="InteriorTurret/CythonLargeBlockSmallLaserTurret" />
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="InteriorTurret/CythonLargeBlockSmallBlasterTurret" />
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="InteriorTurret/CythonSmallBlockSmallPlasmaTurret" />
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="InteriorTurret/CythonSmallBlockSmallLaserTurret" />
+
+	<Entry Class="ToolParts1" BlueprintSubtypeId="AbrasiveDisc_BP" />
+    <Entry Class="ToolParts2" BlueprintSubtypeId="MetalDisc_BP" />
+    <Entry Class="ToolParts3" BlueprintSubtypeId="DiamondDisc_BP" />
+	<Entry Class="ToolParts1" BlueprintSubtypeId="HydroCan_BP" />
+    <Entry Class="ToolParts2" BlueprintSubtypeId="PetrolCan_BP" />
+    <Entry Class="ToolParts3" BlueprintSubtypeId="AcetyleneCan_BP" />
+	
+	<Entry Class="ToolParts4" BlueprintSubtypeId="AbrasiveDisc_BP" />
+    <Entry Class="ToolParts4" BlueprintSubtypeId="MetalDisc_BP" />
+    <Entry Class="ToolParts4" BlueprintSubtypeId="DiamondDisc_BP" />
+	<Entry Class="ToolParts4" BlueprintSubtypeId="HydroCan_BP" />
+    <Entry Class="ToolParts4" BlueprintSubtypeId="PetrolCan_BP" />
+    <Entry Class="ToolParts4" BlueprintSubtypeId="AcetyleneCan_BP" />
+	
+	<Entry Class="Keys" BlueprintSubtypeId="EncryptionKey_BP" />
+	<Entry Class="Keys" BlueprintSubtypeId="Database_BP" />
+	<Entry Class="Keys" BlueprintSubtypeId="DataFrag_BP" />
+	<Entry Class="Keys" BlueprintSubtypeId="DataFragSPC_BP" />
+	<Entry Class="Keys" BlueprintSubtypeId="FusionCore_BP" />
+	<Entry Class="Keys" BlueprintSubtypeId="FusionCoreSpent_BP" />
+	<Entry Class="Keys" BlueprintSubtypeId="A_Comp1_BP" />
+	<Entry Class="Keys" BlueprintSubtypeId="B_Comp1_BP" />
+	<Entry Class="Keys" BlueprintSubtypeId="C_Comp1_BP" />
+	<Entry Class="Keys" BlueprintSubtypeId="D_Comp1_BP" />
+	<Entry Class="Keys" BlueprintSubtypeId="CrystalCarbon_BP" />
+	<Entry Class="Keys" BlueprintSubtypeId="DragoniteShards_BP" />
+	<Entry Class="Keys" BlueprintSubtypeId="Dragonite_BP" />
+	<Entry Class="Keys" BlueprintSubtypeId="MSTHeavyWPN_LW_BP" />
+	<Entry Class="Data" BlueprintSubtypeId="Navigation_BP" />
+	<Entry Class="Data" BlueprintSubtypeId="Automation_BP" />
+	<Entry Class="Data" BlueprintSubtypeId="Targeting_BP" />
+	<Entry Class="Data" BlueprintSubtypeId="Linux_BP" />
+	<Entry Class="Research" BlueprintSubtypeId="Manufacturing_BP" />
+	<Entry Class="Research" BlueprintSubtypeId="Electronics_BP" />
+	<Entry Class="Research" BlueprintSubtypeId="Chemistry_BP" />
+	<Entry Class="Research" BlueprintSubtypeId="Particle_BP" />
+	<Entry Class="Research" BlueprintSubtypeId="PartWPN_BP" />
+	<Entry Class="Research" BlueprintSubtypeId="ADVPartWPN_BP" />
+	<Entry Class="Research" BlueprintSubtypeId="MSTPartWPN_BP" />
+	
+	<Entry Class="SAlien" BlueprintSubtypeId="A_Comp1S_BP" />
+	<Entry Class="SAlien" BlueprintSubtypeId="B_Comp1S_BP" />
+	<Entry Class="SAlien" BlueprintSubtypeId="C_Comp1S_BP" />
+	<Entry Class="SAlien" BlueprintSubtypeId="D_Comp1S_BP" />
+	
+	<Entry Class="RAlien" BlueprintSubtypeId="A_Comp1R_BP" />
+	<Entry Class="RAlien" BlueprintSubtypeId="B_Comp1R_BP" />
+	<Entry Class="RAlien" BlueprintSubtypeId="C_Comp1R_BP" />
+	<Entry Class="RAlien" BlueprintSubtypeId="D_Comp1R_BP" />
+	
+    <Entry Class="BaseComponents2" BlueprintSubtypeId="MetalGrid" />
+    <Entry Class="BaseComponents2" BlueprintSubtypeId="SmallTube" />
+    <Entry Class="BaseComponents2" BlueprintSubtypeId="SteelPlate" />
+    <Entry Class="BaseComponents2" BlueprintSubtypeId="LargeTube" />
+    <Entry Class="BaseComponents2" BlueprintSubtypeId="GirderComponent" />
+    <Entry Class="BaseComponents2" BlueprintSubtypeId="InteriorPlate" />
+    <Entry Class="BaseComponents2" BlueprintSubtypeId="BulletproofGlass" />
+    <Entry Class="BaseComponents2" BlueprintSubtypeId="ConstructionComponent" />
+    <Entry Class="BaseComponents2" BlueprintSubtypeId="MotorComponent" />
+	<Entry Class="BaseComponents2" BlueprintSubtypeId="toughBox_BP" />
+	<Entry Class="BaseComponents2" BlueprintSubtypeId="JerryCan_BP" />
+	
+	<Entry Class="Components" BlueprintSubtypeId="toughBox_BP" />
+	
+    <Entry Class="Electronics2" BlueprintSubtypeId="SolarCell" />
+    <Entry Class="Electronics2" BlueprintSubtypeId="ComputerComponent" />
+    <Entry Class="Electronics2" BlueprintSubtypeId="PowerCell" />
+    <Entry Class="Electronics2" BlueprintSubtypeId="MedicalComponent" />
+	<Entry Class="Electronics2" BlueprintSubtypeId="Electrolyser_BP" />
+	<Entry Class="Electronics2" BlueprintSubtypeId="FuelRegulator_BP" />
+	<Entry Class="Electronics2" BlueprintSubtypeId="Harddrive_BP" />
+	
+	<Entry Class="Components" BlueprintSubtypeId="Electrolyser_BP" />
+	<Entry Class="Components" BlueprintSubtypeId="FuelRegulator_BP" />
+	<Entry Class="Components" BlueprintSubtypeId="Harddrive_BP" />
+	
+    <Entry Class="Chemistry" BlueprintSubtypeId="DetectorComponent" />
+    <Entry Class="Chemistry" BlueprintSubtypeId="Display" />
+    <Entry Class="Chemistry" BlueprintSubtypeId="ReactorComponent" />
+    <Entry Class="Chemistry" BlueprintSubtypeId="ThrustComponent" />
+    <Entry Class="Chemistry" BlueprintSubtypeId="RadioCommunicationComponent" />
+	<Entry Class="Chemistry" BlueprintSubtypeId="ThrusterCone_BP" />
+	
+	<Entry Class="Components" BlueprintSubtypeId="ThrusterCone_BP" />
+
+    <Entry Class="ParticlePhysics" BlueprintSubtypeId="Superconductor" />
+    <Entry Class="ParticlePhysics" BlueprintSubtypeId="GravityGeneratorComponent" />
+	<Entry Class="ParticlePhysics" BlueprintSubtypeId="ShieldComponentBP" />
+
+    <Entry Class="Tools2" BlueprintSubtypeId="Welder" />
+    <Entry Class="Tools2" BlueprintSubtypeId="Welder2" />
+    <Entry Class="Tools2" BlueprintSubtypeId="Welder3" />
+    <Entry Class="Tools2" BlueprintSubtypeId="Welder4" />
+    <Entry Class="Tools2" BlueprintSubtypeId="AngleGrinder" />
+    <Entry Class="Tools2" BlueprintSubtypeId="AngleGrinder2" />
+    <Entry Class="Tools2" BlueprintSubtypeId="AngleGrinder3" />
+    <Entry Class="Tools2" BlueprintSubtypeId="AngleGrinder4" />
+    <Entry Class="Tools2" BlueprintSubtypeId="HandDrill" />
+    <Entry Class="Tools2" BlueprintSubtypeId="HandDrill2" />
+    <Entry Class="Tools2" BlueprintSubtypeId="HandDrill3" />
+    <Entry Class="Tools2" BlueprintSubtypeId="HandDrill4" />
+    <Entry Class="Tools2" BlueprintSubtypeId="OxygenBottle" />
+    <Entry Class="Tools2" BlueprintSubtypeId="HydrogenBottle" />
+	
+	<Entry Class="HC3" BlueprintSubtypeId="HydroCarbonOre" />
+	<Entry Class="Liquids" BlueprintSubtypeId="HydroCarbonToIngot" />
+
+  </BlueprintClassEntries>
+</Definitions>

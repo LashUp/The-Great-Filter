@@ -1,0 +1,1227 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Blueprints>
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>EmergencyBlaster_BP</SubtypeId>
+      </Id>
+      <DisplayName>Converted Rifle</DisplayName>
+      <Icon>Textures\GUI\Icons\WeaponAutomaticRifle_Precise.dds</Icon>
+      <Prerequisites>
+		<Item Amount="1" TypeId="PhysicalGunObject" SubtypeId="AutomaticRifleItem" />
+		<Item Amount="1" TypeId="Component" SubtypeId="Eotech" />
+		<Item Amount="1" TypeId="Component" SubtypeId="MBolt" />
+		<Item Amount="1" TypeId="Component" SubtypeId="BufferSpring" />
+		<Item Amount="1" TypeId="Component" SubtypeId="ConvKit" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="PhysicalGunObject" SubtypeId="EmergencyBlaster" />
+      <BaseProductionTimeInSeconds>12</BaseProductionTimeInSeconds>
+    </Blueprint>
+	
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Bullpup_Rifle_BP</SubtypeId>
+      </Id>
+      <DisplayName>M38 Blaster Rifle</DisplayName>
+      <Icon>Textures\Icons\Rifle_Conv.dds</Icon>
+      <Prerequisites>
+		<Item Amount="1" TypeId="Component" SubtypeId="SAWPN" />
+		<Item Amount="4" TypeId="Component" SubtypeId="Eotech" />
+		<Item Amount="4" TypeId="Component" SubtypeId="STrigger" />
+		<Item Amount="4" TypeId="Component" SubtypeId="MBolt" />
+		<Item Amount="4" TypeId="Component" SubtypeId="BufferSpring" />
+      </Prerequisites>
+      <Result Amount="4" TypeId="PhysicalGunObject" SubtypeId="Bullpup" />
+	  <Result Amount="1" TypeId="Component" SubtypeId="toughBox" />
+      <BaseProductionTimeInSeconds>12</BaseProductionTimeInSeconds>
+    </Blueprint>
+	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Bullpup_Rifle_Picatinny_BP</SubtypeId>
+      </Id>
+      <DisplayName>M38A1</DisplayName>
+      <Icon>Textures\Icons\Rifle_PH.dds</Icon>
+      <Prerequisites>
+		<Item Amount="1" TypeId="PhysicalGunObject" SubtypeId="Bullpup" />
+		<Item Amount="1" TypeId="Component" SubtypeId="ConvKit" />
+		<Item Amount="1" TypeId="Component" SubtypeId="ATrigger" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="PhysicalGunObject" SubtypeId="Bullpup_Picatinny" />
+	  <Result Amount="1" TypeId="PhysicalGunObject" SubtypeId="STrigger" />
+      <BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
+    </Blueprint>
+	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Bullpup_Rifle_Picatinny_Laser_BP</SubtypeId>
+      </Id>
+      <DisplayName>M38A1 with PEQ62</DisplayName>
+      <Icon>Textures\Icons\Rifle_PHL.dds</Icon>
+      <Prerequisites>
+		<Item Amount="1" TypeId="PhysicalGunObject" SubtypeId="Bullpup_Picatinny" />
+		<Item Amount="1" TypeId="Component" SubtypeId="PEQ62" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="PhysicalGunObject" SubtypeId="Bullpup_Picatinny_Laser" />
+      <BaseProductionTimeInSeconds>12</BaseProductionTimeInSeconds>
+    </Blueprint>
+	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Bullpup_Rifle_Picatinny_Grip_BP</SubtypeId>
+      </Id>
+      <DisplayName>M38A1 with Foregrip</DisplayName>
+      <Icon>Textures\Icons\Rifle_PHG.dds</Icon>
+      <Prerequisites>
+		<Item Amount="1" TypeId="PhysicalGunObject" SubtypeId="Bullpup_Picatinny" />
+		<Item Amount="1" TypeId="Component" SubtypeId="ForeGrip" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="PhysicalGunObject" SubtypeId="Bullpup_Picatinny_Grip" />
+      <BaseProductionTimeInSeconds>12</BaseProductionTimeInSeconds>
+    </Blueprint>
+	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Bullpup_Rifle_Picatinny_Grip_Laser_BP</SubtypeId>
+      </Id>
+      <DisplayName>Tactical M38A1</DisplayName>
+      <Icon>Textures\Icons\Rifle_PHLG.dds</Icon>
+      <Prerequisites>
+		<Item Amount="1" TypeId="PhysicalGunObject" SubtypeId="Bullpup_Picatinny" />
+		<Item Amount="1" TypeId="Component" SubtypeId="PEQ62" />
+		<Item Amount="1" TypeId="Component" SubtypeId="ForeGrip" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="PhysicalGunObject" SubtypeId="Bullpup_Picatinny_Grip_Laser" />
+      <BaseProductionTimeInSeconds>12</BaseProductionTimeInSeconds>
+    </Blueprint>
+	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Class1PlasmaMagazine</SubtypeId>
+      </Id>
+      <DisplayName>C1XP3 Magazine</DisplayName>
+      <Icon>Textures\Icons\Magazine.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1.6" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="0.4" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="0.3" TypeId="Ingot" SubtypeId="Cobalt" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="Class1PlasmaGunCharge" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Class2PlasmaMagazine</SubtypeId>
+      </Id>
+      <DisplayName>C2XP3 Magazine</DisplayName>
+      <Icon>Textures\Icons\Magazine.dds</Icon>
+      <Prerequisites>
+        <Item Amount="2.4" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="0.8" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="0.6" TypeId="Ingot" SubtypeId="Cobalt" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="Class2PlasmaGunCharge" />
+      <BaseProductionTimeInSeconds>20</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Class3PlasmaMagazine</SubtypeId>
+      </Id>
+      <DisplayName>C3XP3 Magazine</DisplayName>
+      <Icon>Textures\Icons\Magazine.dds</Icon>
+      <Prerequisites>
+        <Item Amount="2.4" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="0.8" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="0.6" TypeId="Ingot" SubtypeId="Cobalt" />
+		<Item Amount="0.2" TypeId="Ingot" SubtypeId="Gold" />
+		<Item Amount="0.03" TypeId="Ingot" SubtypeId="Platinum" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="Class3PlasmaGunCharge" />
+      <BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
+    </Blueprint>
+	
+	<!--Weapon Parts-->
+	
+	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>SAWPN_BP</SubtypeId>
+      </Id>
+      <DisplayName>Carbine Body and Barrel</DisplayName>
+      <Icon>Textures\Icons\Parts_Case_Large.dds</Icon>
+      <Prerequisites>
+		<Item Amount="12" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="4" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="16" TypeId="Ingot" SubtypeId="Platinum" />
+        <Item Amount="24" TypeId="Ingot" SubtypeId="Silver" />
+		<Item Amount="1" TypeId="Component" SubtypeId="toughBox" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="SAWPN" />
+      <BaseProductionTimeInSeconds>60</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Eotech_BP</SubtypeId>
+      </Id>
+      <DisplayName>Holographic Sight</DisplayName>
+      <Icon>Textures\Icons\Parts_Case.dds</Icon>
+      <Prerequisites>
+        <Item Amount="2.4" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="0.8" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="0.6" TypeId="Ingot" SubtypeId="Cobalt" />
+		<Item Amount="0.2" TypeId="Ingot" SubtypeId="Gold" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="Eotech" />
+      <BaseProductionTimeInSeconds>60</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>BufferSpring_BP</SubtypeId>
+      </Id>
+      <DisplayName>Buffer Spring</DisplayName>
+      <Icon>Textures\Icons\Parts_Case.dds</Icon>
+      <Prerequisites>
+        <Item Amount="2.4" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="0.8" TypeId="Ingot" SubtypeId="Nickel" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="BufferSpring" />
+      <BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>STrigger_BP</SubtypeId>
+      </Id>
+      <DisplayName>Semi-Automatic Trigger</DisplayName>
+      <Icon>Textures\Icons\Parts_Case.dds</Icon>
+      <Prerequisites>
+        <Item Amount="2.4" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="0.8" TypeId="Ingot" SubtypeId="Nickel" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="STrigger" />
+      <BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>ATrigger_BP</SubtypeId>
+      </Id>
+      <DisplayName>Automatic Trigger</DisplayName>
+      <Icon>Textures\Icons\Parts_Case.dds</Icon>
+      <Prerequisites>
+        <Item Amount="2.4" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="0.8" TypeId="Ingot" SubtypeId="Nickel" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="ATrigger" />
+      <BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MBolt_BP</SubtypeId>
+      </Id>
+      <DisplayName>Mechanical Bolt</DisplayName>
+      <Icon>Textures\Icons\Parts_Case.dds</Icon>
+      <Prerequisites>
+        <Item Amount="2.4" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="0.8" TypeId="Ingot" SubtypeId="Nickel" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="MBolt" />
+      <BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>GBolt_BP</SubtypeId>
+      </Id>
+      <DisplayName>Gas Bolt</DisplayName>
+      <Icon>Textures\Icons\Parts_Case.dds</Icon>
+      <Prerequisites>
+        <Item Amount="2.4" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="0.8" TypeId="Ingot" SubtypeId="Nickel" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="GBolt" />
+      <BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>PEQ62_BP</SubtypeId>
+      </Id>
+      <DisplayName>PEQ62 Laser</DisplayName>
+      <Icon>Textures\Icons\Parts_Case.dds</Icon>
+      <Prerequisites>
+        <Item Amount="2.4" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="0.8" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="0.6" TypeId="Ingot" SubtypeId="Gold" />
+		<Item Amount="0.2" TypeId="Ingot" SubtypeId="Cobalt" />
+		<Item Amount="0.03" TypeId="Ingot" SubtypeId="Platinum" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="PEQ62" />
+      <BaseProductionTimeInSeconds>40</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>ForeGrip_BP</SubtypeId>
+      </Id>
+      <DisplayName>Foregrip</DisplayName>
+      <Icon>Textures\Icons\Parts_Case.dds</Icon>
+      <Prerequisites>
+        <Item Amount="2.4" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="0.8" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="0.6" TypeId="Ingot" SubtypeId="Cobalt" />
+		<Item Amount="0.2" TypeId="Ingot" SubtypeId="Gold" />
+		<Item Amount="0.03" TypeId="Ingot" SubtypeId="Platinum" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="ForeGrip" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>ConvKit_BP</SubtypeId>
+      </Id>
+      <DisplayName>Rifle Conversion Kit</DisplayName>
+      <Icon>Textures\Icons\Parts_Case.dds</Icon>
+      <Prerequisites>
+        <Item Amount="2.4" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="0.8" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="0.6" TypeId="Ingot" SubtypeId="Cobalt" />
+		<Item Amount="0.2" TypeId="Ingot" SubtypeId="Gold" />
+		<Item Amount="0.03" TypeId="Ingot" SubtypeId="Platinum" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="ConvKit" />
+      <BaseProductionTimeInSeconds>60</BaseProductionTimeInSeconds>
+    </Blueprint>
+	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>HeavyWPN_BP</SubtypeId>
+      </Id>
+      <DisplayName>Heavy Weapon Parts</DisplayName>
+      <Icon>Textures\Icons\Parts_Case_Large.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1200.0" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="400.0" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="300.0" TypeId="Ingot" SubtypeId="Cobalt" />
+		<Item Amount="100.0" TypeId="Ingot" SubtypeId="Gold" />
+		<Item Amount="45.0" TypeId="Ingot" SubtypeId="Platinum" />
+		<Item Amount="1" TypeId="Component" SubtypeId="toughBox" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="HeavyWPN" />
+      <BaseProductionTimeInSeconds>160</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>WPN_BP</SubtypeId>
+      </Id>
+      <DisplayName>Weapon Parts</DisplayName>
+      <Icon>Textures\Icons\Parts_Case_Large.dds</Icon>
+      <Prerequisites>
+        <Item Amount="600.0" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="200.0" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="150.0" TypeId="Ingot" SubtypeId="Cobalt" />
+		<Item Amount="50.0" TypeId="Ingot" SubtypeId="Gold" />
+		<Item Amount="22.5" TypeId="Ingot" SubtypeId="Platinum" />
+		<Item Amount="1" TypeId="Component" SubtypeId="toughBox" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="WPN" />
+      <BaseProductionTimeInSeconds>80</BaseProductionTimeInSeconds>
+    </Blueprint>	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>ADVHeavyWPN_BP</SubtypeId>
+      </Id>
+      <DisplayName>Advanced Heavy Weapon Parts</DisplayName>
+      <Icon>Textures\Icons\Parts_Case_Large.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1800.0" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="600.0" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="450.0" TypeId="Ingot" SubtypeId="Cobalt" />
+		<Item Amount="150.0" TypeId="Ingot" SubtypeId="Gold" />
+		<Item Amount="67.5" TypeId="Ingot" SubtypeId="Platinum" />
+		<Item Amount="1" TypeId="Component" SubtypeId="toughBox" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="ADVHeavyWPN" />
+      <BaseProductionTimeInSeconds>240</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>ADVWPN_BP</SubtypeId>
+      </Id>
+      <DisplayName>Advanced Weapon Parts</DisplayName>
+      <Icon>Textures\Icons\Parts_Case_Large.dds</Icon>
+      <Prerequisites>
+        <Item Amount="900.0" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="300.0" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="225.0" TypeId="Ingot" SubtypeId="Cobalt" />
+		<Item Amount="75.0" TypeId="Ingot" SubtypeId="Gold" />
+		<Item Amount="33.75" TypeId="Ingot" SubtypeId="Platinum" />
+		<Item Amount="1" TypeId="Component" SubtypeId="toughBox" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="ADVWPN" />
+      <BaseProductionTimeInSeconds>160</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MSTWPN_BP</SubtypeId>
+      </Id>
+      <DisplayName>High-Tech Weapon Parts</DisplayName>
+      <Icon>Textures\Icons\Parts_Case_Large.dds</Icon>
+      <Prerequisites>
+        <Item Amount="900.0" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="300.0" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="225.0" TypeId="Ingot" SubtypeId="Cobalt" />
+		<Item Amount="75.0" TypeId="Ingot" SubtypeId="Gold" />
+		<Item Amount="33.75" TypeId="Ingot" SubtypeId="Platinum" />
+		<Item Amount="1" TypeId="Component" SubtypeId="toughBox" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="MSTWPN" />
+      <BaseProductionTimeInSeconds>160</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MSTHeavyWPN_BP</SubtypeId>
+      </Id>
+      <DisplayName>High-Tech Heavy Weapon Parts</DisplayName>
+      <Icon>Textures\Icons\Parts_Case_Large.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1800.0" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="600.0" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="450.0" TypeId="Ingot" SubtypeId="Cobalt" />
+		<Item Amount="150.0" TypeId="Ingot" SubtypeId="Gold" />
+		<Item Amount="67.5" TypeId="Ingot" SubtypeId="Platinum" />
+		<Item Amount="1" TypeId="Component" SubtypeId="toughBox" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="MSTHeavyWPN" />
+      <BaseProductionTimeInSeconds>240</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MSTHeavyWPN_LW_BP</SubtypeId>
+      </Id>
+      <DisplayName>High-Tech Heavy Weapon Parts</DisplayName>
+      <Icon>Textures\Icons\Parts_Case_Large.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1800.0" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="600.0" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="450.0" TypeId="Ingot" SubtypeId="Cobalt" />
+		<Item Amount="150.0" TypeId="Ingot" SubtypeId="Gold" />
+		<Item Amount="67.5" TypeId="Ingot" SubtypeId="Platinum" />
+		<Item Amount="1" TypeId="Component" SubtypeId="toughBox" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="MSTHeavyWPN_LW" />
+      <BaseProductionTimeInSeconds>240</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>toughBox_BP</SubtypeId>
+      </Id>
+      <DisplayName>Tough Box</DisplayName>
+      <Icon>Textures\Icons\Parts_Case_Large.dds</Icon>
+      <Prerequisites>
+        <Item Amount="2.4" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="32.0" TypeId="Ingot" SubtypeId="Silicon" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="toughBox" />
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+	  <Public>true</Public>
+    </Blueprint>
+	
+	
+	<!--Vanilla Rifles-->
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>AutomaticRifle</SubtypeId>
+      </Id>
+      <DisplayName>M33A1</DisplayName>
+      <Icon>Textures\GUI\Icons\WeaponAutomaticRifle.dds</Icon>
+      <Prerequisites>
+		<Item Amount="1" TypeId="Component" SubtypeId="SAWPN" />
+		<Item Amount="4" TypeId="Component" SubtypeId="STrigger" />
+		<Item Amount="4" TypeId="Component" SubtypeId="GBolt" />
+		<Item Amount="4" TypeId="Component" SubtypeId="BufferSpring" />
+      </Prerequisites>
+      <Result Amount="4" TypeId="PhysicalGunObject" SubtypeId="AutomaticRifleItem" />
+      <BaseProductionTimeInSeconds>1</BaseProductionTimeInSeconds>
+    </Blueprint>
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>RapidFireAutomaticRifle</SubtypeId>
+      </Id>
+      <DisplayName>M33A2</DisplayName>
+      <Icon>Textures\GUI\Icons\WeaponAutomaticRifle_RapidFire.dds</Icon>
+      <Prerequisites>
+		<Item Amount="1" TypeId="PhysicalGunObject" SubtypeId="AutomaticRifleItem" />
+		<Item Amount="1" TypeId="Component" SubtypeId="ATrigger" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="PhysicalGunObject" SubtypeId="RapidFireAutomaticRifleItem" />
+	  <Item Amount="1" TypeId="Component" SubtypeId="STrigger" />
+      <BaseProductionTimeInSeconds>12</BaseProductionTimeInSeconds>
+    </Blueprint>
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>PreciseAutomaticRifle</SubtypeId>
+      </Id>
+      <DisplayName>M33A1 with Sight</DisplayName>
+      <Icon>Textures\GUI\Icons\WeaponAutomaticRifle_Precise.dds</Icon>
+      <Prerequisites>
+		<Item Amount="1" TypeId="PhysicalGunObject" SubtypeId="AutomaticRifleItem" />
+		<Item Amount="1" TypeId="Component" SubtypeId="Eotech" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="PhysicalGunObject" SubtypeId="PreciseAutomaticRifleItem" />
+      <BaseProductionTimeInSeconds>12</BaseProductionTimeInSeconds>
+    </Blueprint>
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>UltimateAutomaticRifle</SubtypeId>
+      </Id>
+      <DisplayName>M33A2 with Sight</DisplayName>
+      <Icon>Textures\GUI\Icons\WeaponAutomaticRifle_Elite.dds</Icon>
+      <Prerequisites>
+		<Item Amount="1" TypeId="PhysicalGunObject" SubtypeId="AutomaticRifleItem" />
+		<Item Amount="1" TypeId="Component" SubtypeId="Eotech" />
+		<Item Amount="1" TypeId="Component" SubtypeId="ATrigger" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="PhysicalGunObject" SubtypeId="UltimateAutomaticRifleItem" />
+	  <Item Amount="1" TypeId="Component" SubtypeId="STrigger" />
+      <BaseProductionTimeInSeconds>45</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+	<!--End Vanilla Rifles-->
+	
+	<!--Data-->
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>EncryptionKey_BP</SubtypeId>
+      </Id>
+      <DisplayName>Encryption Key</DisplayName>
+      <Icon>Textures\Icons\DataFrag.dds</Icon>
+      <Prerequisites>
+        <Item Amount="0.1" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="0.1" TypeId="Ingot" SubtypeId="Gold" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="EncryptionKey" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>DataFrag_BP</SubtypeId>
+      </Id>
+      <DisplayName>Data Fragment</DisplayName>
+      <Icon>Textures\Icons\DataFrag.dds</Icon>
+      <Prerequisites>
+        <Item Amount="0.1" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="0.1" TypeId="Ingot" SubtypeId="Gold" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="DataFrag" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>DataFragSPC_BP</SubtypeId>
+      </Id>
+      <DisplayName>Encrypted Data Fragment</DisplayName>
+      <Icon>Textures\Icons\DataFrag.dds</Icon>
+      <Prerequisites>
+        <Item Amount="0.1" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="0.1" TypeId="Ingot" SubtypeId="Gold" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="DataFragSPC" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Linux_BP</SubtypeId>
+      </Id>
+      <DisplayName>Linux Based OS</DisplayName>
+      <Icon>Textures\Icons\DataFrag.dds</Icon>
+      <Prerequisites>
+        <Item Amount="4.0" TypeId="Component" SubtypeId="DataFrag" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="Linux" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Harddrive_BP</SubtypeId>
+      </Id>
+      <DisplayName>Hard Drive</DisplayName>
+      <Icon>Textures\Icons\Parts_Case.dds</Icon>
+      <Prerequisites>
+		<Item Amount="4.2" TypeId="Ingot" SubtypeId="Iron" />
+		<Item Amount="2.7" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="1.5" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="0.5" TypeId="Ingot" SubtypeId="Gold" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="Harddrive" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Manufacturing_BP</SubtypeId>
+      </Id>
+      <DisplayName>Manufacturing</DisplayName>
+      <Icon>Textures\Icons\DataFrag.dds</Icon>
+      <Prerequisites>
+        <Item Amount="3.0" TypeId="Component" SubtypeId="DataFragSPC" />
+		<Item Amount="1.0" TypeId="Component" SubtypeId="EncryptionKey" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="Manufacturing" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Electronics_BP</SubtypeId>
+      </Id>
+      <DisplayName>Electronics</DisplayName>
+      <Icon>Textures\Icons\DataFrag.dds</Icon>
+      <Prerequisites>
+        <Item Amount="5.0" TypeId="Component" SubtypeId="DataFragSPC" />
+		<Item Amount="1.0" TypeId="Component" SubtypeId="EncryptionKey" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="Electronics" />
+      <BaseProductionTimeInSeconds>12</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Chemistry_BP</SubtypeId>
+      </Id>
+      <DisplayName>Advanced Chemistry</DisplayName>
+      <Icon>Textures\Icons\DataFrag.dds</Icon>
+      <Prerequisites>
+        <Item Amount="8.0" TypeId="Component" SubtypeId="DataFragSPC" />
+		<Item Amount="1.0" TypeId="Component" SubtypeId="EncryptionKey" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="Chemistry" />
+      <BaseProductionTimeInSeconds>120</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Particle_BP</SubtypeId>
+      </Id>
+      <DisplayName>Particle Physics</DisplayName>
+      <Icon>Textures\Icons\DataFrag.dds</Icon>
+      <Prerequisites>
+        <Item Amount="12.0" TypeId="Component" SubtypeId="DataFragSPC" />
+		<Item Amount="1.0" TypeId="Component" SubtypeId="EncryptionKey" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="Particle" />
+      <BaseProductionTimeInSeconds>600</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Database_BP</SubtypeId>
+      </Id>
+      <DisplayName>Database</DisplayName>
+      <Icon>Textures\Icons\Parts_Case.dds</Icon>
+      <Prerequisites>
+		<Item Amount="1.0" TypeId="Component" SubtypeId="Display" />
+		<Item Amount="1.0" TypeId="Component" SubtypeId="Harddrive" />
+		<Item Amount="1.0" TypeId="Component" SubtypeId="Linux" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="Database" />
+      <BaseProductionTimeInSeconds>6000</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Navigation_BP</SubtypeId>
+      </Id>
+      <DisplayName>Navigation Software</DisplayName>
+      <Icon>Textures\Icons\DataFrag.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1.0" TypeId="Component" SubtypeId="DataFrag" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="Navigation" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Automation_BP</SubtypeId>
+      </Id>
+      <DisplayName>Automation Software</DisplayName>
+      <Icon>Textures\Icons\DataFrag.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1.0" TypeId="Component" SubtypeId="DataFrag" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="Automation" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Targeting_BP</SubtypeId>
+      </Id>
+      <DisplayName>Targeting Software</DisplayName>
+      <Icon>Textures\Icons\DataFrag.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1.0" TypeId="Component" SubtypeId="DataFragSPC" />
+		<Item Amount="1.0" TypeId="Component" SubtypeId="EncryptionKey" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="Targeting" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>PartWPN_BP</SubtypeId>
+      </Id>
+      <DisplayName>Weapon Manufacturing</DisplayName>
+      <Icon>Textures\Icons\DataFrag.dds</Icon>
+      <Prerequisites>
+        <Item Amount="3.0" TypeId="Component" SubtypeId="DataFragSPC" />
+		<Item Amount="1.0" TypeId="Component" SubtypeId="EncryptionKey" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="PartWPN" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>ADVPartWPN_BP</SubtypeId>
+      </Id>
+      <DisplayName>Particle Weapons</DisplayName>
+      <Icon>Textures\Icons\DataFrag.dds</Icon>
+      <Prerequisites>
+        <Item Amount="6.0" TypeId="Component" SubtypeId="DataFragSPC" />
+		<Item Amount="1.0" TypeId="Component" SubtypeId="EncryptionKey" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="ADVPartWPN" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MSTPartWPN_BP</SubtypeId>
+      </Id>
+      <DisplayName>Advanced Particle Weapons</DisplayName>
+      <Icon>Textures\Icons\DataFrag.dds</Icon>
+      <Prerequisites>
+        <Item Amount="12.0" TypeId="Component" SubtypeId="DataFragSPC" />
+		<Item Amount="1.0" TypeId="Component" SubtypeId="EncryptionKey" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="MSTPartWPN" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<!--End Data-->
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>AbrasiveDisc_BP</SubtypeId>
+      </Id>
+      <DisplayName>Abrasive Disc</DisplayName>
+      <Icon>Textures\Icons\Parts_Case.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1.0" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="0.3" TypeId="Ingot" SubtypeId="Gold" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="AbrasiveDisc" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MetalDisc_BP</SubtypeId>
+      </Id>
+      <DisplayName>Metal Cut-Off Disc</DisplayName>
+      <Icon>Textures\Icons\Parts_Case.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1.0" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="0.3" TypeId="Ingot" SubtypeId="Gold" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="MetalDisc" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>DiamondDisc_BP</SubtypeId>
+      </Id>
+      <DisplayName>Diamond Cut-Off Disc</DisplayName>
+      <Icon>Textures\Icons\Parts_Case.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1.0" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="0.3" TypeId="Ingot" SubtypeId="Gold" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="DiamondDisc" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>PetrolCan_BP</SubtypeId>
+      </Id>
+      <DisplayName>Petrol Canister</DisplayName>
+      <Icon>Textures\Icons\Parts_Case.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1.0" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="0.3" TypeId="Ingot" SubtypeId="Gold" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="PetrolCan" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>HydroCan_BP</SubtypeId>
+      </Id>
+      <DisplayName>Hydrogen Canister</DisplayName>
+      <Icon>Textures\Icons\Parts_Case.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1.0" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="0.3" TypeId="Ingot" SubtypeId="Gold" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="HydroCan" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>AcetyleneCan_BP</SubtypeId>
+      </Id>
+      <DisplayName>Acetylene Canister</DisplayName>
+      <Icon>Textures\Icons\Parts_Case.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1.0" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="0.3" TypeId="Ingot" SubtypeId="Gold" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="AcetyleneCan" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>
+	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Electrolyser_BP</SubtypeId>
+      </Id>
+      <DisplayName>Electrolyser</DisplayName>
+      <Icon>Textures\Icons\Parts_Case_Large.dds</Icon>
+      <Prerequisites>
+        <Item Amount="2.4" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="16.0" TypeId="Ingot" SubtypeId="Silicon" />
+		<Item Amount="1" TypeId="Component" SubtypeId="toughBox" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="Electrolyser" />
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>FuelRegulator_BP</SubtypeId>
+      </Id>
+      <DisplayName>Fuel Regulator</DisplayName>
+      <Icon>Textures\Icons\Parts_Case.dds</Icon>
+      <Prerequisites>
+        <Item Amount="360" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="90" TypeId="Ingot" SubtypeId="Nickel" />
+		<Item Amount="1" TypeId="Component" SubtypeId="toughBox" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="FuelRegulator" />
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>ThrusterCone_BP</SubtypeId>
+      </Id>
+      <DisplayName>Thruster Cone</DisplayName>
+      <Icon>Textures\Icons\Parts_Case_Large.dds</Icon>
+      <Prerequisites>
+        <Item Amount="60" TypeId="Ingot" SubtypeId="Iron" />
+		<Item Amount="1" TypeId="Component" SubtypeId="toughBox" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="ThrusterCone" />
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+    </Blueprint>
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Welder2</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Item_Welder2</DisplayName>
+      <Icon>Textures\GUI\Icons\WeaponWelder_1.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="PhysicalGunObject" SubtypeId="WelderItem" />
+        <Item Amount="1" TypeId="Component" SubtypeId="HydroCan" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="PhysicalGunObject" SubtypeId="Welder2Item" />
+      <BaseProductionTimeInSeconds>12</BaseProductionTimeInSeconds>
+    </Blueprint>
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Welder3</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Item_Welder3</DisplayName>
+      <Icon>Textures\GUI\Icons\WeaponWelder_2.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="PhysicalGunObject" SubtypeId="WelderItem" />
+        <Item Amount="1" TypeId="Component" SubtypeId="PetrolCan" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="PhysicalGunObject" SubtypeId="Welder3Item" />
+      <BaseProductionTimeInSeconds>36</BaseProductionTimeInSeconds>
+    </Blueprint>
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Welder4</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Item_Welder4</DisplayName>
+      <Icon>Textures\GUI\Icons\WeaponWelder_3.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="PhysicalGunObject" SubtypeId="WelderItem" />
+        <Item Amount="1" TypeId="Component" SubtypeId="AcetyleneCan" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="PhysicalGunObject" SubtypeId="Welder4Item" />
+      <BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+    </Blueprint>
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>AngleGrinder2</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Item_AngleGrinder2</DisplayName>
+      <Icon>Textures\GUI\Icons\WeaponGrinder_1.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="PhysicalGunObject" SubtypeId="AngleGrinderItem" />
+        <Item Amount="1" TypeId="Component" SubtypeId="AbrasiveDisc" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="PhysicalGunObject" SubtypeId="AngleGrinder2Item" />
+      <BaseProductionTimeInSeconds>12</BaseProductionTimeInSeconds>
+    </Blueprint>
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>AngleGrinder3</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Item_AngleGrinder3</DisplayName>
+      <Icon>Textures\GUI\Icons\WeaponGrinder_2.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="PhysicalGunObject" SubtypeId="AngleGrinderItem" />
+        <Item Amount="1" TypeId="Component" SubtypeId="MetalDisc" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="PhysicalGunObject" SubtypeId="AngleGrinder3Item" />
+      <BaseProductionTimeInSeconds>36</BaseProductionTimeInSeconds>
+    </Blueprint>
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>AngleGrinder4</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Item_AngleGrinder4</DisplayName>
+      <Icon>Textures\GUI\Icons\WeaponGrinder_3.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="PhysicalGunObject" SubtypeId="AngleGrinderItem" />
+        <Item Amount="1" TypeId="Component" SubtypeId="DiamondDisc" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="PhysicalGunObject" SubtypeId="AngleGrinder4Item" />
+      <BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>CrystalCarbon_BP</SubtypeId>
+      </Id>
+      <DisplayName>Crystallized Carbon</DisplayName>
+      <Icon>Textures\Icons\DataFrag.dds</Icon>
+      <Prerequisites>
+        <Item Amount="3" TypeId="Component" SubtypeId="DGT" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="CrystalCarbon" />
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>FusionCore_BP</SubtypeId>
+      </Id>
+      <DisplayName>Fusion Core</DisplayName>
+      <Icon>Textures\Icons\FusionCore.dds</Icon>
+      <Prerequisites>
+        <Item Amount="4" TypeId="Component" SubtypeId="DGTShards" />
+		<Item Amount="1" TypeId="Component" SubtypeId="FusionCoreSpent" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="FusionCore" />
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>FusionCoreSpent_BP</SubtypeId>
+      </Id>
+      <DisplayName>Spent Fusion Core</DisplayName>
+      <Icon>Textures\Icons\FusionCoreSpent.dds</Icon>
+      <Prerequisites>
+        <Item Amount="16" TypeId="Component" SubtypeId="DGTShards" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="FusionCoreSpent" />
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Dragonite_BP</SubtypeId>
+      </Id>
+      <DisplayName>Dragonite</DisplayName>
+      <Icon>Textures\Icons\DGT.dds</Icon>
+      <Prerequisites>
+		<Item Amount="12" TypeId="Component" SubtypeId="DGTShards" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="DGT" />
+      <BaseProductionTimeInSeconds>70</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>DragoniteShards_BP</SubtypeId>
+      </Id>
+      <DisplayName>Dragonite Shards</DisplayName>
+      <Icon>Textures\Icons\DGT.dds</Icon>
+      <Prerequisites>
+        <Item Amount="40" TypeId="Component" SubtypeId="CrystalCarbon" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="DGTShards" />
+      <BaseProductionTimeInSeconds>17</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>A_Comp1_BP</SubtypeId>
+      </Id>
+      <DisplayName>???</DisplayName>
+      <Icon>Textures\Icons\A_Comp1.dds</Icon>
+      <Prerequisites>
+        <Item Amount="400" TypeId="Component" SubtypeId="DGTShards" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="A_Comp1" />
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>A_Comp1S_BP</SubtypeId>
+      </Id>
+      <DisplayName>Salvaged Alien Component</DisplayName>
+      <Icon>Textures\Icons\A_Comp1.dds</Icon>
+      <Prerequisites>
+        <Item Amount="16.0" TypeId="Component" SubtypeId="DGTShards" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="A_Comp1S" />
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>A_Comp1R_BP</SubtypeId>
+      </Id>
+      <DisplayName>Refurbished Alien Component</DisplayName>
+      <Icon>Textures\Icons\A_Comp1.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="Component" SubtypeId="A_Comp1S" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="A_Comp1R" />
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>B_Comp1_BP</SubtypeId>
+      </Id>
+      <DisplayName>???</DisplayName>
+      <Icon>Textures\Icons\B_Comp1.dds</Icon>
+      <Prerequisites>
+        <Item Amount="400" TypeId="Component" SubtypeId="DGTShards" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="B_Comp1" />
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>B_Comp1S_BP</SubtypeId>
+      </Id>
+      <DisplayName>Salvaged Alien Component</DisplayName>
+      <Icon>Textures\Icons\B_Comp1.dds</Icon>
+      <Prerequisites>
+        <Item Amount="16.0" TypeId="Component" SubtypeId="DGTShards" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="B_Comp1S" />
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>B_Comp1R_BP</SubtypeId>
+      </Id>
+      <DisplayName>Refurbished Alien Component</DisplayName>
+      <Icon>Textures\Icons\B_Comp1.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="Component" SubtypeId="B_Comp1S" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="B_Comp1R" />
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>C_Comp1_BP</SubtypeId>
+      </Id>
+      <DisplayName>???</DisplayName>
+      <Icon>Textures\Icons\C_Comp1.dds</Icon>
+      <Prerequisites>
+        <Item Amount="400" TypeId="Component" SubtypeId="DGTShards" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="C_Comp1" />
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>C_Comp1S_BP</SubtypeId>
+      </Id>
+      <DisplayName>Salvaged Alien Component</DisplayName>
+      <Icon>Textures\Icons\C_Comp1.dds</Icon>
+      <Prerequisites>
+        <Item Amount="16.0" TypeId="Component" SubtypeId="DGTShards" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="C_Comp1S" />
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>C_Comp1R_BP</SubtypeId>
+      </Id>
+      <DisplayName>Refurbished Alien Component</DisplayName>
+      <Icon>Textures\Icons\C_Comp1.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="Component" SubtypeId="C_Comp1S" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="C_Comp1R" />
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+    </Blueprint>
+	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>D_Comp1_BP</SubtypeId>
+      </Id>
+      <DisplayName>???</DisplayName>
+      <Icon>Textures\Icons\D_Comp1.dds</Icon>
+      <Prerequisites>
+        <Item Amount="400" TypeId="Component" SubtypeId="DGTShards" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="D_Comp1" />
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>D_Comp1S_BP</SubtypeId>
+      </Id>
+      <DisplayName>Salvaged Alien Component</DisplayName>
+      <Icon>Textures\Icons\D_Comp1.dds</Icon>
+      <Prerequisites>
+        <Item Amount="16.0" TypeId="Component" SubtypeId="DGTShards" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="D_Comp1S" />
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>D_Comp1R_BP</SubtypeId>
+      </Id>
+      <DisplayName>Refurbished Alien Component</DisplayName>
+      <Icon>Textures\Icons\D_Comp1.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="Component" SubtypeId="D_Comp1S" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="D_Comp1R" />
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+    </Blueprint>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>JerryCan_BP</SubtypeId>
+      </Id>
+      <DisplayName>Jerry Can</DisplayName>
+      <Icon>Textures\Icons\jerrycan.dds</Icon>
+      <Prerequisites>
+		<Item Amount="16.0" TypeId="Ingot" SubtypeId="Silicon" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="JerryCan" />
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+    </Blueprint>
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>HydroCarbonToIngot</SubtypeId>
+      </Id>
+      <DisplayName>HydroCarbons</DisplayName>
+      <Icon>Textures\Icons\HC3.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="Ore" SubtypeId="HydroCarbonOre" />
+      </Prerequisites>
+      <Result Amount="0.2" TypeId="Ingot" SubtypeId="HydroCarbonIngot" />
+      <BaseProductionTimeInSeconds>0.1</BaseProductionTimeInSeconds>
+    </Blueprint>
+	
+	<!--Shield in Tech Tree-->
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>ShieldComponentBP</SubtypeId>
+      </Id>
+      <DisplayName>Field Emitter</DisplayName>
+      <Icon>Textures\Icons\A_Comp1.dds</Icon>
+      <Prerequisites>
+	  <!-- Define Required Items List based on classnames-->
+        <Item Amount="8" TypeId="Ingot" SubtypeId="Platinum" />
+		<Item Amount="80" TypeId="Ingot" SubtypeId="Iron" />
+		<Item Amount="20" TypeId="Ingot" SubtypeId="Silicon" />
+		<Item Amount="15" TypeId="Ingot" SubtypeId="Gold" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="ShieldComponent" />
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+    </Blueprint>
+  </Blueprints>
+</Definitions>

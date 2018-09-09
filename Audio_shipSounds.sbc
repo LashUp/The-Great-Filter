@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Sounds>
+    <!--
+    
+                  SHIP SOUNDS - LARGE
+    
+    -->
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Warp</SubtypeId>
+      </Id>
+      <Category>SHIP</Category>
+      <MaxDistance>150</MaxDistance>
+      <Volume>1</Volume>
+      <Loopable>true</Loopable>
+      <RealisticFilter>realShipFilter</RealisticFilter>
+      <RealisticVolumeChange>0.6</RealisticVolumeChange>
+      <Waves>
+        <Wave Type="D3">
+          <Loop>Audio\Warp.wav</Loop>
+        </Wave>
+        <Wave Type="D2">
+          <Loop>Audio\Warp.wav</Loop>
+        </Wave>
+      </Waves>
+    </Sound>
+  </Sounds>
+</Definitions>

@@ -1,0 +1,3163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+    <!-- Region ARMOR -->
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalArmorBlock</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_LightArmorBlock</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\light_armor_cube.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>Box</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <BuildProgressModels />
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>SmallCrystalArmorSlope</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>SmallCrystalArmorCorner</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>SmallCrystalArmorCornerInv</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>SmallCrystalHalfArmorBlock</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>SmallCrystalHalfSlopeArmorBlock</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+      <BlockPairName>LightArmorBlock_Crystal</BlockPairName>
+      <DeformationRatio>0.32</DeformationRatio>
+      <BuildTimeSeconds>3</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+      <EdgeType>Light</EdgeType>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalArmorSlope</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_LightArmorSlope</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\light_armor_slope.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>Slope</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\SlopePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerTriangleLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerTriangleRightPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels />
+      <BlockPairName>LightArmorSlope_Crystal</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <DeformationRatio>0.32</DeformationRatio>
+      <BuildTimeSeconds>2</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+      <EdgeType>Light</EdgeType>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalArmorCorner</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_LightArmorCorner</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\light_armor_corner.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>Corner</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\CornerTriangleLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerTriangleRightPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\FaceTrianglePlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerTriangleLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels />
+      <BlockPairName>LightArmorCorner_Crystal</BlockPairName>
+      <MirroringX>YHalfX</MirroringX>
+      <MirroringY>ZHalfY</MirroringY>
+      <MirroringZ>YHalfY</MirroringZ>
+      <DeformationRatio>0.32</DeformationRatio>
+      <BuildTimeSeconds>2</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+      <EdgeType>Light</EdgeType>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalArmorCornerInv</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_LightArmorInvCorner</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\light_armor_inv_corner.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>InvCorner</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\InvFaceTrianglePlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerTriangleRightPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerTriangleLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerTriangleLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels />
+      <BlockPairName>LightArmorInvCorner_Crystal</BlockPairName>
+      <MirroringX>YHalfX</MirroringX>
+      <MirroringY>ZHalfY</MirroringY>
+      <MirroringZ>YHalfZ</MirroringZ>
+      <DeformationRatio>0.32</DeformationRatio>
+      <BuildTimeSeconds>3</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+      <EdgeType>Light</EdgeType>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalHeavyBlockArmorBlock</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_HeavyArmorBlock</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\heavy_armor_cube.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>Box</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="5" />
+        <Component Subtype="MetalGrid" Count="3" />
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <BuildProgressModels />
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>SmallCrystalHeavyBlockArmorSlope</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>SmallCrystalHeavyBlockArmorCorner</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>SmallCrystalHeavyBlockArmorCornerInv</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>HeavySmallCrystalHalfArmorBlock</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>HeavySmallCrystalHalfSlopeArmorBlock</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+      <BlockPairName>HeavyArmorBlock_Crystal</BlockPairName>
+      <DeformationRatio>0.16</DeformationRatio>
+      <BuildTimeSeconds>8</BuildTimeSeconds>
+      <DisassembleRatio>3</DisassembleRatio>
+      <EdgeType>Light</EdgeType>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalHeavyBlockArmorSlope</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_HeavyArmorSlope</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\heavy_armor_slope.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>Slope</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\HeavySlopePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerRightPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+        <Component Subtype="MetalGrid" Count="3" />
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels />
+      <BlockPairName>HeavyArmorSlope_Crystal</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <DeformationRatio>0.16</DeformationRatio>
+      <BuildTimeSeconds>5</BuildTimeSeconds>
+      <DisassembleRatio>3</DisassembleRatio>
+      <EdgeType>Light</EdgeType>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalHeavyBlockArmorCorner</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_HeavyArmorCorner</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\heavy_armor_corner.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>Corner</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerRightPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyFacePlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+        <Component Subtype="MetalGrid" Count="3" />
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels />
+      <BlockPairName>HeavyArmorCorner_Crystal</BlockPairName>
+      <MirroringX>YHalfX</MirroringX>
+      <MirroringY>ZHalfY</MirroringY>
+      <MirroringZ>YHalfY</MirroringZ>
+      <DeformationRatio>0.16</DeformationRatio>
+      <BuildTimeSeconds>4</BuildTimeSeconds>
+      <DisassembleRatio>3</DisassembleRatio>
+      <EdgeType>Light</EdgeType>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalHeavyBlockArmorCornerInv</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_HeavyArmorInvCorner</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\heavy_armor_inv_corner.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>InvCorner</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\HeavyInvFacePlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerRightPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+        <Component Subtype="MetalGrid" Count="3" />
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels />
+      <BlockPairName>HeavyArmorInvCorner_Crystal</BlockPairName>
+      <MirroringX>YHalfX</MirroringX>
+      <MirroringY>ZHalfY</MirroringY>
+      <MirroringZ>YHalfZ</MirroringZ>
+      <DeformationRatio>0.16</DeformationRatio>
+      <BuildTimeSeconds>4</BuildTimeSeconds>
+      <DisassembleRatio>3</DisassembleRatio>
+      <EdgeType>Light</EdgeType>
+    </Definition>
+
+
+
+
+
+    <!-- Small half blocks -->
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalHalfArmorBlock</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_HalfLightArmorBlock</DisplayName>
+      <Icon>Textures/GUI/Icons/Cubes/LightArmorSquareSlab.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>HalfBox</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlateSlope2BaseFront.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlateCenter.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlateSlope2BaseFront.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlateSlope2BaseFront.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlateSlope2BaseFront.mwm" PatternWidth="4" PatternHeight="2" />
+        </Sides>
+      </CubeDefinition>
+      <GuiVisible>false</GuiVisible>
+      <PhysicsOption>Convex</PhysicsOption>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <BuildProgressModels />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="0.5" />
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+        <MountPoint Side="Right" StartX="0.5" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0.5" EndX="1" EndY="1" />
+      </MountPoints>
+      <BlockPairName>HalfLightArmorBlock_Crystal</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>4</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+      <NavigationDefinition>Default</NavigationDefinition>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>HeavySmallCrystalHalfArmorBlock</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_HalfHeavyArmorBlock</DisplayName>
+      <Icon>Textures/GUI/Icons/Cubes/HeavyArmorSquareSlab.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>HalfBox</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlateSlope2BaseFront.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlateCenter.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlateSlope2BaseFront.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlateSlope2BaseFront.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlateSlope2BaseFront.mwm" PatternWidth="4" PatternHeight="2" />
+        </Sides>
+      </CubeDefinition>
+      <GuiVisible>false</GuiVisible>
+      <PhysicsOption>Convex</PhysicsOption>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+        <Component Subtype="MetalGrid" Count="3" />
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <BuildProgressModels />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="0.5" />
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+        <MountPoint Side="Right" StartX="0.5" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0.5" EndX="1" EndY="1" />
+      </MountPoints>
+      <BlockPairName>HalfHeavyArmorBlock_Crystal</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>8</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+      <NavigationDefinition>Default</NavigationDefinition>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalHalfSlopeArmorBlock</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_HalfSlopeLightArmorBlock</DisplayName>
+      <Icon>Textures/GUI/Icons/Cubes/LightArmorSlopeSlab.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>HalfSlopeBox</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlateSlope2BaseFront.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\SlopePlateSlab.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerTriangleLeftPlateCorner2TipFront.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlateSlope2BaseFront.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerTriangleLeftPlateCorner2TipFront.mwm" PatternWidth="1" PatternHeight="1" />
+        </Sides>
+      </CubeDefinition>
+      <GuiVisible>false</GuiVisible>
+      <PhysicsOption>Convex</PhysicsOption>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <BuildProgressModels />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.5" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.5" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.16" EndY="0.5" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0.16" StartY="0" EndX="0.33" EndY="0.33" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0.33" StartY="0" EndX="0.5" EndY="0.16" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.5" StartY="0" EndX="0.66" EndY="0.16" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.66" StartY="0" EndX="0.84" EndY="0.33" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.84" StartY="0" EndX="1.0" EndY="0.5" />
+      </MountPoints>
+      <BlockPairName>HalfSlopeLightArmorBlock_Crystal</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>8</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+      <NavigationDefinition>Default</NavigationDefinition>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>HeavySmallCrystalHalfSlopeArmorBlock</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_HalfSlopeHeavyArmorBlock</DisplayName>
+      <Icon>Textures/GUI/Icons/Cubes/HeavyArmorSlopeSlab.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>HalfSlopeBox</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlateSlope2BaseFront.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySlopePlateSlab.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerTriangleLeftPlateCorner2TipFront.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlateSlope2BaseFront.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerTriangleLeftPlateCorner2TipFront.mwm" PatternWidth="1" PatternHeight="1" />
+        </Sides>
+      </CubeDefinition>
+      <GuiVisible>false</GuiVisible>
+      <PhysicsOption>Convex</PhysicsOption>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+        <Component Subtype="MetalGrid" Count="3" />
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <BuildProgressModels />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.5" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.5" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.16" EndY="0.5" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0.16" StartY="0" EndX="0.33" EndY="0.33" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0.33" StartY="0" EndX="0.5" EndY="0.16" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.5" StartY="0" EndX="0.66" EndY="0.16" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.66" StartY="0" EndX="0.84" EndY="0.33" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.84" StartY="0" EndX="1.0" EndY="0.5" />
+      </MountPoints>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>8</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+      <NavigationDefinition>Default</NavigationDefinition>
+      <BlockPairName>HalfSlopeHeavyArmorBlock_Crystal</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+    </Definition>
+
+    <!-- End region ARMOR -->
+
+
+    <!--    Region SMALL LIGHT -->
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalArmorRoundSlope</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_LightRoundArmorSlope</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\RoundArmorSlope.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>RoundSlope</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\SlopeRoundPlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerRoundTriangleLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerRoundTriangleRightPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0.5" StartY="0" EndX="1" EndY="0.5" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.5" EndY="0.5" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.5" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels />
+      <Skeleton>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+      </Skeleton>
+      <BlockPairName>ArmorRoundSlope_Crystal</BlockPairName>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>SmallCrystalArmorRoundCorner</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>SmallCrystalArmorRoundCornerInv</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <DeformationRatio>0.32</DeformationRatio>
+      <BuildTimeSeconds>3</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalArmorRoundCorner</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_LightRoundArmorCorner</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\RoundArmorCorner.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>RoundCorner</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\CornerRoundTriangleLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerRoundTriangleRightPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\FaceRoundTrianglePlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerRoundTriangleLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="1" />
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="0.2" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="0.2" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="0.2" />
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels />
+      <Skeleton>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+      </Skeleton>
+      <BlockPairName>ArmorRoundCorner_Crystal</BlockPairName>
+      <MirroringX>YHalfX</MirroringX>
+      <MirroringY>ZHalfY</MirroringY>
+      <MirroringZ>YHalfY</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <DeformationRatio>0.32</DeformationRatio>
+      <BuildTimeSeconds>2</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalArmorRoundCornerInv</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_LightRoundArmorInvCorner</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\RoundArmorInvCorner.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>RoundInvCorner</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\InvFaceRoundTrianglePlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerRoundTriangleRightPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerRoundTriangleLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerRoundTriangleLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.2" EndY="1" />
+        <MountPoint Side="Right" StartX="0.2" StartY="0.2" EndX="0.8" EndY="1" />
+        <MountPoint Side="Right" StartX="0.8" StartY="0.8" EndX="1" EndY="1" />
+        <MountPoint Side="Front" StartX="0" StartY="0.8" EndX="0.2" EndY="1" />
+        <MountPoint Side="Front" StartX="0.2" StartY="0.2" EndX="0.8" EndY="1" />
+        <MountPoint Side="Front" StartX="0.8" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="0.2" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0.2" StartY="0.2" EndX="0.8" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0.8" StartY="0.8" EndX="1" EndY="1" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels />
+      <Skeleton>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+      </Skeleton>
+      <BlockPairName>ArmorRoundCornerInv_Crystal</BlockPairName>
+      <MirroringX>MinusHalfY</MirroringX>
+      <MirroringY>ZHalfY</MirroringY>
+      <MirroringZ>HalfY</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <DeformationRatio>0.32</DeformationRatio>
+      <BuildTimeSeconds>3</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+    </Definition>
+    <!--    End region SMALL LIGHT -->
+    <!--    Region SMALL HEAVY-->
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalHeavyBlockArmorRoundSlope</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_HeavyRoundArmorSlope</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\HeavyRoundArmorSlope.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>RoundSlope</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\HeavySlopeRoundPlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerRoundTriangleLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerRoundTriangleRightPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+        <Component Subtype="MetalGrid" Count="3" />
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0.5" StartY="0" EndX="1" EndY="0.5" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.5" EndY="0.5" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.5" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels />
+      <Skeleton>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+      </Skeleton>
+      <BlockPairName>HeavyArmorRoundSlope_Crystal</BlockPairName>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>SmallCrystalHeavyBlockArmorRoundCorner</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>SmallCrystalHeavyBlockArmorRoundCornerInv</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <DeformationRatio>0.16</DeformationRatio>
+      <BuildTimeSeconds>5</BuildTimeSeconds>
+      <DisassembleRatio>3</DisassembleRatio>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalHeavyBlockArmorRoundCorner</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_HeavyRoundArmorCorner</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\HeavyRoundArmorCorner.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>RoundCorner</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerRoundTriangleLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerRoundTriangleRightPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyFaceRoundTrianglePlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerRoundTriangleLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+        <Component Subtype="MetalGrid" Count="3" />
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="1" />
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="0.2" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="0.2" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="0.2" />
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels />
+      <Skeleton>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+      </Skeleton>
+      <BlockPairName>HeavyArmorRoundCorner_Crystal</BlockPairName>
+      <MirroringX>YHalfX</MirroringX>
+      <MirroringY>ZHalfY</MirroringY>
+      <MirroringZ>YHalfY</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <DeformationRatio>0.16</DeformationRatio>
+      <BuildTimeSeconds>4</BuildTimeSeconds>
+      <DisassembleRatio>3</DisassembleRatio>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalHeavyBlockArmorRoundCornerInv</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_HeavyRoundArmorInvCorner</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\HeavyRoundArmorInvCorner.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>RoundInvCorner</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\HeavyInvFaceRoundTrianglePlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerRoundTriangleRightPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerRoundTriangleLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerRoundTriangleLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="5" />
+        <Component Subtype="MetalGrid" Count="3" />
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.2" EndY="1" />
+        <MountPoint Side="Right" StartX="0.2" StartY="0.2" EndX="0.8" EndY="1" />
+        <MountPoint Side="Right" StartX="0.8" StartY="0.8" EndX="1" EndY="1" />
+        <MountPoint Side="Front" StartX="0" StartY="0.8" EndX="0.2" EndY="1" />
+        <MountPoint Side="Front" StartX="0.2" StartY="0.2" EndX="0.8" EndY="1" />
+        <MountPoint Side="Front" StartX="0.8" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="0.2" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0.2" StartY="0.2" EndX="0.8" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0.8" StartY="0.8" EndX="1" EndY="1" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels />
+      <Skeleton>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+      </Skeleton>
+      <BlockPairName>HeavyArmorRoundCornerInv_Crystal</BlockPairName>
+      <MirroringX>MinusHalfY</MirroringX>
+      <MirroringY>ZHalfY</MirroringY>
+      <MirroringZ>HalfY</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <DeformationRatio>0.16</DeformationRatio>
+      <BuildTimeSeconds>4</BuildTimeSeconds>
+      <DisassembleRatio>3</DisassembleRatio>
+    </Definition>
+    <!--    End region SMALL HEAVY-->
+    <!--    2x1x1 SLOPE-->
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalArmorSlope2Base</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_LightArmorSlope2Base</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Slope2x1x1Base.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>Slope2Base</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlateSlope2BaseTop.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlateSlope2BaseFront.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlateSlope2BaseRight.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlateSlope2BaseLeft.mwm" PatternWidth="4" PatternHeight="2" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="0.5" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+        <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="1" EndY="0.5" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.5" EndY="0.5" />
+        <MountPoint Side="Right" StartX="0.5" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <BuildProgressModels />
+      <Skeleton>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+      </Skeleton>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BlockPairName>LargeBlockArmorSlope2Base_Crystal</BlockPairName>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>SmallCrystalArmorSlope2Tip</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>8</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalArmorSlope2Tip</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_LightArmorSlope2Tip</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Slope2x1x1Tip.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>Slope2Tip</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\SlopePlateSlope2Tip.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerTriangleLeftPlateSlope2Tip.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerTriangleRightPlateSlope2Tip.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlateSlope2TipBack.mwm" PatternWidth="4" PatternHeight="2" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="0.5" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.5" EndY="0.5" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0.5" StartY="0" EndX="1" EndY="0.25" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.5" EndY="0.25" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.5" StartY="0" EndX="1" EndY="0.5" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels />
+      <Skeleton>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+      </Skeleton>
+      <BlockPairName>LargeBlockArmorSlope2Tip_Crystal</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>5</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+    </Definition>
+    <!--    2x1x1 CORNER-->
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalArmorCorner2Base</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_LightArmorCorner2Base</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Corner2x1x1Base.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>Corner2Base</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\SlopePlateCorner2BaseTop.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerTriangleLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerTriangleRightPlateCorner2Base.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlateCorner2BaseBottom.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlateCorner2BaseBack.mwm" PatternWidth="4" PatternHeight="2" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="0.2" />
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="0.2" />
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="1" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="0.2" />
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="1" />
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="0.2" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels />
+      <Skeleton>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+      </Skeleton>
+      <BlockPairName>LargeBlockArmorCorner2Base_Crystal</BlockPairName>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>SmallCrystalArmorCorner2Tip</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+      <MirroringX>YHalfX</MirroringX>
+      <MirroringY>MinusHalfX</MirroringY>
+      <MirroringZ>HalfX</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>5</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalArmorCorner2Tip</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_LightArmorCorner2Tip</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Corner2x1x1Tip.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>Corner2Tip</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\CornerTriangleLeftPlateCorner2TipFront.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerTriangleRightPlateCorner2TipRight.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\FaceTrianglePlateCorner2Tip.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerTriangleLeftPlateCorner2TipBottom.mwm" PatternWidth="1" PatternHeight="1" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="0.5" />
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.5" EndY="0.4" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="0.1" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.8" EndY="0.4" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="0.5" />
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="0.5" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels />
+      <Skeleton>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+      </Skeleton>
+      <BlockPairName>LargeBlockArmorCorner2Tip_Crystal</BlockPairName>
+      <MirroringX>HalfZ</MirroringX>
+      <MirroringY>MinusHalfZ</MirroringY>
+      <MirroringZ>XMinusHalfZ</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>3</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+    </Definition>
+    <!--    2x1x1 INV. CORNER-->
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalArmorInvCorner2Base</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_LightArmorInvCorner2Base</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\InvCorner2x1x1Base.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>InvCorner2Base</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\InvFaceTrianglePlateInvCorner2Base.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerTriangleRightPlateInvCorner2BaseRight.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerTriangleLeftPlateInvCorner2BaseFront.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerTriangleLeftPlateInvCorner2BaseBottom.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+        <MountPoint Side="Right" StartX="0.5" StartY="0.5" EndX="0.8" EndY="1" />
+        <MountPoint Side="Right" StartX="0.8" StartY="0.8" EndX="1" EndY="1" />
+        <MountPoint Side="Front" StartX="0" StartY="0.8" EndX="0.2" EndY="1" />
+        <MountPoint Side="Front" StartX="0.2" StartY="0.5" EndX="0.8" EndY="1" />
+        <MountPoint Side="Front" StartX="0.8" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0.5" StartY="0.5" EndX="0.8" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0.8" StartY="0.8" EndX="1" EndY="1" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels />
+      <Skeleton>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+      </Skeleton>
+      <BlockPairName>LargeBlockArmorInvCorner2Base_Crystal</BlockPairName>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>SmallCrystalArmorInvCorner2Tip</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+      <MirroringX>HalfZ</MirroringX>
+      <MirroringY>MinusHalfZ</MirroringY>
+      <MirroringZ>XMinusHalfZ</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>7</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalArmorInvCorner2Tip</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_LightArmorInvCorner2Tip</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\InvCorner2x1x1Tip.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>InvCorner2Tip</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\InvFaceTrianglePlateInvCorner2Tip.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerTriangleRightPlateInvCorner2TipRight.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerTriangleLeftPlateInvCorner2TipFront.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\CornerTriangleLeftPlateInvCorner2TipBottom.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\SquarePlateInvCorner2TipBack.mwm" PatternWidth="4" PatternHeight="2" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="0.2" EndY="1" />
+        <MountPoint Side="Back" StartX="0.2" StartY="0.2" EndX="0.8" EndY="1" />
+        <MountPoint Side="Back" StartX="0.8" StartY="0.5" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0.5" EndX="0.8" EndY="1" />
+        <MountPoint Side="Right" StartX="0.8" StartY="0.8" EndX="1" EndY="1" />
+        <MountPoint Side="Front" StartX="0" StartY="0.8" EndX="0.2" EndY="1" />
+        <MountPoint Side="Front" StartX="0.2" StartY="0.2" EndX="0.8" EndY="1" />
+        <MountPoint Side="Front" StartX="0.8" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="0.2" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0.2" StartY="0.5" EndX="0.5" EndY="1" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels />
+      <Skeleton>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+      </Skeleton>
+      <BlockPairName>LargeBlockArmorInvCorner2Tip_Crystal</BlockPairName>
+      <MirroringX>HalfZ</MirroringX>
+      <MirroringY>MinusHalfZ</MirroringY>
+      <MirroringZ>XMinusHalfZ</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>7</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+    </Definition>
+
+    <!--    Small Heavy    -->
+    <!--    2x1x1 SLOPE-->
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalHeavyBlockArmorSlope2Base</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_HeavyArmorSlope2Base</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\HeavySlope2x1x1Base.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>Slope2Base</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlateSlope2BaseTop.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlateSlope2BaseFront.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlateSlope2BaseRight.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlateSlope2BaseLeft.mwm" PatternWidth="4" PatternHeight="2" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+        <Component Subtype="MetalGrid" Count="3" />
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="0.5" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+        <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="1" EndY="0.5" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.5" EndY="0.5" />
+        <MountPoint Side="Right" StartX="0.5" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <BuildProgressModels />
+      <Skeleton>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+      </Skeleton>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BlockPairName>LargeHeavyBlockArmorSlope2Base_Crystal</BlockPairName>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>SmallCrystalHeavyBlockArmorSlope2Tip</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>8</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalHeavyBlockArmorSlope2Tip</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_HeavyArmorSlope2Tip</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\HeavySlope2x1x1Tip.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>Slope2Tip</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\HeavySlopePlateSlope2Tip.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerTriangleLeftPlateSlope2Tip.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerTriangleRightPlateSlope2Tip.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlateSlope2TipBack.mwm" PatternWidth="4" PatternHeight="2" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+        <Component Subtype="MetalGrid" Count="3" />
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="0.5" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.5" EndY="0.5" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0.5" StartY="0" EndX="1" EndY="0.25" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.5" EndY="0.25" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.5" StartY="0" EndX="1" EndY="0.5" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels />
+      <Skeleton>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+      </Skeleton>
+      <BlockPairName>LargeHeavyBlockArmorSlope2Tip_Crystal</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>5</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+    </Definition>
+    <!--    2x1x1 CORNER-->
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalHeavyBlockArmorCorner2Base</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_HeavyArmorCorner2Base</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\HeavyCorner2x1x1Base.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>Corner2Base</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\HeavySlopePlateCorner2BaseTop.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerTriangleRightPlateCorner2Base.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlateCorner2BaseBottom.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlateCorner2BaseBack.mwm" PatternWidth="4" PatternHeight="2" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+        <Component Subtype="MetalGrid" Count="3" />
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="0.2" />
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="0.2" />
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="1" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="0.2" />
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="1" />
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="0.2" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels />
+      <Skeleton>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+      </Skeleton>
+      <BlockPairName>LargeHeavyBlockArmorCorner2Base_Crystal</BlockPairName>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>SmallCrystalHeavyBlockArmorCorner2Tip</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+      <MirroringX>YHalfX</MirroringX>
+      <MirroringY>MinusHalfX</MirroringY>
+      <MirroringZ>HalfX</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>5</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalHeavyBlockArmorCorner2Tip</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_HeavyArmorCorner2Tip</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\HeavyCorner2x1x1Tip.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>Corner2Tip</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerTriangleLeftPlateCorner2TipFront.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerTriangleRightPlateCorner2TipRight.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyFaceTrianglePlateCorner2Tip.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerTriangleLeftPlateCorner2TipBottom.mwm" PatternWidth="1" PatternHeight="1" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="3" />
+        <Component Subtype="MetalGrid" Count="3" />
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="0.5" />
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.5" EndY="0.4" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="0.1" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.8" EndY="0.4" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="0.5" />
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="0.5" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels />
+      <Skeleton>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+      </Skeleton>
+      <BlockPairName>LargeHeavyBlockArmorCorner2Tip_Crystal</BlockPairName>
+      <MirroringX>HalfZ</MirroringX>
+      <MirroringY>MinusHalfZ</MirroringY>
+      <MirroringZ>XMinusHalfZ</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>3</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+    </Definition>
+    <!--    2x1x1 INV. CORNER-->
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalHeavyBlockArmorInvCorner2Base</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_HeavyArmorInvCorner2Base</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\HeavyInvCorner2x1x1Base.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>InvCorner2Base</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\HeavyInvFaceTrianglePlateInvCorner2Base.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerTriangleRightPlateInvCorner2BaseRight.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerTriangleLeftPlateInvCorner2BaseFront.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerTriangleLeftPlateInvCorner2BaseBottom.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="5" />
+        <Component Subtype="MetalGrid" Count="3" />
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+        <MountPoint Side="Right" StartX="0.5" StartY="0.5" EndX="0.8" EndY="1" />
+        <MountPoint Side="Right" StartX="0.8" StartY="0.8" EndX="1" EndY="1" />
+        <MountPoint Side="Front" StartX="0" StartY="0.8" EndX="0.2" EndY="1" />
+        <MountPoint Side="Front" StartX="0.2" StartY="0.5" EndX="0.8" EndY="1" />
+        <MountPoint Side="Front" StartX="0.8" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0.5" StartY="0.5" EndX="0.8" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0.8" StartY="0.8" EndX="1" EndY="1" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels />
+      <Skeleton>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+      </Skeleton>
+      <BlockPairName>LargeHeavyBlockArmorInvCorner2Base_Crystal</BlockPairName>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>SmallCrystalHeavyBlockArmorInvCorner2Tip</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+      <MirroringX>HalfZ</MirroringX>
+      <MirroringY>MinusHalfZ</MirroringY>
+      <MirroringZ>XMinusHalfZ</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>7</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>SmallCrystalHeavyBlockArmorInvCorner2Tip</SubtypeId>
+      </Id>
+      <DisplayName>Crystal_Small_HeavyArmorInvCorner2Tip</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\HeavyInvCorner2x1x1Tip.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <CubeDefinition>
+        <CubeTopology>InvCorner2Tip</CubeTopology>
+        <ShowEdges>true</ShowEdges>
+        <Sides>
+          <Side Model="Models\Cubes\Crystal\Small\HeavyInvFaceTrianglePlateInvCorner2Tip.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerTriangleRightPlateInvCorner2TipRight.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerTriangleLeftPlateInvCorner2TipFront.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavyCornerTriangleLeftPlateInvCorner2TipBottom.mwm" PatternWidth="1" PatternHeight="1" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Crystal\Small\HeavySquarePlateInvCorner2TipBack.mwm" PatternWidth="4" PatternHeight="2" />
+        </Sides>
+      </CubeDefinition>
+      <Components>
+        <Component Subtype="CrystalCarbon" Count="5" />
+        <Component Subtype="MetalGrid" Count="3" />
+        <Component Subtype="CrystalCarbon" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="CrystalCarbon" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="0.2" EndY="1" />
+        <MountPoint Side="Back" StartX="0.2" StartY="0.2" EndX="0.8" EndY="1" />
+        <MountPoint Side="Back" StartX="0.8" StartY="0.5" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0.5" EndX="0.8" EndY="1" />
+        <MountPoint Side="Right" StartX="0.8" StartY="0.8" EndX="1" EndY="1" />
+        <MountPoint Side="Front" StartX="0" StartY="0.8" EndX="0.2" EndY="1" />
+        <MountPoint Side="Front" StartX="0.2" StartY="0.2" EndX="0.8" EndY="1" />
+        <MountPoint Side="Front" StartX="0.8" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="0.2" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0.2" StartY="0.5" EndX="0.5" EndY="1" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels />
+      <Skeleton>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+      </Skeleton>
+      <BlockPairName>LargeHeavyBlockArmorInvCorner2Tip_Crystal</BlockPairName>
+      <MirroringX>HalfZ</MirroringX>
+      <MirroringY>MinusHalfZ</MirroringY>
+      <MirroringZ>XMinusHalfZ</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>7</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+    </Definition>
+    <!-- Region NON-DEFORMING SLOPED ARMOR -->
+  </CubeBlocks>	
+</Definitions>

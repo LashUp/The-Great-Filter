@@ -1,0 +1,2838 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>InteriorTurret</TypeId>
+        <SubtypeId>CythonLargeBlockSmallPlasmaTurret</SubtypeId>
+      </Id>
+      <DisplayName>CX3 Plasma Turret</DisplayName>
+      <Icon>Textures\Icons\smallplasmaturret.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="2" z="1" />
+      <Model>Models\Cubes\LargeBlockSmallPlasmaTurret_Large.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+	  <MountPoints>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Front"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Back"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Left"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Right"/>
+		<MountPoint EndY="0.80" EndX="0.80" StartY="0.20" StartX="0.20" Side="Bottom"/>
+	  </MountPoints>
+      <Components>
+		<Component Subtype="SteelPlate" Count="10" />
+		<Component Subtype="A_Comp1" Count="1">
+          <DeconstructId>
+            <TypeId>Component</TypeId>
+            <SubtypeId>A_Comp1S</SubtypeId>
+          </DeconstructId>
+		</Component>
+		<Component Subtype="Targeting" Count="1" />
+        <Component Subtype="Computer" Count="12" />
+		<Component Subtype="MSTHeavyWPN" Count="2" />
+		<Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="MSTHeavyWPN" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\MissileTurretConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\MissileTurretConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\MissileTurretConstruction_3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>CythonSmallPlasmaTurret</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="LargeShipSmallPlasmaTurret" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+	  <Public>true</Public>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+	  <MaxPowerConsumption>0.0001</MaxPowerConsumption>
+      <MinPowerConsumption>0.0001</MinPowerConsumption>
+      <RequiredPowerInput>0.0001</RequiredPowerInput>
+      <MinElevationDegrees>5</MinElevationDegrees>
+      <MaxElevationDegrees>180</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1200</MaxRangeMeters>
+      <RotationSpeed>0.0002</RotationSpeed>
+      <ElevationSpeed>0.0002</ElevationSpeed>
+    </Definition>
+	
+	
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>InteriorTurret</TypeId>
+        <SubtypeId>CX3PlasmaCannon</SubtypeId>
+      </Id>
+      <DisplayName>Plasma Cannon</DisplayName>
+      <Icon>Textures\Icons\CX3PlasmaCannon.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="1" z="5" />
+	  <ModelOffset x="0" y="-1.25" z="0" />
+      <Model>Models\Cubes\T_Base.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+	  <MountPoints>
+		<MountPoint EndY="3.25" EndX="3.25" StartY="2.75" StartX="2.75" Side="Bottom"/>
+	  </MountPoints>
+      <Components>
+		<Component Subtype="SteelPlate" Count="10" />
+		<Component Subtype="A_Comp1" Count="1">
+          <DeconstructId>
+            <TypeId>Component</TypeId>
+            <SubtypeId>A_Comp1S</SubtypeId>
+          </DeconstructId>
+		</Component>
+		<Component Subtype="Targeting" Count="1" />
+        <Component Subtype="Computer" Count="12" />
+		<Component Subtype="MSTHeavyWPN" Count="2" />
+		<Component Subtype="SteelPlate" Count="700" />
+      </Components>
+      <CriticalComponent Subtype="MSTHeavyWPN" Index="0" />
+      <BuildProgressModels />
+      <BlockPairName>CX3PlasmaCannonPair</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="WPN_CX3PlasmaCannon" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+	  <Public>true</Public>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+	  <MaxPowerConsumption>0.0001</MaxPowerConsumption>
+      <MinPowerConsumption>0.0001</MinPowerConsumption>
+      <RequiredPowerInput>0.0001</RequiredPowerInput>
+      <MinElevationDegrees>0</MinElevationDegrees>
+      <MaxElevationDegrees>60</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1200</MaxRangeMeters>
+      <RotationSpeed>0.0004</RotationSpeed>
+      <ElevationSpeed>0.0004</ElevationSpeed>
+    </Definition>
+	
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>InteriorTurret</TypeId>
+        <SubtypeId>CythonLargeBlockSmallLaserTurret</SubtypeId>
+      </Id>
+      <DisplayName>CX1 Laser Turret</DisplayName>
+      <Icon>Textures\Icons\CX1_Laser_LG.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+	  <ModelOffset x="0" y="-1.25" z="0" />
+      <Model>Models\Cubes\C1LG_Laser\InteriorTurret.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+	  <MountPoints>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Front"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Back"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Left"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Right"/>
+		<MountPoint EndY="0.80" EndX="0.80" StartY="0.20" StartX="0.20" Side="Bottom"/>
+	  </MountPoints>
+      <Components>
+		<Component Subtype="SteelPlate" Count="10" />
+		<Component Subtype="A_Comp1S" Count="1" />
+		<Component Subtype="Targeting" Count="1" />
+        <Component Subtype="Computer" Count="12" />
+		<Component Subtype="ADVHeavyWPN" Count="1" />
+		<Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="ADVHeavyWPN" Index="0" />
+      <BuildProgressModels />
+      <BlockPairName>CythonSmallLaserTurret</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="LargeShipSmallLaserTurret" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>15</MinElevationDegrees>
+      <MaxElevationDegrees>180</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1200</MaxRangeMeters>
+      <RotationSpeed>0.0008</RotationSpeed>
+      <ElevationSpeed>0.0008</ElevationSpeed>
+    </Definition>
+	
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>InteriorTurret</TypeId>
+        <SubtypeId>CythonLargeBlockSmallLaserTurretC2</SubtypeId>
+      </Id>
+      <DisplayName>CX2 Laser Turret</DisplayName>
+      <Icon>Textures\Icons\CX2_Laser_LG.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+	  <ModelOffset x="0" y="-1.25" z="0" />
+      <Model>Models\Cubes\C2LG_Laser\InteriorTurret.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+	  <MountPoints>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Front"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Back"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Left"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Right"/>
+		<MountPoint EndY="0.80" EndX="0.80" StartY="0.20" StartX="0.20" Side="Bottom"/>
+	  </MountPoints>
+      <Components>
+		<Component Subtype="SteelPlate" Count="10" />
+		<Component Subtype="A_Comp1R" Count="1" />
+		<Component Subtype="Targeting" Count="1" />
+        <Component Subtype="Computer" Count="12" />
+		<Component Subtype="MSTHeavyWPN" Count="1" />
+		<Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="A_Comp1R" Index="0" />
+      <BuildProgressModels />
+      <BlockPairName>CythonSmallLaserTurretC2</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="LargeShipSmallLaserTurretC2" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>15</MinElevationDegrees>
+      <MaxElevationDegrees>180</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1200</MaxRangeMeters>
+      <RotationSpeed>0.0008</RotationSpeed>
+      <ElevationSpeed>0.0008</ElevationSpeed>
+    </Definition>
+	
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>InteriorTurret</TypeId>
+        <SubtypeId>CythonSmallBlockSmallPlasmaTurretC1</SubtypeId>
+      </Id>
+      <DisplayName>CX1 Blaster Turret</DisplayName>
+      <Icon>Textures\Icons\Laser_SG.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <Model>Models\Cubes\C1SM_Laser\InteriorTurret.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+		<Component Subtype="SteelPlate" Count="10" />
+		<Component Subtype="A_Comp1S" Count="1" />
+		<Component Subtype="Targeting" Count="1" />
+        <Component Subtype="Computer" Count="12" />
+		<Component Subtype="ADVWPN" Count="1" />
+		<Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="ADVWPN" Index="0" />
+      <BuildProgressModels />
+	  <MountPoints>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Front"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Back"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Left"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Right"/>
+		<MountPoint EndY="0.80" EndX="0.80" StartY="0.20" StartX="0.20" Side="Bottom"/>
+	  </MountPoints>
+      <BlockPairName>CythonSmallBlasterTurret</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="SmallShipSmallBlasterTurretC1" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>0</MinElevationDegrees> 
+      <MaxElevationDegrees>180</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <RotationSpeed>0.002</RotationSpeed>
+      <ElevationSpeed>0.002</ElevationSpeed>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1200</MaxRangeMeters>
+    </Definition>
+
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>InteriorTurret</TypeId>
+        <SubtypeId>CythonSmallBlockSmallPlasmaTurret</SubtypeId>
+      </Id>
+      <DisplayName>CX2 Blaster Turret</DisplayName>
+      <Icon>Textures\Icons\Laser_SG.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <Model>Models\Cubes\C1SM_Laser\InteriorTurret.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+		<Component Subtype="SteelPlate" Count="10" />
+		<Component Subtype="A_Comp1R" Count="1" />
+		<Component Subtype="Targeting" Count="1" />
+        <Component Subtype="Computer" Count="12" />
+		<Component Subtype="MSTWPN" Count="1" />
+		<Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="MSTWPN" Index="0" />
+      <BuildProgressModels />
+	  <MountPoints>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Front"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Back"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Left"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Right"/>
+		<MountPoint EndY="0.80" EndX="0.80" StartY="0.20" StartX="0.20" Side="Bottom"/>
+	  </MountPoints>
+      <BlockPairName>CythonSmallBlasterTurretC2</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="SmallShipSmallBlasterTurret" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>0</MinElevationDegrees> 
+      <MaxElevationDegrees>180</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <RotationSpeed>0.002</RotationSpeed>
+      <ElevationSpeed>0.002</ElevationSpeed>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1200</MaxRangeMeters>
+    </Definition>
+	
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>InteriorTurret</TypeId>
+        <SubtypeId>CythonSmallBlockSmallPlasmaTurretC3</SubtypeId>
+      </Id>
+      <DisplayName>CX3 Blaster Turret</DisplayName>
+      <Icon>Textures\Icons\Laser_SG.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <Model>Models\Cubes\C1SM_Laser\InteriorTurret.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+		<Component Subtype="SteelPlate" Count="10" />
+		<Component Subtype="A_Comp1" Count="1">
+          <DeconstructId>
+            <TypeId>Component</TypeId>
+            <SubtypeId>A_Comp1S</SubtypeId>
+          </DeconstructId>
+		</Component>
+		<Component Subtype="Targeting" Count="1" />
+        <Component Subtype="Computer" Count="12" />
+		<Component Subtype="MSTWPN" Count="1" />
+		<Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="MSTWPN" Index="0" />
+      <BuildProgressModels />
+	  <MountPoints>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Front"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Back"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Left"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Right"/>
+		<MountPoint EndY="0.80" EndX="0.80" StartY="0.20" StartX="0.20" Side="Bottom"/>
+	  </MountPoints>
+      <BlockPairName>CythonSmallBlasterTurretC3</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="SmallShipSmallBlasterTurretC3" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>0</MinElevationDegrees> 
+      <MaxElevationDegrees>180</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <RotationSpeed>0.002</RotationSpeed>
+      <ElevationSpeed>0.002</ElevationSpeed>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1200</MaxRangeMeters>
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>InteriorTurret</TypeId>
+        <SubtypeId>CythonLargeBlockSmallBlasterTurret</SubtypeId>
+      </Id>
+      <DisplayName>CX1 Blaster Turret</DisplayName>
+      <Icon>Textures\Icons\CX1_Blaster_LG.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+	  <ModelOffset x="0" y="-1.25" z="0" />
+      <Model>Models\Cubes\C1LG_Blaster\InteriorTurret.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+	  <MountPoints>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Front"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Back"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Left"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Right"/>
+		<MountPoint EndY="0.80" EndX="0.80" StartY="0.20" StartX="0.20" Side="Bottom"/>
+	  </MountPoints>
+      <Components>
+		<Component Subtype="SteelPlate" Count="10" />
+		<Component Subtype="A_Comp1S" Count="1" />
+		<Component Subtype="Targeting" Count="1" />
+        <Component Subtype="Computer" Count="12" />
+		<Component Subtype="ADVHeavyWPN" Count="1" />
+		<Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="ADVHeavyWPN" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\MissileTurretConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\MissileTurretConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\MissileTurretConstruction_3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>CythonSmallBlasterTurret</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="LargeShipSmallBlasterTurret" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+	  <MaxPowerConsumption>0.25</MaxPowerConsumption>
+      <MinPowerConsumption>0.2</MinPowerConsumption>
+      <RequiredPowerInput>0.2</RequiredPowerInput>
+      <MinElevationDegrees>15</MinElevationDegrees>
+      <MaxElevationDegrees>180</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1200</MaxRangeMeters>
+      <RotationSpeed>0.002</RotationSpeed>
+      <ElevationSpeed>0.002</ElevationSpeed>
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>InteriorTurret</TypeId>
+        <SubtypeId>CythonLargeBlockSmallBlasterTurretC2</SubtypeId>
+      </Id>
+      <DisplayName>CX2 Blaster Turret</DisplayName>
+      <Icon>Textures\Icons\CX2_Blaster_LG.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+	  <ModelOffset x="0" y="-1.25" z="0" />
+      <Model>Models\Cubes\C2LG_Blaster\InteriorTurret.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+	  <MountPoints>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Front"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Back"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Left"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Right"/>
+		<MountPoint EndY="0.80" EndX="0.80" StartY="0.20" StartX="0.20" Side="Bottom"/>
+	  </MountPoints>
+      <Components>
+		<Component Subtype="SteelPlate" Count="10" />
+		<Component Subtype="A_Comp1R" Count="1" />
+		<Component Subtype="Targeting" Count="1" />
+        <Component Subtype="Computer" Count="12" />
+		<Component Subtype="MSTHeavyWPN" Count="1" />
+		<Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="MSTHeavyWPN" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\MissileTurretConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\MissileTurretConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\MissileTurretConstruction_3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>CythonSmallBlasterTurretC2</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="LargeShipSmallBlasterTurretC2" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+	  <MaxPowerConsumption>0.35</MaxPowerConsumption>
+      <MinPowerConsumption>0.3</MinPowerConsumption>
+      <RequiredPowerInput>0.3</RequiredPowerInput>
+      <MinElevationDegrees>15</MinElevationDegrees>
+      <MaxElevationDegrees>180</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1200</MaxRangeMeters>
+      <RotationSpeed>0.002</RotationSpeed>
+      <ElevationSpeed>0.002</ElevationSpeed>
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>InteriorTurret</TypeId>
+        <SubtypeId>CythonLargeBlockSmallBlasterTurretC3</SubtypeId>
+      </Id>
+      <DisplayName>CX3 Blaster Turret</DisplayName>
+      <Icon>Textures\Icons\CX3_Blaster_LG.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+	  <ModelOffset x="0" y="-1.25" z="0" />
+      <Model>Models\Cubes\C3LG_Blaster\InteriorTurret.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+	  <MountPoints>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Front"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Back"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Left"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Right"/>
+		<MountPoint EndY="0.80" EndX="0.80" StartY="0.20" StartX="0.20" Side="Bottom"/>
+	  </MountPoints>
+      <Components>
+		<Component Subtype="SteelPlate" Count="10" />
+		<Component Subtype="A_Comp1" Count="1">
+          <DeconstructId>
+            <TypeId>Component</TypeId>
+            <SubtypeId>A_Comp1S</SubtypeId>
+          </DeconstructId>
+		</Component>
+		<Component Subtype="Targeting" Count="1" />
+        <Component Subtype="Computer" Count="12" />
+		<Component Subtype="MSTHeavyWPN" Count="1" />
+		<Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="MSTHeavyWPN" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\MissileTurretConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\MissileTurretConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\MissileTurretConstruction_3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>CythonSmallBlasterTurretC3</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="LargeShipSmallBlasterTurretC3" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+	  <MaxPowerConsumption>0.45</MaxPowerConsumption>
+      <MinPowerConsumption>0.4</MinPowerConsumption>
+      <RequiredPowerInput>0.4</RequiredPowerInput>
+      <MinElevationDegrees>15</MinElevationDegrees>
+      <MaxElevationDegrees>180</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1200</MaxRangeMeters>
+      <RotationSpeed>0.002</RotationSpeed>
+      <ElevationSpeed>0.002</ElevationSpeed>
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>InteriorTurret</TypeId>
+        <SubtypeId>CX3LG_SM_Blaster</SubtypeId>
+      </Id>
+      <DisplayName>CX3 Blaster Turret</DisplayName>
+      <Icon>Textures\Icons\CX3_Blaster_LG.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="3" z="5" />
+	  <ModelOffset x="0" y="-0.75" z="0" />
+      <Model>Models\Cubes\C3LG_Blaster\InteriorTurret.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+	  <MountPoints>
+		<MountPoint EndY="0" EndX="0" StartY="5" StartX="5" Side="Bottom"/>
+	  </MountPoints>
+      <Components>
+		<Component Subtype="SteelPlate" Count="10" />
+		<Component Subtype="A_Comp1" Count="1">
+          <DeconstructId>
+            <TypeId>Component</TypeId>
+            <SubtypeId>A_Comp1S</SubtypeId>
+          </DeconstructId>
+		</Component>
+		<Component Subtype="Targeting" Count="1" />
+        <Component Subtype="Computer" Count="12" />
+		<Component Subtype="MSTHeavyWPN_LW" Count="1" />
+		<Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="MSTHeavyWPN_LW" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\MissileTurretConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\MissileTurretConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\MissileTurretConstruction_3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>CX3LG_SM_Blaster</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="WPN_CX3LG_SM_Blaster" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+	  <MaxPowerConsumption>0.45</MaxPowerConsumption>
+      <MinPowerConsumption>0.4</MinPowerConsumption>
+      <RequiredPowerInput>0.4</RequiredPowerInput>
+      <MinElevationDegrees>5</MinElevationDegrees>
+      <MaxElevationDegrees>180</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1200</MaxRangeMeters>
+      <RotationSpeed>0.002</RotationSpeed>
+      <ElevationSpeed>0.002</ElevationSpeed>
+    </Definition>
+
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>InteriorTurret</TypeId>
+        <SubtypeId>CythonSmallBlockSmallLaserTurretC1</SubtypeId>
+      </Id>
+      <DisplayName>CX1 Laser Turret</DisplayName>
+      <Icon>Textures\Icons\Laser_SG.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <Model>Models\Cubes\C1SM_Laser\InteriorTurret.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+		<Component Subtype="SteelPlate" Count="10" />
+		<Component Subtype="A_Comp1S" Count="1" />
+		<Component Subtype="Targeting" Count="1" />
+        <Component Subtype="Computer" Count="12" />
+		<Component Subtype="ADVWPN" Count="1" />
+		<Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="ADVWPN" Index="0" />
+      <BuildProgressModels />
+	  <MountPoints>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Front"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Back"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Left"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Right"/>
+		<MountPoint EndY="0.80" EndX="0.80" StartY="0.20" StartX="0.20" Side="Bottom"/>
+	  </MountPoints>
+      <BlockPairName>CythonSmallLaserTurret</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="SmallShipSmallLaserTurretC1" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>0</MinElevationDegrees> 
+      <MaxElevationDegrees>180</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <RotationSpeed>0.002</RotationSpeed>
+      <ElevationSpeed>0.002</ElevationSpeed>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1200</MaxRangeMeters>
+    </Definition>
+	
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>InteriorTurret</TypeId>
+        <SubtypeId>CythonSmallBlockSmallLaserTurret</SubtypeId>
+      </Id>
+      <DisplayName>CX2 Laser Turret</DisplayName>
+      <Icon>Textures\Icons\Laser_SG.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <Model>Models\Cubes\C1SM_Laser\InteriorTurret.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+		<Component Subtype="SteelPlate" Count="10" />
+		<Component Subtype="A_Comp1R" Count="1" />
+		<Component Subtype="Targeting" Count="1" />
+        <Component Subtype="Computer" Count="12" />
+		<Component Subtype="MSTWPN" Count="1" />
+		<Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="MSTWPN" Index="0" />
+      <BuildProgressModels />
+	  <MountPoints>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Front"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Back"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Left"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Right"/>
+		<MountPoint EndY="0.80" EndX="0.80" StartY="0.20" StartX="0.20" Side="Bottom"/>
+	  </MountPoints>
+      <BlockPairName>CythonSmallLaserTurretC2</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="SmallShipSmallLaserTurret" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>0</MinElevationDegrees> 
+      <MaxElevationDegrees>180</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <RotationSpeed>0.002</RotationSpeed>
+      <ElevationSpeed>0.002</ElevationSpeed>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1200</MaxRangeMeters>
+    </Definition>
+	
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>InteriorTurret</TypeId>
+        <SubtypeId>CythonSmallBlockSmallLaserTurretC3</SubtypeId>
+      </Id>
+      <DisplayName>CX3 Laser Turret</DisplayName>
+      <Icon>Textures\Icons\Laser_SG.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <Model>Models\Cubes\C1SM_Laser\InteriorTurret.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+		<Component Subtype="SteelPlate" Count="10" />
+		<Component Subtype="A_Comp1" Count="1">
+          <DeconstructId>
+            <TypeId>Component</TypeId>
+            <SubtypeId>A_Comp1S</SubtypeId>
+          </DeconstructId>
+		</Component>
+		<Component Subtype="Targeting" Count="1" />
+        <Component Subtype="Computer" Count="12" />
+		<Component Subtype="MSTWPN" Count="1" />
+		<Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="MSTWPN" Index="0" />
+      <BuildProgressModels />
+	  <MountPoints>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Front"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Back"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Left"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Right"/>
+		<MountPoint EndY="0.80" EndX="0.80" StartY="0.20" StartX="0.20" Side="Bottom"/>
+	  </MountPoints>
+      <BlockPairName>CythonSmallLaserTurretC3</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="SmallShipSmallLaserTurretC3" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>0</MinElevationDegrees> 
+      <MaxElevationDegrees>180</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <RotationSpeed>0.002</RotationSpeed>
+      <ElevationSpeed>0.002</ElevationSpeed>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1200</MaxRangeMeters>
+    </Definition>
+
+	
+	<!--TS Drives-->
+	
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>GravDriveSmallSlow</SubtypeId>
+      </Id>
+      <DisplayName>GravDriveSmallSlow</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\gravity_generator.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\SpaceBallBlock.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="24" />
+        <Component Subtype="GravityGenerator" Count="3" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="SteelPlate" Count="26" />
+        <Component Subtype="LargeTube" Count="2" />
+        <Component Subtype="Motor" Count="3" />
+        <Component Subtype="Computer" Count="20" />
+        <Component Subtype="SteelPlate" Count="2" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.55" File="Models\Cubes\Small\SpaceBallBlockConstruction_1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>GravDriveSlow</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>120</BuildTimeSeconds>
+
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <ForceMagnitude>1250000</ForceMagnitude>
+      <MaxPowerConsumption>0.01</MaxPowerConsumption>
+      <MinPowerConsumption>0.00000002</MinPowerConsumption>
+      <SlowdownFactor>1</SlowdownFactor>
+
+      <MinPlanetaryInfluence>1</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>1</EffectivenessAtMaxInfluence>
+      
+      <FlameDamageLengthScale>0</FlameDamageLengthScale>
+      <FlameLengthScale>0</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>0</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>0</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareLsThrustLarge</FlameGlareMaterial>
+      <FlameVisibilityDistance>0</FlameVisibilityDistance>
+      <FlameGlareSize>0</FlameGlareSize>
+      <FlameGlareQuerySize>0</FlameGlareQuerySize>
+      <PrimarySound>BlockGravityGen</PrimarySound>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+    </Definition>
+	
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>GravDriveSmall</SubtypeId>
+      </Id>
+      <DisplayName>GravDriveSmall</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\gravity_generator.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\SpaceBallBlock.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="24" />
+        <Component Subtype="GravityGenerator" Count="3" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="SteelPlate" Count="26" />
+        <Component Subtype="LargeTube" Count="2" />
+        <Component Subtype="Motor" Count="3" />
+        <Component Subtype="Computer" Count="20" />
+        <Component Subtype="SteelPlate" Count="2" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.55" File="Models\Cubes\Small\SpaceBallBlockConstruction_1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>GravDrive</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>120</BuildTimeSeconds>
+
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <ForceMagnitude>500000</ForceMagnitude>
+      <MaxPowerConsumption>0.01</MaxPowerConsumption>
+      <MinPowerConsumption>0.00000002</MinPowerConsumption>
+      <SlowdownFactor>1</SlowdownFactor>
+
+      <MinPlanetaryInfluence>1</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>1</EffectivenessAtMaxInfluence>
+      
+      <FlameDamageLengthScale>0</FlameDamageLengthScale>
+      <FlameLengthScale>0</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>0</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>0</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareLsThrustLarge</FlameGlareMaterial>
+      <FlameVisibilityDistance>0</FlameVisibilityDistance>
+      <FlameGlareSize>0</FlameGlareSize>
+      <FlameGlareQuerySize>0</FlameGlareQuerySize>
+      <PrimarySound>BlockGravityGen</PrimarySound>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+    </Definition>
+
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>CX1TSDrive</SubtypeId>
+      </Id>
+      <DisplayName>CX1 Drive</DisplayName>
+      <Icon>Textures\Icons\tsdrive1.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="1.25" />
+      <Model>Models\Cubes\TSDrive1.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="54" />
+        <Component Subtype="GravityGenerator" Count="6" />
+		<Component Subtype="A_Comp1S" Count="1" />
+        <Component Subtype="Construction" Count="60" />
+        <Component Subtype="SteelPlate" Count="56" />
+        <Component Subtype="LargeTube" Count="4" />
+        <Component Subtype="Motor" Count="6" />
+        <Component Subtype="Computer" Count="40" />
+        <Component Subtype="SteelPlate" Count="4" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Back"/>
+      </MountPoints>
+      <BuildProgressModels />
+      <BlockPairName>CX1Drive</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>120</BuildTimeSeconds>
+
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <ForceMagnitude>3750000</ForceMagnitude>
+      <MaxPowerConsumption>100</MaxPowerConsumption>
+      <MinPowerConsumption>0.0002</MinPowerConsumption>
+      <SlowdownFactor>1.5</SlowdownFactor>
+
+      <MinPlanetaryInfluence>1</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>1</EffectivenessAtMaxInfluence>
+      
+      <FlameDamageLengthScale>0</FlameDamageLengthScale>
+      <FlameLengthScale>0</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>0</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>0</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareLsThrustLarge</FlameGlareMaterial>
+      <FlameVisibilityDistance>0</FlameVisibilityDistance>
+      <FlameGlareSize>0</FlameGlareSize>
+      <FlameGlareQuerySize>0</FlameGlareQuerySize>
+      <PrimarySound>BlockGravityGen</PrimarySound>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+    </Definition>
+	
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>CX2TSDrive</SubtypeId>
+      </Id>
+      <DisplayName>CX2 Drive</DisplayName>
+      <Icon>Textures\Icons\tsdrive2.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="1.25" />
+      <Model>Models\Cubes\TSDrive2.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="54" />
+        <Component Subtype="GravityGenerator" Count="6" />
+        <Component Subtype="Construction" Count="60" />
+        <Component Subtype="SteelPlate" Count="56" />
+        <Component Subtype="LargeTube" Count="4" />
+        <Component Subtype="Motor" Count="6" />
+        <Component Subtype="Computer" Count="40" />
+        <Component Subtype="SteelPlate" Count="4" />
+		<Component Subtype="A_Comp1R" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="A_Comp1R" Index="0" />
+      <MountPoints>
+        <MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Back"/>
+      </MountPoints>
+      <BuildProgressModels />
+      <BlockPairName>CX2Drive</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>120</BuildTimeSeconds>
+
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <ForceMagnitude>5000000</ForceMagnitude>
+      <MaxPowerConsumption>100</MaxPowerConsumption>
+      <MinPowerConsumption>0.0002</MinPowerConsumption>
+      <SlowdownFactor>1.5</SlowdownFactor>
+
+      <MinPlanetaryInfluence>1</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>1</EffectivenessAtMaxInfluence>
+      
+      <FlameDamageLengthScale>0</FlameDamageLengthScale>
+      <FlameLengthScale>0</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>0</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>0</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareLsThrustLarge</FlameGlareMaterial>
+      <FlameVisibilityDistance>0</FlameVisibilityDistance>
+      <FlameGlareSize>0</FlameGlareSize>
+      <FlameGlareQuerySize>0</FlameGlareQuerySize>
+      <PrimarySound>BlockGravityGen</PrimarySound>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+    </Definition>
+	
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>CX3TSDrive</SubtypeId>
+      </Id>
+      <DisplayName>CX3 Drive</DisplayName>
+      <Icon>Textures\Icons\tsdrive3.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="1.25" />
+      <Model>Models\Cubes\TSDrive3.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="54" />
+        <Component Subtype="GravityGenerator" Count="6" />
+        <Component Subtype="Construction" Count="60" />
+        <Component Subtype="SteelPlate" Count="56" />
+        <Component Subtype="LargeTube" Count="4" />
+        <Component Subtype="Motor" Count="6" />
+        <Component Subtype="Computer" Count="40" />
+        <Component Subtype="SteelPlate" Count="4" />
+		<Component Subtype="A_Comp1" Count="1">
+          <DeconstructId>
+            <TypeId>Component</TypeId>
+            <SubtypeId>A_Comp1S</SubtypeId>
+          </DeconstructId>
+		</Component>
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Back"/>
+      </MountPoints>
+      <BuildProgressModels />
+      <BlockPairName>CX3Drive</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>120</BuildTimeSeconds>
+
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <ForceMagnitude>6250000</ForceMagnitude>
+      <MaxPowerConsumption>100</MaxPowerConsumption>
+      <MinPowerConsumption>0.0002</MinPowerConsumption>
+      <SlowdownFactor>1.5</SlowdownFactor>
+
+      <MinPlanetaryInfluence>1</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>1</EffectivenessAtMaxInfluence>
+      
+      <FlameDamageLengthScale>0</FlameDamageLengthScale>
+      <FlameLengthScale>0</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>0</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>0</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareLsThrustLarge</FlameGlareMaterial>
+      <FlameVisibilityDistance>0</FlameVisibilityDistance>
+      <FlameGlareSize>0</FlameGlareSize>
+      <FlameGlareQuerySize>0</FlameGlareQuerySize>
+      <PrimarySound>BlockGravityGen</PrimarySound>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+    </Definition>
+	
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>CX4TSDrive</SubtypeId>
+      </Id>
+      <DisplayName>CX4 Drive</DisplayName>
+      <Icon>Textures\Icons\tsdrive4.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="1.25" />
+      <Model>Models\Cubes\TSDrive4.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="54" />
+        <Component Subtype="GravityGenerator" Count="6" />
+        <Component Subtype="Construction" Count="60" />
+        <Component Subtype="SteelPlate" Count="56" />
+        <Component Subtype="LargeTube" Count="4" />
+        <Component Subtype="Motor" Count="6" />
+        <Component Subtype="Computer" Count="40" />
+        <Component Subtype="SteelPlate" Count="4" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Back"/>
+      </MountPoints>
+      <BuildProgressModels />
+      <BlockPairName>CX4Drive</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>120</BuildTimeSeconds>
+
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <ForceMagnitude>15000000</ForceMagnitude>
+      <MaxPowerConsumption>100</MaxPowerConsumption>
+      <MinPowerConsumption>0.0002</MinPowerConsumption>
+      <SlowdownFactor>1</SlowdownFactor>
+
+      <MinPlanetaryInfluence>1</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>1</EffectivenessAtMaxInfluence>
+      
+      <FlameDamageLengthScale>0</FlameDamageLengthScale>
+      <FlameLengthScale>0</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>0</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>0</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareLsThrustLarge</FlameGlareMaterial>
+      <FlameVisibilityDistance>0</FlameVisibilityDistance>
+      <FlameGlareSize>0</FlameGlareSize>
+      <FlameGlareQuerySize>0</FlameGlareQuerySize>
+      <PrimarySound>BlockGravityGen</PrimarySound>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+    </Definition>
+	
+	<!--End TS Drive-->
+
+	
+    <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition">
+      <Id>
+        <TypeId>CargoContainer</TypeId>
+        <SubtypeId>ToughBox</SubtypeId>
+      </Id>
+      <DisplayName>Tough Boxes</DisplayName>
+      <Icon>Textures\Icons\Parts_Case_Large.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Parts_Case_Large_Deco.mwm</Model>
+      <Components>
+        <Component Subtype="toughBox" Count="3" />
+        <Component Subtype="Computer" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+	  <InventorySize>
+        <X>1.25</X>
+        <Y>1.8</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <MountPoints>
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels />
+      <BlockPairName>ToughBoxes</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>3</BuildTimeSeconds>
+      <DamageEffectId>212</DamageEffectId>
+      <DamagedSound>ParticleHeavyMech</DamagedSound>
+    </Definition>
+	
+	<!--GunSmiths-->
+	    <Definition xsi:type="MyObjectBuilder_AssemblerDefinition">
+      <Id>
+        <TypeId>Assembler</TypeId>
+        <SubtypeId>GunSmith</SubtypeId>
+      </Id>
+      <DisplayName>Gunsmith</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\assembler.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\Assembler.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="130" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="Motor" Count="8" />
+        <Component Subtype="Display" Count="4" />
+        <Component Subtype="Computer" Count="80" />
+		<Component Subtype="PartWPN" Count="1" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="2" Default="true" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="2" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="2" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.16" File="Models\Cubes\Large\AssemblerConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\AssemblerConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Large\AssemblerConstruction_3.mwm" />
+        <Model BuildPercentUpperBound="0.83" File="Models\Cubes\Large\AssemblerConstruction_4.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\AssemblerConstruction_5.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Gunsmith</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>80</BuildTimeSeconds>
+      <ResourceSinkGroup>Factory</ResourceSinkGroup>
+      <InventoryMaxVolume>1</InventoryMaxVolume>
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+      <OperationalPowerConsumption>0.56</OperationalPowerConsumption>
+      <BlueprintClasses>
+		<Class>Rifles</Class>
+		<Class>C1Ammo</Class>
+		<Class>RifleParts</Class>
+        <Class>WeaponParts</Class>
+      </BlueprintClasses>
+      <DamageEffectId>212</DamageEffectId>
+      <DamagedSound>ParticleHeavyMech</DamagedSound>
+      <PrimarySound>BlockAssembler</PrimarySound>
+      <ActionSound>BlockAssemblerProcess</ActionSound>
+      <DestroyEffect>Explosion_Missile</DestroyEffect>
+      <DestroySound>WepSmallMissileExpl</DestroySound>
+    </Definition>
+	<Definition xsi:type="MyObjectBuilder_AssemblerDefinition">
+      <Id>
+        <TypeId>Assembler</TypeId>
+        <SubtypeId>ADVGunSmith</SubtypeId>
+      </Id>
+      <DisplayName>Advanced Gunsmith</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\assembler.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\Assembler.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="130" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="Motor" Count="8" />
+        <Component Subtype="Display" Count="4" />
+        <Component Subtype="Computer" Count="80" />
+		<Component Subtype="ADVPartWPN" Count="1" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="2" Default="true" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="2" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="2" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.16" File="Models\Cubes\Large\AssemblerConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\AssemblerConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Large\AssemblerConstruction_3.mwm" />
+        <Model BuildPercentUpperBound="0.83" File="Models\Cubes\Large\AssemblerConstruction_4.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\AssemblerConstruction_5.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>AdvGunsmith</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>80</BuildTimeSeconds>
+      <ResourceSinkGroup>Factory</ResourceSinkGroup>
+      <InventoryMaxVolume>1</InventoryMaxVolume>
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+      <OperationalPowerConsumption>0.56</OperationalPowerConsumption>
+      <BlueprintClasses>
+		<Class>Rifles</Class>
+		<Class>C2Ammo</Class>
+		<Class>ADVRifleParts</Class>
+        <Class>ADVWeaponParts</Class>
+      </BlueprintClasses>
+      <DamageEffectId>212</DamageEffectId>
+      <DamagedSound>ParticleHeavyMech</DamagedSound>
+      <PrimarySound>BlockAssembler</PrimarySound>
+      <ActionSound>BlockAssemblerProcess</ActionSound>
+      <DestroyEffect>Explosion_Missile</DestroyEffect>
+      <DestroySound>WepSmallMissileExpl</DestroySound>
+    </Definition>
+	<Definition xsi:type="MyObjectBuilder_AssemblerDefinition">
+      <Id>
+        <TypeId>Assembler</TypeId>
+        <SubtypeId>MSTGunSmith</SubtypeId>
+      </Id>
+      <DisplayName>Master Gunsmith</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\assembler.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\Assembler.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="130" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="Motor" Count="8" />
+        <Component Subtype="Display" Count="4" />
+        <Component Subtype="Computer" Count="80" />
+		<Component Subtype="MSTPartWPN" Count="1" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="2" Default="true" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="2" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="2" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.16" File="Models\Cubes\Large\AssemblerConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\AssemblerConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Large\AssemblerConstruction_3.mwm" />
+        <Model BuildPercentUpperBound="0.83" File="Models\Cubes\Large\AssemblerConstruction_4.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\AssemblerConstruction_5.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>MstGunsmith</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>80</BuildTimeSeconds>
+      <ResourceSinkGroup>Factory</ResourceSinkGroup>
+      <InventoryMaxVolume>1</InventoryMaxVolume>
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+      <OperationalPowerConsumption>0.56</OperationalPowerConsumption>
+      <BlueprintClasses>
+		<Class>Rifles</Class>
+		<Class>C3Ammo</Class>
+		<Class>ADVRifleParts</Class>
+		<Class>MSTWeaponParts</Class>
+      </BlueprintClasses>
+      <DamageEffectId>212</DamageEffectId>
+      <DamagedSound>ParticleHeavyMech</DamagedSound>
+      <PrimarySound>BlockAssembler</PrimarySound>
+      <ActionSound>BlockAssemblerProcess</ActionSound>
+      <DestroyEffect>Explosion_Missile</DestroyEffect>
+      <DestroySound>WepSmallMissileExpl</DestroySound>
+    </Definition>
+	<!--End GunSmiths-->
+	
+	<!--Research Scanner-->
+	<Definition xsi:type="MyObjectBuilder_AssemblerDefinition">
+      <Id>
+        <TypeId>Assembler</TypeId>
+        <SubtypeId>RScan</SubtypeId>
+      </Id>
+      <DisplayName>Research Scanner</DisplayName>
+      <Icon>Textures\Icons\RScan.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\RScan.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="130" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="Motor" Count="8" />
+        <Component Subtype="Display" Count="4" />
+        <Component Subtype="Computer" Count="80" />
+		<Component Subtype="Automation" Count="1" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="Automation" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+      </MountPoints>
+      <BuildProgressModels />
+      <BlockPairName>RScan</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>80</BuildTimeSeconds>
+      <ResourceSinkGroup>Factory</ResourceSinkGroup>
+      <InventoryMaxVolume>1</InventoryMaxVolume>
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+      <OperationalPowerConsumption>17.20</OperationalPowerConsumption>
+      <BlueprintClasses>
+		<Class>SAlien</Class>
+      </BlueprintClasses>
+      <DamageEffectId>212</DamageEffectId>
+      <DamagedSound>ParticleHeavyMech</DamagedSound>
+      <PrimarySound>silent</PrimarySound>
+      <ActionSound>RScan</ActionSound>
+      <DestroyEffect>Explosion_Missile</DestroyEffect>
+      <DestroySound>WepSmallMissileExpl</DestroySound>
+    </Definition>
+	<!--End Research Scanner-->
+
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>Crate</SubtypeId>
+      </Id>
+      <DisplayName>Crate</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\stairs.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Pelican_Case_1wc.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="40" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="InteriorPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels />
+      <BlockPairName>Crate</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>25</BuildTimeSeconds>
+    </Definition>
+	
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>Crate3</SubtypeId>
+      </Id>
+      <DisplayName>Crate 3</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\stairs.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Pelican_Case_3.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="120" />
+        <Component Subtype="Construction" Count="90" />
+        <Component Subtype="InteriorPlate" Count="30" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels />
+      <BlockPairName>Crate3</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>75</BuildTimeSeconds>
+    </Definition>	
+	
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>Crate5</SubtypeId>
+      </Id>
+      <DisplayName>Crate 5</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\stairs.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Pelican_Case_5.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="120" />
+        <Component Subtype="Construction" Count="90" />
+        <Component Subtype="InteriorPlate" Count="30" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels />
+      <BlockPairName>Crate5</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>75</BuildTimeSeconds>
+    </Definition>
+	
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>Crate6</SubtypeId>
+      </Id>
+      <DisplayName>Crate 6</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\stairs.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Pelican_Case_6.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="120" />
+        <Component Subtype="Construction" Count="90" />
+        <Component Subtype="InteriorPlate" Count="30" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels />
+      <BlockPairName>Crate6</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>75</BuildTimeSeconds>
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_LandingGearDefinition">
+      <Id>
+        <TypeId>LandingGear</TypeId>
+        <SubtypeId>EMLock</SubtypeId>
+      </Id>
+      <DisplayName>EM Lock</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\landing_gear.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Landing_Pad.mwm</Model>
+      <LockSound>ShipLandGearOn</LockSound>
+      <UnlockSound>ShipLandGearOff</UnlockSound>
+      <FailedAttachSound>ShipLandGearNothing01</FailedAttachSound>
+      <Components>
+        <Component Subtype="SteelPlate" Count="1" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="SteelPlate" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels />
+      <BlockPairName>EM_Lock</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <DamageEffectId>212</DamageEffectId>
+      <DamagedSound>ParticleHeavyMech</DamagedSound>
+    </Definition>
+	
+
+<!--God Gun-->
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>InteriorTurret</TypeId>
+        <SubtypeId>CythonLargeBlockSmallLaserTurretC3</SubtypeId>
+      </Id>
+      <DisplayName>CX3 Laser Turret</DisplayName>
+      <Icon>Textures\Icons\CX3_Laser_LG.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+	  <ModelOffset x="0" y="-1.25" z="0" />
+      <Model>Models\Cubes\C3LG_Laser\InteriorTurret.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+	  <MountPoints>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Front"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Back"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Left"/>
+		<MountPoint EndY="0.78" EndX="0.80" StartY="0.18" StartX="0.20" Side="Right"/>
+		<MountPoint EndY="0.80" EndX="0.80" StartY="0.20" StartX="0.20" Side="Bottom"/>
+	  </MountPoints>
+      <Components>
+		<Component Subtype="MSTHeavyWPN" Count="1" />
+		<Component Subtype="A_Comp1" Count="1">
+          <DeconstructId>
+            <TypeId>Component</TypeId>
+            <SubtypeId>A_Comp1S</SubtypeId>
+          </DeconstructId>
+		</Component>
+		<Component Subtype="Targeting" Count="1" />
+        <Component Subtype="Computer" Count="12" />
+      </Components>
+      <CriticalComponent Subtype="A_Comp1" Index="0" />
+      <BuildProgressModels />
+      <BlockPairName>CythonSmallLaserTurretC3</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="LargeShipSmallLaserTurretC3" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>15</MinElevationDegrees>
+      <MaxElevationDegrees>180</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1200</MaxRangeMeters>
+      <RotationSpeed>0.0008</RotationSpeed>
+      <ElevationSpeed>0.0008</ElevationSpeed>
+    </Definition>
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>InteriorTurret</TypeId>
+        <SubtypeId>CX3LG_SM_Laser</SubtypeId>
+      </Id>
+      <DisplayName>CX3 Laser Turret</DisplayName>
+      <Icon>Textures\Icons\CX3_Laser_LG.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="3" z="5" />
+	  <ModelOffset x="0" y="-0.75" z="0" />
+      <Model>Models\Cubes\C3LG_Laser\InteriorTurret.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+	  <MountPoints>
+		<MountPoint EndY="0" EndX="0" StartY="5" StartX="5" Side="Bottom"/>
+	  </MountPoints>
+      <Components>
+		<Component Subtype="MSTHeavyWPN" Count="1" />
+		<Component Subtype="A_Comp1" Count="1">
+          <DeconstructId>
+            <TypeId>Component</TypeId>
+            <SubtypeId>A_Comp1S</SubtypeId>
+          </DeconstructId>
+		</Component>
+		<Component Subtype="Targeting" Count="1" />
+        <Component Subtype="Computer" Count="12" />
+      </Components>
+      <CriticalComponent Subtype="A_Comp1" Index="0" />
+      <BuildProgressModels />
+      <BlockPairName>CX3LG_SM_Laser</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="WPN_CX3LG_SM_Laser" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>15</MinElevationDegrees>
+      <MaxElevationDegrees>180</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1200</MaxRangeMeters>
+      <RotationSpeed>0.0008</RotationSpeed>
+      <ElevationSpeed>0.0008</ElevationSpeed>
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+      <Id>
+        <TypeId>SmallGatlingGun</TypeId>
+        <SubtypeId>CXLance3</SubtypeId>
+      </Id>
+      <DisplayName>CX3 Lance</DisplayName>
+      <Icon>Textures\Icons\CX3Lance.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="1" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\CX3Lance.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+		<Component Subtype="DGT" Count="3" />
+        <Component Subtype="Construction" Count="8" />
+        <Component Subtype="MetalGrid" Count="30" />
+        <Component Subtype="LargeTube" Count="25" />
+        <Component Subtype="Motor" Count="6" />
+        <Component Subtype="Computer" Count="4" />
+        <Component Subtype="SteelPlate" Count="15" />
+      </Components>
+      <CriticalComponent Subtype="DGT" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" />
+		<MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="3" />
+      </MountPoints>
+      <BuildProgressModels />
+      <BlockPairName>CX3Lance</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <Center x="0" y="0" z="0" />
+      <BuildTimeSeconds>130</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="CX3LanceW" />
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>1.14</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+      <Id>
+        <TypeId>SmallGatlingGun</TypeId>
+        <SubtypeId>CXLance3_SM</SubtypeId>
+      </Id>
+      <DisplayName>CX3 Lance Small</DisplayName>
+      <Icon>Textures\Icons\CX3Lance.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="15" y="5" z="15" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\CX3Lance.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+		<Component Subtype="DGT" Count="3" />
+        <Component Subtype="Construction" Count="8" />
+        <Component Subtype="MetalGrid" Count="30" />
+        <Component Subtype="LargeTube" Count="25" />
+        <Component Subtype="Motor" Count="6" />
+        <Component Subtype="Computer" Count="4" />
+        <Component Subtype="SteelPlate" Count="15" />
+      </Components>
+      <CriticalComponent Subtype="DGT" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="15" EndY="15" />
+		<MountPoint Side="Top" StartX="0" StartY="0" EndX="15" EndY="15" />
+      </MountPoints>
+      <BuildProgressModels />
+      <BlockPairName>CX3Lance</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <Center x="0" y="0" z="0" />
+      <BuildTimeSeconds>130</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="CX3LanceW_SM" />
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>1.14</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+      <Id>
+        <TypeId>SmallGatlingGun</TypeId>
+        <SubtypeId>Fixed_Blaster</SubtypeId>
+      </Id>
+      <DisplayName>Blaster Cannon</DisplayName>
+      <Icon>Textures\Icons\Fixed_Blaster.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="3" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Fixed_Blaster.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="Construction" Count="8" />
+        <Component Subtype="MetalGrid" Count="30" />
+        <Component Subtype="LargeTube" Count="25" />
+        <Component Subtype="Motor" Count="6" />
+		<Component Subtype="ADVWPN" Count="1" />
+        <Component Subtype="Computer" Count="4" />
+        <Component Subtype="SteelPlate" Count="15" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="3" />
+      </MountPoints>
+      <BuildProgressModels />
+      <BlockPairName>FixedBlaster</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <Center x="0" y="0" z="0" />
+      <BuildTimeSeconds>130</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="FixedBlasterW" />
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>1.14</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+    </Definition>
+	
+	<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+      <Id>
+        <TypeId>SmallGatlingGun</TypeId>
+        <SubtypeId>Fixed_BlasterCX3</SubtypeId>
+      </Id>
+      <DisplayName>CX3 Blaster Cannon</DisplayName>
+      <Icon>Textures\Icons\Fixed_Blaster.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="3" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Fixed_Blaster.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="Construction" Count="8" />
+        <Component Subtype="MetalGrid" Count="30" />
+        <Component Subtype="LargeTube" Count="25" />
+        <Component Subtype="Motor" Count="6" />
+		<Component Subtype="ADVWPN" Count="1" />
+        <Component Subtype="Computer" Count="4" />
+        <Component Subtype="SteelPlate" Count="15" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="3" />
+      </MountPoints>
+      <BuildProgressModels />
+      <BlockPairName>FixedBlasterCX3</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <Center x="0" y="0" z="0" />
+      <BuildTimeSeconds>130</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="FixedBlasterCX3W" />
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>1.14</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+    </Definition>
+	
+	<Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition">
+	  <Id>
+		<TypeId>UpgradeModule</TypeId>
+		<SubtypeId>CX3WarpCore</SubtypeId>
+	  </Id>
+      <DisplayName>CX3 Warp Core</DisplayName>
+      <Icon>Textures\Icons\CX3WarpCore.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\CX3WarpCore.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+		<Component Subtype="D_Comp1" Count="1">
+		<DeconstructId>
+            <TypeId>Component</TypeId>
+            <SubtypeId>D_Comp1S</SubtypeId>
+          </DeconstructId>
+		</Component>
+        <Component Subtype="LargeTube" Count="40" />
+        <Component Subtype="MetalGrid" Count="50" />
+        <Component Subtype="GravityGenerator" Count="20" />
+        <Component Subtype="Detector" Count="20" />
+        <Component Subtype="Superconductor" Count="100" />
+        <Component Subtype="Computer" Count="30" />
+		<Component Subtype="Navigation" Count="1" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="D_Comp1" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+		<MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+      </MountPoints>
+	  <BuildProgressModels />
+	  <IsAirTight>false</IsAirTight>
+      <BlockPairName>CX3WarpCore</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>45</BuildTimeSeconds>
+	  <BlockVariants />
+	  <Upgrades>
+		<MyUpgradeModuleInfo>
+		  <!-- Warp Factor is from 0.1 to 10-->
+		  <UpgradeType>WarpFactor</UpgradeType>
+		  <Modifier>10</Modifier>
+		</MyUpgradeModuleInfo>
+	  </Upgrades>
+	  <Public>true</Public>
+	  <PrimarySound>WarpOn</PrimarySound>
+	  <DamageEffectId>214</DamageEffectId>
+	  <DamagedSound>ParticleElectrical</DamagedSound>
+	  <EmissiveColorPreset>Default</EmissiveColorPreset>
+	</Definition>
+	
+	 <!--<Definition xsi:type="MyObjectBuilder_JumpDriveDefinition">
+      <Id>
+        <TypeId>JumpDrive</TypeId>
+        <SubtypeId>CX3WarpCore</SubtypeId>
+      </Id>
+      <DisplayName>CX3 Warp Core</DisplayName>
+      <Icon>Textures\Icons\CX3WarpCore.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\CX3WarpCore.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="LargeTube" Count="40" />
+        <Component Subtype="MetalGrid" Count="50" />
+        <Component Subtype="GravityGenerator" Count="20" />
+        <Component Subtype="Detector" Count="20" />
+        <Component Subtype="Superconductor" Count="100" />
+        <Component Subtype="Computer" Count="30" />
+		<Component Subtype="Navigation" Count="1" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="SteelPlate" Count="20" />
+		<Component Subtype="D_Comp1" Count="1"/>
+      </Components>
+      <CriticalComponent Subtype="D_Comp1S" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+		<MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+      </MountPoints>
+	  <IsAirTight>false</IsAirTight>
+      <BuildProgressModels />
+      <BlockPairName>CX3WarpCore</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>45</BuildTimeSeconds>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+
+      <ResourceSinkGroup>Charging</ResourceSinkGroup>
+	  
+	  <MaxPowerConsumption>400</MaxPowerConsumption>
+      <MinPowerConsumption>15</MinPowerConsumption>
+      <RequiredPowerInput>128</RequiredPowerInput>
+      <PowerNeededForJump>40</PowerNeededForJump>
+
+      <MaxJumpDistance>0</MaxJumpDistance>
+      <MaxJumpMass>0</MaxJumpMass>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+    </Definition>-->
+
+<!--Tiered Blocks-->
+    <Definition xsi:type="MyObjectBuilder_JumpDriveDefinition">
+      <Id>
+        <TypeId>JumpDrive</TypeId>
+        <SubtypeId>CX1JumpDrive</SubtypeId>
+      </Id>
+      <DisplayName>CX1 JumpDrive</DisplayName>
+      <Icon>Textures\Icons\JumpDrive1.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="9" y="3" z="9" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\JumpDrive1.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+		<Component Subtype="C_Comp1S" Count="1"/>
+        <Component Subtype="LargeTube" Count="40" />
+        <Component Subtype="MetalGrid" Count="50" />
+        <Component Subtype="GravityGenerator" Count="20" />
+        <Component Subtype="Detector" Count="20" />
+        <Component Subtype="PowerCell" Count="120" />
+        <Component Subtype="Superconductor" Count="1000" />
+        <Component Subtype="Computer" Count="300" />
+		<Component Subtype="Navigation" Count="1" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="C_Comp1S" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="9" EndY="9" Default="true" />
+      </MountPoints>
+	  <IsAirTight>true</IsAirTight>
+      <BuildProgressModels />
+      <BlockPairName>CX1JumpDrive</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>45</BuildTimeSeconds>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+
+      <ResourceSinkGroup>Charging</ResourceSinkGroup>
+      <RequiredPowerInput>128</RequiredPowerInput>
+      <PowerNeededForJump>12</PowerNeededForJump>
+
+      <MaxJumpDistance>50000000</MaxJumpDistance>
+      <MaxJumpMass>750000</MaxJumpMass>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_JumpDriveDefinition">
+      <Id>
+        <TypeId>JumpDrive</TypeId>
+        <SubtypeId>CX2JumpDrive</SubtypeId>
+      </Id>
+      <DisplayName>CX2 JumpDrive</DisplayName>
+      <Icon>Textures\Icons\JumpDrive2.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="9" y="3" z="9" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\JumpDrive2.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+		<Component Subtype="C_Comp1" Count="1">
+          <DeconstructId>
+            <TypeId>Component</TypeId>
+            <SubtypeId>C_Comp1S</SubtypeId>
+          </DeconstructId>
+		</Component>
+        <Component Subtype="LargeTube" Count="40" />
+        <Component Subtype="MetalGrid" Count="50" />
+        <Component Subtype="GravityGenerator" Count="20" />
+        <Component Subtype="Detector" Count="20" />
+        <Component Subtype="PowerCell" Count="120" />
+        <Component Subtype="Superconductor" Count="1000" />
+        <Component Subtype="Computer" Count="300" />
+		<Component Subtype="Navigation" Count="1" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="C_Comp1" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="9" EndY="9" Default="true" />
+      </MountPoints>
+	  <IsAirTight>true</IsAirTight>
+      <BuildProgressModels />
+      <BlockPairName>CX2JumpDrive</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>45</BuildTimeSeconds>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+
+      <ResourceSinkGroup>Charging</ResourceSinkGroup>
+      <RequiredPowerInput>192</RequiredPowerInput>
+      <PowerNeededForJump>12</PowerNeededForJump>
+
+      <MaxJumpDistance>100000000</MaxJumpDistance>
+      <MaxJumpMass>1000000</MaxJumpMass>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_JumpDriveDefinition">
+      <Id>
+        <TypeId>JumpDrive</TypeId>
+        <SubtypeId>CX3JumpDrive</SubtypeId>
+      </Id>
+      <DisplayName>CX3 JumpDrive</DisplayName>
+      <Icon>Textures\Icons\JumpDrive3.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="9" y="3" z="9" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\JumpDrive3.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+		<Component Subtype="C_Comp1" Count="1">
+          <DeconstructId>
+            <TypeId>Component</TypeId>
+            <SubtypeId>C_Comp1S</SubtypeId>
+          </DeconstructId>
+		</Component>
+        <Component Subtype="LargeTube" Count="40" />
+        <Component Subtype="MetalGrid" Count="50" />
+        <Component Subtype="GravityGenerator" Count="20" />
+        <Component Subtype="Detector" Count="20" />
+        <Component Subtype="PowerCell" Count="120" />
+        <Component Subtype="Superconductor" Count="1000" />
+        <Component Subtype="Computer" Count="300" />
+		<Component Subtype="Navigation" Count="1" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="C_Comp1" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="9" EndY="9" Default="true" />
+      </MountPoints>
+	  <IsAirTight>true</IsAirTight>
+      <BuildProgressModels />
+      <BlockPairName>CX3JumpDrive</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>45</BuildTimeSeconds>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+
+      <ResourceSinkGroup>Charging</ResourceSinkGroup>
+      <RequiredPowerInput>256</RequiredPowerInput>
+      <PowerNeededForJump>12</PowerNeededForJump>
+
+      <MaxJumpDistance>150000000</MaxJumpDistance>
+      <MaxJumpMass>1250000</MaxJumpMass>
+      <Public>true</Public>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_JumpDriveDefinition">
+      <Id>
+        <TypeId>JumpDrive</TypeId>
+        <SubtypeId>CX4JumpDrive</SubtypeId>
+      </Id>
+      <DisplayName>CX4 JumpDrive</DisplayName>
+      <Icon>Textures\Icons\JumpDrive4.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="9" y="3" z="9" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\JumpDrive4.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="LargeTube" Count="40" />
+        <Component Subtype="MetalGrid" Count="50" />
+        <Component Subtype="GravityGenerator" Count="20" />
+        <Component Subtype="Detector" Count="20" />
+        <Component Subtype="PowerCell" Count="120" />
+        <Component Subtype="Superconductor" Count="1000" />
+        <Component Subtype="Computer" Count="300" />
+		<Component Subtype="Navigation" Count="1" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="9" EndY="9" Default="true" />
+      </MountPoints>
+	  <IsAirTight>true</IsAirTight>
+      <BuildProgressModels />
+      <BlockPairName>CX4JumpDrive</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>45</BuildTimeSeconds>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+
+      <ResourceSinkGroup>Charging</ResourceSinkGroup>
+      <RequiredPowerInput>384</RequiredPowerInput>
+      <PowerNeededForJump>12</PowerNeededForJump>
+
+      <MaxJumpDistance>175000000</MaxJumpDistance>
+      <MaxJumpMass>1500000</MaxJumpMass>
+      <Public>false</Public>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+    </Definition>
+
+<!--End Tiered Blocks-->
+
+    <!-- Region BatteryBlock-->
+    <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+      <Id>
+        <TypeId>BatteryBlock</TypeId>
+        <SubtypeId>CX1Battery</SubtypeId>
+      </Id>
+      <DisplayName>CX1 Battery</DisplayName>
+      <Icon>Textures\Icons\blastercap1.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="-1.25" z="0" />
+      <Model>Models\Cubes\BlasterCap1.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="B_Comp1S" Count="40" />
+        <Component Subtype="Computer" Count="25" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="SteelPlate" Count="60" />
+      </Components>
+      <CriticalComponent Subtype="B_Comp1S" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels />
+      <BlockPairName>BlasterCap1</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>45</BuildTimeSeconds>
+
+      <ResourceSourceGroup>Battery</ResourceSourceGroup>
+      <MaxPowerOutput>24</MaxPowerOutput>
+
+      <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+      <RequiredPowerInput>18</RequiredPowerInput>
+      <AdaptibleInput>true</AdaptibleInput>
+      <MaxStoredPower>6</MaxStoredPower>
+      <InitialStoredPowerRatio>0</InitialStoredPowerRatio>
+
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <Public>true</Public>
+      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+      <Id>
+        <TypeId>BatteryBlock</TypeId>
+        <SubtypeId>CX2Battery</SubtypeId>
+      </Id>
+      <DisplayName>CX2 Battery</DisplayName>
+      <Icon>Textures\Icons\blastercap2.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="-1.25" z="0" />
+      <Model>Models\Cubes\BlasterCap2.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="B_Comp1R" Count="120" />
+        <Component Subtype="Computer" Count="25" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="SteelPlate" Count="60" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels />
+      <BlockPairName>BlasterCap2</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>45</BuildTimeSeconds>
+
+      <ResourceSourceGroup>Battery</ResourceSourceGroup>
+      <MaxPowerOutput>36</MaxPowerOutput>
+
+      <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+      <RequiredPowerInput>24</RequiredPowerInput>
+      <AdaptibleInput>true</AdaptibleInput>
+      <MaxStoredPower>12</MaxStoredPower>
+      <InitialStoredPowerRatio>0</InitialStoredPowerRatio>
+
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <Public>true</Public>
+      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+      <Id>
+        <TypeId>BatteryBlock</TypeId>
+        <SubtypeId>CX3Battery</SubtypeId>
+      </Id>
+      <DisplayName>CX3 Battery</DisplayName>
+      <Icon>Textures\Icons\blastercap3.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="-1.25" z="0" />
+      <Model>Models\Cubes\BlasterCap3.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="B_Comp1" Count="40">
+          <DeconstructId>
+            <TypeId>Component</TypeId>
+            <SubtypeId>B_Comp1S</SubtypeId>
+          </DeconstructId>
+        </Component>
+        <Component Subtype="Computer" Count="25" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="SteelPlate" Count="60" />
+      </Components>
+      <CriticalComponent Subtype="B_Comp1" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels />
+      <BlockPairName>BlasterCap3</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>45</BuildTimeSeconds>
+
+      <ResourceSourceGroup>Battery</ResourceSourceGroup>
+      <MaxPowerOutput>48</MaxPowerOutput>
+
+      <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+      <RequiredPowerInput>30</RequiredPowerInput>
+      <AdaptibleInput>true</AdaptibleInput>
+      <MaxStoredPower>12</MaxStoredPower>
+      <InitialStoredPowerRatio>12</InitialStoredPowerRatio>
+
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <Public>true</Public>
+      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+      <Id>
+        <TypeId>BatteryBlock</TypeId>
+        <SubtypeId>CX3Battery_SM</SubtypeId>
+      </Id>
+      <DisplayName>CX3 Battery</DisplayName>
+      <Icon>Textures\Icons\blastercap3.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="3" z="5" />
+      <ModelOffset x="0" y="-0.75" z="0" />
+      <Model>Models\Cubes\BlasterCap3.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="B_Comp1" Count="40">
+          <DeconstructId>
+            <TypeId>Component</TypeId>
+            <SubtypeId>B_Comp1S</SubtypeId>
+          </DeconstructId>
+        </Component>
+        <Component Subtype="Computer" Count="25" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="SteelPlate" Count="60" />
+      </Components>
+      <CriticalComponent Subtype="B_Comp1" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="5" EndY="5" />
+      </MountPoints>
+      <BuildProgressModels />
+      <BlockPairName>BlasterCap3</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>45</BuildTimeSeconds>
+
+      <ResourceSourceGroup>Battery</ResourceSourceGroup>
+      <MaxPowerOutput>48</MaxPowerOutput>
+
+      <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+      <RequiredPowerInput>30</RequiredPowerInput>
+      <AdaptibleInput>true</AdaptibleInput>
+      <MaxStoredPower>12</MaxStoredPower>
+      <InitialStoredPowerRatio>12</InitialStoredPowerRatio>
+
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <Public>true</Public>
+      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+    </Definition>
+
+
+    <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+      <Id>
+        <TypeId>BatteryBlock</TypeId>
+        <SubtypeId>CX4Battery</SubtypeId>
+      </Id>
+      <DisplayName>CX4 Battery</DisplayName>
+      <Icon>Textures\Icons\blastercap4.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="-1.25" z="0" />
+      <Model>Models\Cubes\BlasterCap4.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="PowerCell" Count="120">
+          <DeconstructId>
+            <TypeId>Ore</TypeId>
+            <SubtypeId>Scrap</SubtypeId>
+          </DeconstructId>
+        </Component>
+        <Component Subtype="Computer" Count="25" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="SteelPlate" Count="60" />
+      </Components>
+      <CriticalComponent Subtype="PowerCell" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels />
+      <BlockPairName>BlasterCap4</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>45</BuildTimeSeconds>
+
+      <ResourceSourceGroup>Battery</ResourceSourceGroup>
+      <MaxPowerOutput>60</MaxPowerOutput>
+
+      <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+      <RequiredPowerInput>36</RequiredPowerInput>
+      <AdaptibleInput>true</AdaptibleInput>
+      <MaxStoredPower>24</MaxStoredPower>
+      <InitialStoredPowerRatio>0</InitialStoredPowerRatio>
+
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <Public>false</Public>
+      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+    </Definition>
+    <!-- End Region BatteryBlock-->
+	
+    <!-- Region FusionBlock-->
+    <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+      <Id>
+        <TypeId>BatteryBlock</TypeId>
+        <SubtypeId>CX1Fusion</SubtypeId>
+      </Id>
+      <DisplayName>CX1 Fusion Reactor</DisplayName>
+      <Icon>Textures\Icons\reactor1.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="1" z="3" />
+      <ModelOffset x="0" y="-0.75" z="0" />
+      <Model>Models\Cubes\Reactor1_Core.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="800" />
+        <Component Subtype="Construction" Count="70" />
+        <Component Subtype="MetalGrid" Count="40" />
+        <Component Subtype="LargeTube" Count="40" />
+        <Component Subtype="Superconductor" Count="100" />
+        <Component Subtype="Motor" Count="20" />
+        <Component Subtype="Computer" Count="75" />
+        <Component Subtype="SteelPlate" Count="200" />
+        <Component Subtype="FusionCore" Count="1">
+          <DeconstructId>
+            <TypeId>Component</TypeId>
+            <SubtypeId>FusionCoreSpent</SubtypeId>
+          </DeconstructId>
+        </Component>
+      </Components>
+      <CriticalComponent Subtype="FusionCore" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Reactor1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Reactor1</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>45</BuildTimeSeconds>
+
+      <ResourceSourceGroup>Battery</ResourceSourceGroup>
+      <MaxPowerOutput>500</MaxPowerOutput>
+
+      <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+      <RequiredPowerInput>0</RequiredPowerInput>
+      <AdaptibleInput>false</AdaptibleInput>
+      <MaxStoredPower>10000</MaxStoredPower>
+      <InitialStoredPowerRatio>10000</InitialStoredPowerRatio>
+
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <Public>true</Public>
+      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+      <Id>
+        <TypeId>BatteryBlock</TypeId>
+        <SubtypeId>CX2Fusion</SubtypeId>
+      </Id>
+      <DisplayName>CX2 Fusion Reactor</DisplayName>
+      <Icon>Textures\Icons\reactor2.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="1" z="3" />
+      <ModelOffset x="0" y="-0.75" z="0" />
+      <Model>Models\Cubes\Reactor2_Core.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="800" />
+        <Component Subtype="Construction" Count="70" />
+        <Component Subtype="MetalGrid" Count="40" />
+        <Component Subtype="LargeTube" Count="40" />
+        <Component Subtype="Superconductor" Count="200" />
+        <Component Subtype="Motor" Count="20" />
+        <Component Subtype="Computer" Count="75" />
+        <Component Subtype="SteelPlate" Count="200" />
+	    <Component Subtype="FusionCore" Count="1">
+          <DeconstructId>
+            <TypeId>Component</TypeId>
+            <SubtypeId>FusionCoreSpent</SubtypeId>
+          </DeconstructId>
+        </Component>
+      </Components>
+      <CriticalComponent Subtype="FusionCore" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Reactor2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Reactor2</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>45</BuildTimeSeconds>
+
+      <ResourceSourceGroup>Battery</ResourceSourceGroup>
+      <MaxPowerOutput>750</MaxPowerOutput>
+
+      <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+      <RequiredPowerInput>0</RequiredPowerInput>
+      <AdaptibleInput>false</AdaptibleInput>
+      <MaxStoredPower>20000</MaxStoredPower>
+      <InitialStoredPowerRatio>20000</InitialStoredPowerRatio>
+
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <Public>true</Public>
+      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+      <Id>
+        <TypeId>BatteryBlock</TypeId>
+        <SubtypeId>CX3Fusion</SubtypeId>
+      </Id>
+      <DisplayName>CX3 Fusion Reactor</DisplayName>
+      <Icon>Textures\Icons\reactor3.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="1" z="3" />
+      <ModelOffset x="0" y="-0.75" z="0" />
+      <Model>Models\Cubes\Reactor3_Core.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="800" />
+        <Component Subtype="Construction" Count="70" />
+        <Component Subtype="MetalGrid" Count="40" />
+        <Component Subtype="LargeTube" Count="40" />
+        <Component Subtype="Superconductor" Count="100" />
+        <Component Subtype="Motor" Count="20" />
+        <Component Subtype="Computer" Count="75" />
+        <Component Subtype="SteelPlate" Count="200" />
+		<Component Subtype="A_Comp1" Count="27">
+          <DeconstructId>
+            <TypeId>Component</TypeId>
+            <SubtypeId>A_Comp1S</SubtypeId>
+          </DeconstructId>
+		</Component>
+        <Component Subtype="FusionCore" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="FusionCore" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Reactor3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Reactor3</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>45</BuildTimeSeconds>
+
+      <ResourceSourceGroup>Battery</ResourceSourceGroup>
+      <MaxPowerOutput>1000</MaxPowerOutput>
+
+      <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+      <RequiredPowerInput>0</RequiredPowerInput>
+      <AdaptibleInput>false</AdaptibleInput>
+      <MaxStoredPower>30000</MaxStoredPower>
+      <InitialStoredPowerRatio>30000</InitialStoredPowerRatio>
+
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <Public>true</Public>
+      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+      <Id>
+        <TypeId>BatteryBlock</TypeId>
+        <SubtypeId>CX4Fusion</SubtypeId>
+      </Id>
+      <DisplayName>CX4 Fusion Reactor</DisplayName>
+      <Icon>Textures\Icons\reactor4.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="1" z="3" />
+      <ModelOffset x="0" y="-0.75" z="0" />
+      <Model>Models\Cubes\Reactor4_Core.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="800" />
+        <Component Subtype="Construction" Count="70" />
+        <Component Subtype="MetalGrid" Count="40" />
+        <Component Subtype="LargeTube" Count="40" />
+        <Component Subtype="Superconductor" Count="100" />
+        <Component Subtype="Motor" Count="20" />
+        <Component Subtype="Computer" Count="75" />
+        <Component Subtype="SteelPlate" Count="200" />
+        <Component Subtype="FusionCore" Count="1">
+          <DeconstructId>
+            <TypeId>Component</TypeId>
+            <SubtypeId>FusionCoreSpent</SubtypeId>
+          </DeconstructId>
+        </Component>
+      </Components>
+      <CriticalComponent Subtype="FusionCore" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Reactor4.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Reactor4</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>45</BuildTimeSeconds>
+
+      <ResourceSourceGroup>Battery</ResourceSourceGroup>
+      <MaxPowerOutput>1000</MaxPowerOutput>
+
+      <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+      <RequiredPowerInput>0</RequiredPowerInput>
+      <AdaptibleInput>false</AdaptibleInput>
+      <MaxStoredPower>50000</MaxStoredPower>
+      <InitialStoredPowerRatio>50000</InitialStoredPowerRatio>
+
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <Public>false</Public>
+      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+    </Definition>
+	
+	<Definition xsi:type="MyObjectBuilder_RadioAntennaDefinition">
+      <Id>
+        <TypeId>RadioAntenna</TypeId>
+        <SubtypeId>CXAntenna</SubtypeId>
+      </Id>
+      <DisplayName>CX Antenna</DisplayName>
+      <Icon>Textures\Icons\CXAntenna.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\CXAntenna.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="65" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="SmallTube" Count="60" />
+        <Component Subtype="LargeTube" Count="40" />
+        <Component Subtype="Computer" Count="8" />
+        <Component Subtype="A_Comp1" Count="40">
+          <DeconstructId>
+            <TypeId>Component</TypeId>
+            <SubtypeId>A_Comp1S</SubtypeId>
+          </DeconstructId>
+        </Component>
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="SteelPlate" Count="15" />
+      </Components>
+      <CriticalComponent Subtype="A_Comp1" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="1" EndY="2" />
+      </MountPoints>
+      <BuildProgressModels />
+      <BlockPairName>CXAntenna</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <BuildTimeSeconds>50</BuildTimeSeconds>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <DamageEffectName>Damage_Electrical_Damaged_Antenna</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>
+    </Definition>
+	
+    <!-- End Region FusionBlock-->
+	
+	</CubeBlocks>
+	
+  <BlockPositions>
+    <BlockPosition>
+      <Name>GravDrive</Name>
+      <Position>
+        <X>5</X>
+        <Y>11</Y>
+      </Position>
+    </BlockPosition>
+  </BlockPositions>
+  
+  <BlockPositions>
+    <BlockPosition>
+      <Name>GravDriveSmall</Name>
+      <Position>
+        <X>5</X>
+        <Y>12</Y>
+      </Position>
+    </BlockPosition>
+  </BlockPositions>
+  
+  <BlockPositions>
+    <BlockPosition>
+      <Name>GravDriveSlow</Name>
+      <Position>
+        <X>5</X>
+        <Y>13</Y>
+      </Position>
+    </BlockPosition>
+  </BlockPositions>
+  
+  <BlockPositions>
+    <BlockPosition>
+      <Name>GravDriveSmallSlow</Name>
+      <Position>
+        <X>5</X>
+        <Y>14</Y>
+      </Position>
+    </BlockPosition>
+  </BlockPositions>
+</Definitions>

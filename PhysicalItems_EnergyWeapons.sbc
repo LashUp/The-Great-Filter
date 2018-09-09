@@ -1,0 +1,250 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PhysicalItems>
+    <PhysicalItem xsi:type="MyObjectBuilder_WeaponItemDefinition">
+      <Id>
+        <TypeId>PhysicalGunObject</TypeId>
+        <SubtypeId>EmergencyBlaster</SubtypeId>
+      </Id>
+      <DisplayName>Converted Rifle</DisplayName>
+      <Icon>Textures\GUI\Icons\WeaponAutomaticRifle_Precise.dds</Icon>
+      <Size>
+        <X>0.8</X>
+        <Y>0.24</Y>
+        <Z>0.08</Z>
+      </Size>
+      <Mass>3</Mass>
+      <Volume>14</Volume>
+      <Model>Models\HandWeapons\PreciseAutomaticRifle.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <WeaponDefinitionId Subtype="EmergencyBlasterGun" />
+      <ShowAmmoCount>false</ShowAmmoCount>
+	  <Public>true</Public>
+    </PhysicalItem>
+	
+    <PhysicalItem xsi:type="MyObjectBuilder_WeaponItemDefinition">
+      <Id>
+        <TypeId>PhysicalGunObject</TypeId>
+        <SubtypeId>Bullpup</SubtypeId>
+      </Id>
+      <DisplayName>M38 Blaster Rifle</DisplayName>
+      <Icon>Textures\Icons\Rifle_Conv.dds</Icon>
+      <Size>
+        <X>0.8</X>
+        <Y>0.24</Y>
+        <Z>0.08</Z>
+      </Size>
+      <Mass>3</Mass>
+      <Volume>14</Volume>
+      <Model>Models\HandWeapons\Bullpup_Rifle.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <WeaponDefinitionId Subtype="Bullpup_Rifle" />
+      <ShowAmmoCount>false</ShowAmmoCount>
+	  <Public>true</Public>
+    </PhysicalItem>
+    <PhysicalItem xsi:type="MyObjectBuilder_WeaponItemDefinition">
+      <Id>
+        <TypeId>PhysicalGunObject</TypeId>
+        <SubtypeId>Bullpup_Picatinny</SubtypeId>
+      </Id>
+      <DisplayName>M38A1</DisplayName>
+      <Icon>Textures\Icons\Rifle_PH.dds</Icon>
+      <Size>
+        <X>0.8</X>
+        <Y>0.24</Y>
+        <Z>0.08</Z>
+      </Size>
+      <Mass>3</Mass>
+      <Volume>14</Volume>
+      <Model>Models\HandWeapons\Bullpup_Rifle_Picatinny.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <WeaponDefinitionId Subtype="Bullpup_Rifle_Picatinny" />
+      <ShowAmmoCount>false</ShowAmmoCount>
+	  <Public>true</Public>
+    </PhysicalItem>
+    <PhysicalItem xsi:type="MyObjectBuilder_WeaponItemDefinition">
+      <Id>
+        <TypeId>PhysicalGunObject</TypeId>
+        <SubtypeId>Bullpup_Picatinny_Laser</SubtypeId>
+      </Id>
+      <DisplayName>M38A1 with Laser</DisplayName>
+      <Icon>Textures\Icons\Rifle_PHL.dds</Icon>
+      <Size>
+        <X>0.8</X>
+        <Y>0.24</Y>
+        <Z>0.08</Z>
+      </Size>
+      <Mass>3</Mass>
+      <Volume>14</Volume>
+      <Model>Models\HandWeapons\Bullpup_Rifle_Picatinny_Laser.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <WeaponDefinitionId Subtype="Bullpup_Rifle_Picatinny_Laser" />
+      <ShowAmmoCount>false</ShowAmmoCount>
+	  <Public>true</Public>
+    </PhysicalItem>
+    <PhysicalItem xsi:type="MyObjectBuilder_WeaponItemDefinition">
+      <Id>
+        <TypeId>PhysicalGunObject</TypeId>
+        <SubtypeId>Bullpup_Picatinny_Grip</SubtypeId>
+      </Id>
+      <DisplayName>M38A1 with Grip</DisplayName>
+      <Icon>Textures\Icons\Rifle_PHG.dds</Icon>
+      <Size>
+        <X>0.8</X>
+        <Y>0.24</Y>
+        <Z>0.08</Z>
+      </Size>
+      <Mass>3</Mass>
+      <Volume>14</Volume>
+      <Model>Models\HandWeapons\Bullpup_Rifle_Picatinny_Grip.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <WeaponDefinitionId Subtype="Bullpup_Rifle_Picatinny_Grip" />
+      <ShowAmmoCount>false</ShowAmmoCount>
+	  <Public>true</Public>
+    </PhysicalItem>
+    <PhysicalItem xsi:type="MyObjectBuilder_WeaponItemDefinition">
+      <Id>
+        <TypeId>PhysicalGunObject</TypeId>
+        <SubtypeId>Bullpup_Picatinny_Grip_Laser</SubtypeId>
+      </Id>
+      <DisplayName>Tactical M38A1</DisplayName>
+      <Icon>Textures\Icons\Rifle_PHLG.dds</Icon>
+      <Size>
+        <X>0.8</X>
+        <Y>0.24</Y>
+        <Z>0.08</Z>
+      </Size>
+      <Mass>3</Mass>
+      <Volume>14</Volume>
+      <Model>Models\HandWeapons\Bullpup_Rifle_Picatinny_Grip_Laser.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <WeaponDefinitionId Subtype="Bullpup_Rifle_Picatinny_Grip_Laser" />
+      <ShowAmmoCount>false</ShowAmmoCount>
+	  <Public>true</Public>
+    </PhysicalItem>
+	
+	
+	
+	<!--Vanilla Rifles-->
+    <PhysicalItem xsi:type="MyObjectBuilder_WeaponItemDefinition">
+      <Id>
+        <TypeId>PhysicalGunObject</TypeId>
+        <SubtypeId>AutomaticRifleItem</SubtypeId>
+      </Id>
+      <DisplayName>M33A1</DisplayName>
+      <Icon>Textures\GUI\Icons\WeaponAutomaticRifle.dds</Icon>
+      <Size>
+        <X>0.8</X>
+        <Y>0.24</Y>
+        <Z>0.08</Z>
+      </Size>
+      <Mass>3</Mass>
+      <Volume>14</Volume>
+      <Model>Models\Weapons\AutomaticRifle.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <WeaponDefinitionId Subtype="AutomaticRifleGun" />
+      <ShowAmmoCount>true</ShowAmmoCount>
+	  <Public>true</Public>
+    </PhysicalItem>
+
+    <PhysicalItem xsi:type="MyObjectBuilder_WeaponItemDefinition">
+      <Id>
+        <TypeId>PhysicalGunObject</TypeId>
+        <SubtypeId>PreciseAutomaticRifleItem</SubtypeId>
+      </Id>
+      <DisplayName>M33A1 with Sight</DisplayName>
+      <Icon>Textures\GUI\Icons\WeaponAutomaticRifle_Precise.dds</Icon>
+      <Size>
+        <X>0.8</X>
+        <Y>0.24</Y>
+        <Z>0.08</Z>
+      </Size>
+      <Mass>3</Mass>
+      <Volume>14</Volume>
+      <Model>Models\Weapons\PreciseAutomaticRifle.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <WeaponDefinitionId Subtype="PreciseAutomaticRifleGun" />
+      <ShowAmmoCount>true</ShowAmmoCount>
+	  <Public>true</Public>
+    </PhysicalItem>
+
+    <PhysicalItem xsi:type="MyObjectBuilder_WeaponItemDefinition">
+      <Id>
+        <TypeId>PhysicalGunObject</TypeId>
+        <SubtypeId>RapidFireAutomaticRifleItem</SubtypeId>
+      </Id>
+      <DisplayName>M33A2</DisplayName>
+      <Icon>Textures\GUI\Icons\WeaponAutomaticRifle_RapidFire.dds</Icon>
+      <Size>
+        <X>0.8</X>
+        <Y>0.24</Y>
+        <Z>0.08</Z>
+      </Size>
+      <Mass>3</Mass>
+      <Volume>14</Volume>
+      <Model>Models\Weapons\RapidFireAutomaticRifle.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <WeaponDefinitionId Subtype="RapidFireAutomaticRifleGun" />
+      <ShowAmmoCount>true</ShowAmmoCount>
+	  <Public>true</Public>
+    </PhysicalItem>
+
+    <PhysicalItem xsi:type="MyObjectBuilder_WeaponItemDefinition">
+      <Id>
+        <TypeId>PhysicalGunObject</TypeId>
+        <SubtypeId>UltimateAutomaticRifleItem</SubtypeId>
+      </Id>
+      <DisplayName>M33A2 with Sight</DisplayName>
+      <Icon>Textures\GUI\Icons\WeaponAutomaticRifle_Elite.dds</Icon>
+      <Size>
+        <X>0.8</X>
+        <Y>0.24</Y>
+        <Z>0.08</Z>
+      </Size>
+      <Mass>3</Mass>
+      <Volume>14</Volume>
+      <Model>Models\Weapons\UltimateAutomaticRifle.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <WeaponDefinitionId Subtype="UltimateAutomaticRifleGun" />
+      <ShowAmmoCount>true</ShowAmmoCount>
+	  <Public>true</Public>
+    </PhysicalItem>
+	<!--End Vanilla Rifles-->
+    <PhysicalItem>
+      <Id>
+        <TypeId>Ore</TypeId>
+        <SubtypeId>HydroCarbonOre</SubtypeId>
+      </Id>
+      <DisplayName>HydroCarbon</DisplayName>
+      <Icon>Textures\Icons\HC3.dds</Icon>
+      <Size>
+        <X>0.07</X>
+        <Y>0.07</Y>
+        <Z>0.07</Z>
+      </Size>
+      <Mass>12</Mass>
+      <Volume>1</Volume>
+      <Model>Models\Components\Sphere.mwm</Model>
+      <PhysicalMaterial>Stone</PhysicalMaterial>
+	  <Public>false</Public>
+    </PhysicalItem>
+    <PhysicalItem>
+      <Id>
+        <TypeId>Ingot</TypeId>
+        <SubtypeId>HydroCarbonIngot</SubtypeId>
+      </Id>
+      <DisplayName>HydroCarbon</DisplayName>
+      <Icon>Textures\Icons\HC3.dds</Icon>
+      <Size>
+        <X>0.072</X>
+        <Y>0.072</Y>
+        <Z>0.072</Z>
+      </Size>
+      <Mass>12</Mass>
+      <Volume>1</Volume>
+      <Model>Models\Ingots\stone_ingot.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+	  <Public>false</Public>
+    </PhysicalItem>
+  </PhysicalItems>
+</Definitions>

@@ -1,0 +1,299 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AmmoMagazines>
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>Class3PlasmaPulseCharge</SubtypeId>
+      </Id>
+      <DisplayName>CX3 Plasma Charge</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\Ammo_Box.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>35</Mass>
+      <Volume>16</Volume>
+      <Model>Models\Weapons\Ammo_Box.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>2</Capacity>
+      <AmmoDefinitionId Subtype="Class3PlasmaPulseProjectile" />
+	  <Public>false</Public>
+    </AmmoMagazine>
+	<AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>Class1LaserBeamCharge</SubtypeId>
+      </Id>
+      <DisplayName>CX1A7 Charge</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\Ammo_Box.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>35</Mass>
+      <Volume>16</Volume>
+      <Model>Models\Weapons\Ammo_Box.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="Class1LaserBeamProjectile" />
+	  <Public>false</Public>
+    </AmmoMagazine>
+	<AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>Class2LaserBeamCharge</SubtypeId>
+      </Id>
+      <DisplayName>CX2A7 Charge</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\Ammo_Box.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>35</Mass>
+      <Volume>16</Volume>
+      <Model>Models\Weapons\Ammo_Box.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="Class2LaserBeamProjectile" />
+	  <Public>false</Public>
+    </AmmoMagazine>
+	<AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>Class3LaserBeamCharge</SubtypeId>
+      </Id>
+      <DisplayName>CX3A7 Charge</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\Ammo_Box.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>35</Mass>
+      <Volume>16</Volume>
+      <Model>Models\Weapons\Ammo_Box.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="Class3LaserBeamProjectile" />
+	  <Public>false</Public>
+	</AmmoMagazine>
+	
+	<AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>Class1SMLaserBeamCharge</SubtypeId>
+      </Id>
+      <DisplayName>CX1A3 Charge</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\Ammo_Box.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>35</Mass>
+      <Volume>16</Volume>
+      <Model>Models\Weapons\Ammo_Box.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="Class1SMLaserBeamProjectile" />
+	  <Public>false</Public>
+    </AmmoMagazine>
+	
+	<AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>Class2SMLaserBeamCharge</SubtypeId>
+      </Id>
+      <DisplayName>CX2A3 Charge</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\Ammo_Box.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>35</Mass>
+      <Volume>16</Volume>
+      <Model>Models\Weapons\Ammo_Box.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="Class2SMLaserBeamProjectile" />
+	  <Public>false</Public>
+    </AmmoMagazine>
+	
+	<AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>Class3SMLaserBeamCharge</SubtypeId>
+      </Id>
+      <DisplayName>CX3A3 Charge</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\Ammo_Box.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>35</Mass>
+      <Volume>16</Volume>
+      <Model>Models\Weapons\Ammo_Box.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="Class3SMLaserBeamProjectile" />
+	  <Public>false</Public>
+    </AmmoMagazine>
+	
+	<AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>Class1PlasmaGunCharge</SubtypeId>
+      </Id>
+      <DisplayName>CX1P3 Magazine</DisplayName>
+      <Icon>Textures\Icons\Magazine.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>0.45</Mass>
+      <Volume>0.2</Volume>
+      <Model>Models\Components\Magazine.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>30</Capacity>
+      <AmmoDefinitionId Subtype="Class1PlasmaGunProjectile" />
+	  <Public>false</Public>
+    </AmmoMagazine>
+  
+ 	<AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>Class2PlasmaGunCharge</SubtypeId>
+      </Id>
+      <DisplayName>CX2P3 Magazine</DisplayName>
+      <Icon>Textures\Icons\Magazine.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>0.45</Mass>
+      <Volume>0.2</Volume>
+      <Model>Models\Components\Magazine.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>30</Capacity>
+      <AmmoDefinitionId Subtype="Class2PlasmaGunProjectile" />
+	  <Public>false</Public>
+    </AmmoMagazine>
+	
+ 	<AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>Class3PlasmaGunCharge</SubtypeId>
+      </Id>
+      <DisplayName>CX3P3 Magazine</DisplayName>
+      <Icon>Textures\Icons\Magazine.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>0.45</Mass>
+      <Volume>0.2</Volume>
+      <Model>Models\Components\Magazine.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>30</Capacity>
+      <AmmoDefinitionId Subtype="Class3PlasmaGunProjectile" />
+	  <Public>false</Public>
+    </AmmoMagazine>
+	
+	<AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>Class1MGPlasmaGunCharge</SubtypeId>
+      </Id>
+      <DisplayName>CX1P7 Box</DisplayName>
+      <Icon>Textures\Icons\Magazine.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>0.45</Mass>
+      <Volume>0.2</Volume>
+      <Model>Models\Components\Magazine.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>30</Capacity>
+      <AmmoDefinitionId Subtype="Class1MGPlasmaGunProjectile" />
+	  <Public>false</Public>
+    </AmmoMagazine>
+  
+ 	<AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>Class2MGPlasmaGunCharge</SubtypeId>
+      </Id>
+      <DisplayName>CX2P7 Box</DisplayName>
+      <Icon>Textures\Icons\Magazine.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>0.45</Mass>
+      <Volume>0.2</Volume>
+      <Model>Models\Components\Magazine.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>30</Capacity>
+      <AmmoDefinitionId Subtype="Class2MGPlasmaGunProjectile" />
+	  <Public>false</Public>
+    </AmmoMagazine>
+	
+ 	<AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>Class3MGPlasmaGunCharge</SubtypeId>
+      </Id>
+      <DisplayName>CX3P7 Box</DisplayName>
+      <Icon>Textures\Icons\Magazine.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>0.45</Mass>
+      <Volume>0.2</Volume>
+      <Model>Models\Components\Magazine.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>30</Capacity>
+      <AmmoDefinitionId Subtype="Class3MGPlasmaGunProjectile" />
+	  <Public>false</Public>
+    </AmmoMagazine>
+	
+<!--God Gun -->
+	<AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>CX3LanceMag</SubtypeId>
+      </Id>
+      <DisplayName>CX3 Lance Charge</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\Ammo_Box.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>35</Mass>
+      <Volume>16</Volume>
+      <Model>Models\Weapons\Ammo_Box.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>100</Capacity>
+      <AmmoDefinitionId Subtype="Class4LaserBeamProjectile" />
+	  <Public>false</Public>
+    </AmmoMagazine>
+
+<!--End God Gun-->
+	
+  </AmmoMagazines>
+</Definitions>

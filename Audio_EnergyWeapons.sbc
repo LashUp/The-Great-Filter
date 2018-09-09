@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+<!--
+  Encoding info:
+
+  Loopable sounds must use AdpcmEncode.exe for all <Start>, <Loop> and <End>. Adpcm supports loops.
+  Use xWMAEncode.exe for everything else. Wmaudio2 has better compression but doesn't support loops.
+-->
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Sounds>
+    <Sound>
+      <Id>
+        <TypeId>AudioDefinition</TypeId>
+        <SubtypeId>SmallLaserTurretFire</SubtypeId>
+      </Id>
+      <Category>WEP_TURR</Category>
+      <MaxDistance>150</MaxDistance>
+      <Volume>0.6</Volume>
+      <Loopable>true</Loopable>
+	  <RealisticFilter>realShipFilter</RealisticFilter>
+      <RealisticVolumeChange>0.3</RealisticVolumeChange>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\SmallLaserTurretLoop.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	<Sound>
+      <Id>
+        <TypeId>AudioDefinition</TypeId>
+        <SubtypeId>SmallPlasmaTurretFire</SubtypeId>
+      </Id>
+      <Category>WEP_TURR</Category>
+      <MaxDistance>150</MaxDistance>
+      <Volume>0.6</Volume>
+      <Loopable>false</Loopable>
+	  <RealisticFilter>realShipFilter</RealisticFilter>
+      <RealisticVolumeChange>0.3</RealisticVolumeChange>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\SmallPlasmaTurretShot.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	<Sound>
+      <Id>
+        <TypeId>AudioDefinition</TypeId>
+        <SubtypeId>PlasmaRifle</SubtypeId>
+      </Id>
+      <Category>WEP_TURR</Category>
+      <MaxDistance>150</MaxDistance>
+      <Volume>0.6</Volume>
+      <Loopable>false</Loopable>
+	  <RealisticFilter>realShipFilter</RealisticFilter>
+      <RealisticVolumeChange>0.3</RealisticVolumeChange>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\PlasmaRifle.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>AudioDefinition</TypeId>
+        <SubtypeId>BlasterMG</SubtypeId>
+      </Id>
+      <Category>WEP_TURR</Category>
+      <MaxDistance>300</MaxDistance>
+      <Volume>0.4</Volume>
+      <Loopable>false</Loopable>
+	  <RealisticFilter>realShipFilter</RealisticFilter>
+      <RealisticVolumeChange>0.2</RealisticVolumeChange>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\BlasterCannon.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>AudioDefinition</TypeId>
+        <SubtypeId>BlasterMG2</SubtypeId>
+      </Id>
+      <Category>WEP_TURR</Category>
+      <MaxDistance>300</MaxDistance>
+      <Volume>0.4</Volume>
+      <Loopable>false</Loopable>
+	  <RealisticFilter>realShipFilter</RealisticFilter>
+      <RealisticVolumeChange>0.2</RealisticVolumeChange>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\BlasterCannon2.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	<Sound>
+      <Id>
+        <TypeId>AudioDefinition</TypeId>
+        <SubtypeId>PlasmaCannon</SubtypeId>
+      </Id>
+      <Category>WEP_TURR</Category>
+      <MaxDistance>300</MaxDistance>
+      <Volume>3.5</Volume>
+      <Loopable>false</Loopable>
+	  <RealisticFilter>realShipFilter</RealisticFilter>
+      <RealisticVolumeChange>0.2</RealisticVolumeChange>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\PlasmaCannon.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+    <Sound>
+      <Id>
+        <TypeId>AudioDefinition</TypeId>
+        <SubtypeId>RScan</SubtypeId>
+      </Id>
+      <Category>R_BLOCK_PROGRESS</Category>
+      <MaxDistance>12</MaxDistance>
+      <UpdateDistance>22</UpdateDistance>
+      <Volume>1.0</Volume>
+      <Loopable>true</Loopable>
+	  <RealisticFilter>realShipFilter</RealisticFilter>
+      <PreventSynchronization>10</PreventSynchronization>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\scan_start.wav</Start>
+          <Loop>Audio\scan_loop.wav</Loop>
+          <End>Audio\scan_end.wav</End>
+        </Wave>
+      </Waves>
+    </Sound>
+    <Sound>
+      <Id>
+        <TypeId>AudioDefinition</TypeId>
+        <SubtypeId>silent</SubtypeId>
+      </Id>
+      <Category>R_BLOCK</Category>
+      <MaxDistance>12</MaxDistance>
+      <UpdateDistance>22</UpdateDistance>
+      <Volume>1.0</Volume>
+      <Loopable>true</Loopable>
+	  <RealisticFilter>realShipFilter</RealisticFilter>
+      <PreventSynchronization>10</PreventSynchronization>
+      <Waves>
+        <Wave Type="D3">
+          <Loop>Audio\silent.wav</Loop>
+        </Wave>
+      </Waves>
+    </Sound>
+    <!--<Sound>
+      <Id>
+        <TypeId>AudioDefinition</TypeId>
+        <SubtypeId>Warp</SubtypeId>
+      </Id>
+      <Category>R_BLOCK</Category>
+      <MaxDistance>100</MaxDistance>
+      <UpdateDistance>220</UpdateDistance>
+      <DynamicMusicCategory>MusFun</DynamicMusicCategory>
+      <DynamicMusicAmount>3</DynamicMusicAmount>
+      <Volume>3.0</Volume>
+      <Loopable>true</Loopable>
+	  <RealisticFilter>realShipFilter</RealisticFilter>
+      <PreventSynchronization>10</PreventSynchronization>
+      <Waves>
+        <Wave Type="D3">
+          <Loop>Audio\Warp.wav</Loop>
+        </Wave>
+      </Waves>
+    </Sound>-->
+    <Sound>
+      <Id>
+        <TypeId>AudioDefinition</TypeId>
+        <SubtypeId>WarpOn</SubtypeId>
+      </Id>
+      <Category>R_BLOCK</Category>
+      <MaxDistance>100</MaxDistance>
+      <UpdateDistance>220</UpdateDistance>
+      <!--<DynamicMusicCategory>MusFun</DynamicMusicCategory>
+      <DynamicMusicAmount>3</DynamicMusicAmount>-->
+      <Volume>2.0</Volume>
+      <Loopable>true</Loopable>
+	  <RealisticFilter>realShipFilter</RealisticFilter>
+      <PreventSynchronization>10</PreventSynchronization>
+      <Waves>
+        <Wave Type="D3">
+          <Loop>Audio\WarpOn.wav</Loop>
+        </Wave>
+      </Waves>
+    </Sound>
+    <Sound>
+      <Id>
+        <TypeId>AudioDefinition</TypeId>
+        <SubtypeId>WarpIn</SubtypeId>
+      </Id>
+      <Category>R_BLOCK</Category>
+      <MaxDistance>15000</MaxDistance>
+      <UpdateDistance>22000</UpdateDistance>
+      <!--<DynamicMusicCategory>MusFun</DynamicMusicCategory>
+      <DynamicMusicAmount>3</DynamicMusicAmount>-->
+      <Volume>4.0</Volume>
+      <Loopable>true</Loopable>
+	  <RealisticFilter>realShipFilter</RealisticFilter>
+      <PreventSynchronization>10</PreventSynchronization>
+      <Waves>
+        <Wave Type="D3">
+          <Loop>Audio\WarpIn.wav</Loop>
+        </Wave>
+      </Waves>
+    </Sound>
+    <Sound>
+      <Id>
+        <TypeId>AudioDefinition</TypeId>
+        <SubtypeId>WarpOut</SubtypeId>
+      </Id>
+      <Category>R_BLOCK</Category>
+      <MaxDistance>15000</MaxDistance>
+      <UpdateDistance>22000</UpdateDistance>
+      <!--<DynamicMusicCategory>MusFun</DynamicMusicCategory>
+      <DynamicMusicAmount>3</DynamicMusicAmount>-->
+      <Volume>4.0</Volume>
+      <Loopable>true</Loopable>
+	  <RealisticFilter>realShipFilter</RealisticFilter>
+      <PreventSynchronization>10</PreventSynchronization>
+      <Waves>
+        <Wave Type="D3">
+          <Loop>Audio\WarpOut.wav</Loop>
+        </Wave>
+      </Waves>
+    </Sound>
+  </Sounds>
+</Definitions>

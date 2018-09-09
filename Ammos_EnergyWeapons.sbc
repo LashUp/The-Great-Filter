@@ -1,0 +1,435 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Ammos>
+    <Ammo xsi:type="MyObjectBuilder_MissileAmmoDefinition">
+      <Id>
+        <TypeId>AmmoDefinition</TypeId>
+        <SubtypeId>Class1PlasmaPulseProjectile</SubtypeId>
+      </Id>
+      <BasicProperties>
+	<DesiredSpeed>1000</DesiredSpeed>
+	<SpeedVariance>150</SpeedVariance>
+	<MaxTrajectory>1600</MaxTrajectory>
+	<IsExplosive>false</IsExplosive>
+	<BackkickForce>10</BackkickForce>
+      </BasicProperties>
+      <MissileProperties>
+	<MissileMass>0.1</MissileMass>
+	<MissileExplosionRadius>15.0</MissileExplosionRadius>
+	<MissileModelName>Models\Projectiles\C1PlasmaProjectile_Large.mwm</MissileModelName>
+	<MissileAcceleration>200</MissileAcceleration>
+	<MissileInitialSpeed>300</MissileInitialSpeed>
+	<MissileSkipAcceleration>false</MissileSkipAcceleration>
+	<MissileExplosionDamage>200</MissileExplosionDamage>
+      <AdditionalProperties>
+        <OnHitMaterialParticlesType>Small</OnHitMaterialParticlesType>
+        <OnHitParticlesType>BasicSmall</OnHitParticlesType>
+      </AdditionalProperties>
+	</MissileProperties>
+    </Ammo>
+	<Ammo xsi:type="MyObjectBuilder_MissileAmmoDefinition">
+      <Id>
+        <TypeId>AmmoDefinition</TypeId>
+        <SubtypeId>Class2PlasmaPulseProjectile</SubtypeId>
+      </Id>
+      <BasicProperties>
+	<DesiredSpeed>900</DesiredSpeed>
+	<SpeedVariance>500</SpeedVariance>
+	<MaxTrajectory>40000</MaxTrajectory>
+	<IsExplosive>true</IsExplosive>
+	<BackkickForce>300</BackkickForce>
+      </BasicProperties>
+      <MissileProperties>
+	<MissileMass>1</MissileMass>
+	<MissileExplosionRadius>1.5</MissileExplosionRadius>
+	<MissileModelName>Models\Projectiles\C1PlasmaProjectile_Large.mwm</MissileModelName>
+	<MissileAcceleration>0</MissileAcceleration>
+	<MissileInitialSpeed>1000</MissileInitialSpeed>
+	<MissileSkipAcceleration>false</MissileSkipAcceleration>
+	<MissileExplosionDamage>300</MissileExplosionDamage>
+	<DamageProperties DamageType="Bullet" AmmoType="HighSpeed">
+        <MassDamage>40</MassDamage>
+        <HealthDamage>10</HealthDamage>
+      </DamageProperties>
+      <AdditionalProperties>
+        <OnHitMaterialParticlesType>Small</OnHitMaterialParticlesType>
+        <OnHitParticlesType>BasicSmall</OnHitParticlesType>
+      </AdditionalProperties>
+	</MissileProperties>
+    </Ammo>
+	<Ammo xsi:type="MyObjectBuilder_MissileAmmoDefinition">
+      <Id>
+        <TypeId>AmmoDefinition</TypeId>
+        <SubtypeId>Class3PlasmaPulseProjectile</SubtypeId>
+      </Id>
+      <BasicProperties>
+	<DesiredSpeed>100</DesiredSpeed>
+	<SpeedVariance>0</SpeedVariance>
+	<MaxTrajectory>8000</MaxTrajectory>
+	<IsExplosive>false</IsExplosive>
+	<BackkickForce>0.0000000100</BackkickForce>
+      </BasicProperties>
+      <MissileProperties>
+	<MissileMass>58</MissileMass>
+	<MissileExplosionRadius>13</MissileExplosionRadius>
+	<MissileModelName>Models\Projectiles\PlasmaMissile.mwm</MissileModelName>
+	<MissileAcceleration>0</MissileAcceleration>
+	<MissileInitialSpeed>100</MissileInitialSpeed>
+	<MissileSkipAcceleration>false</MissileSkipAcceleration>
+	<MissileExplosionDamage>1000</MissileExplosionDamage>
+	<DamageProperties DamageType="Fire" AmmoType="LowSpeed">
+        <MassDamage>75</MassDamage>
+        <HealthDamage>30</HealthDamage>
+      </DamageProperties>
+      <AdditionalProperties>
+        <OnHitMaterialParticlesType>Small</OnHitMaterialParticlesType>
+        <OnHitParticlesType>BasicSmall</OnHitParticlesType>
+      </AdditionalProperties>
+	</MissileProperties>
+    </Ammo>
+	<Ammo xsi:type="MyObjectBuilder_MissileAmmoDefinition">
+      <Id>
+        <TypeId>AmmoDefinition</TypeId>
+        <SubtypeId>Class4PlasmaPulseProjectile</SubtypeId>
+      </Id>
+      <BasicProperties>
+	<DesiredSpeed>700</DesiredSpeed>
+	<SpeedVariance>500</SpeedVariance>
+	<MaxTrajectory>40000</MaxTrajectory>
+	<IsExplosive>true</IsExplosive>
+	<BackkickForce>300</BackkickForce>
+      </BasicProperties>
+      <MissileProperties>
+	<MissileMass>1</MissileMass>
+	<MissileExplosionRadius>2</MissileExplosionRadius>
+	<MissileModelName>Models\Projectiles\C1PlasmaProjectile_Large.mwm</MissileModelName>
+	<MissileAcceleration>0</MissileAcceleration>
+	<MissileInitialSpeed>1000</MissileInitialSpeed>
+	<MissileSkipAcceleration>false</MissileSkipAcceleration>
+	<MissileExplosionDamage>600</MissileExplosionDamage>
+	<DamageProperties DamageType="Bullet" AmmoType="HighSpeed">
+        <MassDamage>10</MassDamage>
+        <HealthDamage>10</HealthDamage>
+      </DamageProperties>
+      <AdditionalProperties>
+        <OnHitMaterialParticlesType>Small</OnHitMaterialParticlesType>
+        <OnHitParticlesType>BasicSmall</OnHitParticlesType>
+      </AdditionalProperties>
+	</MissileProperties>
+    </Ammo>
+	<Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+      <Id>
+        <TypeId>AmmoDefinition</TypeId>
+        <SubtypeId>Class1LaserBeamProjectile</SubtypeId>
+      </Id>
+      <BasicProperties>
+        <DesiredSpeed>12000000</DesiredSpeed>
+        <SpeedVariance>0</SpeedVariance>
+        <MaxTrajectory>0</MaxTrajectory>
+        <BackkickForce>0</BackkickForce>
+      </BasicProperties>
+      <ProjectileProperties>
+        <ProjectileHitImpulse>0.0001</ProjectileHitImpulse>
+        <ProjectileMassDamage>16</ProjectileMassDamage>
+        <ProjectileHealthDamage>20</ProjectileHealthDamage>
+		<ProjectileTrailScale>3.5</ProjectileTrailScale>
+		<ProjectileTrailColor x="2.1" y="0.08" z="0.08" />
+		<ProjectileTrailProbability>1</ProjectileTrailProbability>
+      </ProjectileProperties>
+    </Ammo>
+	
+	<Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+      <Id>
+        <TypeId>AmmoDefinition</TypeId>
+        <SubtypeId>Class1SMLaserBeamProjectile</SubtypeId>
+      </Id>
+      <BasicProperties>
+        <DesiredSpeed>12000000</DesiredSpeed>
+        <SpeedVariance>0</SpeedVariance>
+        <MaxTrajectory>0</MaxTrajectory>
+        <BackkickForce>0</BackkickForce>
+      </BasicProperties>
+      <ProjectileProperties>
+        <ProjectileHitImpulse>0.0001</ProjectileHitImpulse>
+        <ProjectileMassDamage>8</ProjectileMassDamage>
+        <ProjectileHealthDamage>10</ProjectileHealthDamage>
+		<ProjectileTrailScale>3.5</ProjectileTrailScale>
+		<ProjectileTrailColor x="2.1" y="0.08" z="0.08" />
+		<ProjectileTrailProbability>1</ProjectileTrailProbability>
+      </ProjectileProperties>
+    </Ammo>
+	
+	<Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+      <Id>
+        <TypeId>AmmoDefinition</TypeId>
+        <SubtypeId>Class2LaserBeamProjectile</SubtypeId>
+      </Id>
+      <BasicProperties>
+        <DesiredSpeed>12000000</DesiredSpeed>
+        <SpeedVariance>0</SpeedVariance>
+        <MaxTrajectory>0</MaxTrajectory>
+        <BackkickForce>0</BackkickForce>
+      </BasicProperties>
+      <ProjectileProperties>
+        <ProjectileHitImpulse>0.0001</ProjectileHitImpulse>
+        <ProjectileMassDamage>24</ProjectileMassDamage>
+        <ProjectileHealthDamage>30</ProjectileHealthDamage>
+		<ProjectileTrailScale>3.5</ProjectileTrailScale>
+		<ProjectileTrailColor x="2.1" y="0.08" z="0.08" />
+		<ProjectileTrailProbability>1</ProjectileTrailProbability>
+      </ProjectileProperties>
+    </Ammo>
+	
+	<Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+      <Id>
+        <TypeId>AmmoDefinition</TypeId>
+        <SubtypeId>Class2SMLaserBeamProjectile</SubtypeId>
+      </Id>
+      <BasicProperties>
+        <DesiredSpeed>12000000</DesiredSpeed>
+        <SpeedVariance>0</SpeedVariance>
+        <MaxTrajectory>0</MaxTrajectory>
+        <BackkickForce>0</BackkickForce>
+      </BasicProperties>
+      <ProjectileProperties>
+        <ProjectileHitImpulse>0.0001</ProjectileHitImpulse>
+        <ProjectileMassDamage>12</ProjectileMassDamage>
+        <ProjectileHealthDamage>15</ProjectileHealthDamage>
+		<ProjectileTrailScale>3.5</ProjectileTrailScale>
+		<ProjectileTrailColor x="2.1" y="0.08" z="0.08" />
+		<ProjectileTrailProbability>1</ProjectileTrailProbability>
+      </ProjectileProperties>
+    </Ammo>
+	
+	<Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+      <Id>
+        <TypeId>AmmoDefinition</TypeId>
+        <SubtypeId>Class3LaserBeamProjectile</SubtypeId>
+      </Id>
+      <BasicProperties>
+        <DesiredSpeed>12000000</DesiredSpeed>
+        <SpeedVariance>0</SpeedVariance>
+        <MaxTrajectory>0</MaxTrajectory>
+        <BackkickForce>0</BackkickForce>
+      </BasicProperties>
+      <ProjectileProperties>
+        <ProjectileHitImpulse>0.0001</ProjectileHitImpulse>
+        <ProjectileMassDamage>32</ProjectileMassDamage>
+        <ProjectileHealthDamage>40</ProjectileHealthDamage>
+		<ProjectileTrailScale>3.5</ProjectileTrailScale>
+		<ProjectileTrailColor x="2.1" y="0.08" z="0.08" />
+		<ProjectileTrailProbability>1</ProjectileTrailProbability>
+      </ProjectileProperties>
+    </Ammo>
+	
+	<Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+      <Id>
+        <TypeId>AmmoDefinition</TypeId>
+        <SubtypeId>Class3SMLaserBeamProjectile</SubtypeId>
+      </Id>
+      <BasicProperties>
+        <DesiredSpeed>12000000</DesiredSpeed>
+        <SpeedVariance>0</SpeedVariance>
+        <MaxTrajectory>0</MaxTrajectory>
+        <BackkickForce>0</BackkickForce>
+      </BasicProperties>
+      <ProjectileProperties>
+        <ProjectileHitImpulse>0.0001</ProjectileHitImpulse>
+        <ProjectileMassDamage>16</ProjectileMassDamage>
+        <ProjectileHealthDamage>20</ProjectileHealthDamage>
+		<ProjectileTrailScale>3.5</ProjectileTrailScale>
+		<ProjectileTrailColor x="2.1" y="0.08" z="0.08" />
+		<ProjectileTrailProbability>1</ProjectileTrailProbability>
+      </ProjectileProperties>
+    </Ammo>
+	
+	<Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+      <Id>
+        <TypeId>AmmoDefinition</TypeId>
+        <SubtypeId>Class1PlasmaGunProjectile</SubtypeId>
+      </Id>
+      <BasicProperties>
+	<DesiredSpeed>800</DesiredSpeed>
+	<SpeedVariance>0</SpeedVariance>
+	<MaxTrajectory>1800</MaxTrajectory>
+	<BackkickForce>2</BackkickForce>
+	<PhysicalMaterial>RifleBullet</PhysicalMaterial>
+      </BasicProperties>
+      <ProjectileProperties>
+        <ProjectileHitImpulse>1</ProjectileHitImpulse>
+        <ProjectileMassDamage>30</ProjectileMassDamage>
+        <ProjectileHealthDamage>30</ProjectileHealthDamage>
+		<ProjectileTrailScale>0.25</ProjectileTrailScale>
+		<ProjectileTrailColor x="2.55" y="0.99" z="0.71" />
+		<ProjectileTrailProbability>1</ProjectileTrailProbability>
+		<HeadShot>true</HeadShot>
+        <ProjectileHeadShotDamage>60</ProjectileHeadShotDamage>
+      </ProjectileProperties>
+    </Ammo>
+	
+	<Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+      <Id>
+        <TypeId>AmmoDefinition</TypeId>
+        <SubtypeId>Class2PlasmaGunProjectile</SubtypeId>
+      </Id>
+      <BasicProperties>
+	<DesiredSpeed>800</DesiredSpeed>
+	<SpeedVariance>0</SpeedVariance>
+	<MaxTrajectory>1800</MaxTrajectory>
+	<BackkickForce>2</BackkickForce>
+	<PhysicalMaterial>GunBullet</PhysicalMaterial>
+      </BasicProperties>
+      <ProjectileProperties>
+        <ProjectileHitImpulse>1</ProjectileHitImpulse>
+        <ProjectileMassDamage>45</ProjectileMassDamage>
+        <ProjectileHealthDamage>45</ProjectileHealthDamage>
+		<ProjectileTrailScale>0.25</ProjectileTrailScale>
+		<ProjectileTrailColor x="0.46" y="1.39" z="0.87" />
+		<ProjectileTrailProbability>1</ProjectileTrailProbability>
+		<HeadShot>true</HeadShot>
+        <ProjectileHeadShotDamage>90</ProjectileHeadShotDamage>
+      </ProjectileProperties>
+    </Ammo>
+	
+	<Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+      <Id>
+        <TypeId>AmmoDefinition</TypeId>
+        <SubtypeId>Class3PlasmaGunProjectile</SubtypeId>
+      </Id>
+      <BasicProperties>
+	<DesiredSpeed>800</DesiredSpeed>
+	<SpeedVariance>0</SpeedVariance>
+	<MaxTrajectory>1800</MaxTrajectory>
+	<BackkickForce>2</BackkickForce>
+	<PhysicalMaterial>GunBullet</PhysicalMaterial>
+      </BasicProperties>
+      <ProjectileProperties>
+        <ProjectileHitImpulse>1</ProjectileHitImpulse>
+        <ProjectileMassDamage>60</ProjectileMassDamage>
+        <ProjectileHealthDamage>60</ProjectileHealthDamage>
+		<ProjectileTrailScale>0.25</ProjectileTrailScale>
+		<ProjectileTrailColor x="0.30" y="1.44" z="2.55" />
+		<ProjectileTrailProbability>1</ProjectileTrailProbability>
+		<HeadShot>true</HeadShot>
+        <ProjectileHeadShotDamage>120</ProjectileHeadShotDamage>
+      </ProjectileProperties>
+    </Ammo>
+	
+    <Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+      <Id>
+        <TypeId>AmmoDefinition</TypeId>
+        <SubtypeId>Class1MGPlasmaGunProjectile</SubtypeId>
+      </Id>
+      <BasicProperties>
+        <DesiredSpeed>800</DesiredSpeed>
+        <SpeedVariance>0</SpeedVariance>
+        <MaxTrajectory>1800</MaxTrajectory>
+        <BackkickForce>25</BackkickForce>
+        <PhysicalMaterial>GunBullet</PhysicalMaterial>
+      </BasicProperties>
+      <ProjectileProperties>
+        <ProjectileHitImpulse>40</ProjectileHitImpulse>
+        <ProjectileMassDamage>200</ProjectileMassDamage>
+        <ProjectileHealthDamage>30</ProjectileHealthDamage>
+		<ProjectileTrailScale>0.5</ProjectileTrailScale>
+		<ProjectileTrailColor x="2.55" y="0.99" z="0.71" />
+		<ProjectileTrailProbability>1</ProjectileTrailProbability>
+        <ProjectileHeadShotDamage>60</ProjectileHeadShotDamage>
+        <HeadShot>true</HeadShot>
+      </ProjectileProperties>
+    </Ammo>
+    <Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+      <Id>
+        <TypeId>AmmoDefinition</TypeId>
+        <SubtypeId>Class2MGPlasmaGunProjectile</SubtypeId>
+      </Id>
+      <BasicProperties>
+        <DesiredSpeed>800</DesiredSpeed>
+        <SpeedVariance>0</SpeedVariance>
+        <MaxTrajectory>1800</MaxTrajectory>
+        <BackkickForce>25</BackkickForce>
+        <PhysicalMaterial>GunBullet</PhysicalMaterial>
+      </BasicProperties>
+      <ProjectileProperties>
+        <ProjectileHitImpulse>60</ProjectileHitImpulse>
+        <ProjectileMassDamage>250</ProjectileMassDamage>
+        <ProjectileHealthDamage>45</ProjectileHealthDamage>
+		<ProjectileTrailScale>0.5</ProjectileTrailScale>
+		<ProjectileTrailColor x="0.46" y="1.39" z="0.87" />
+		<ProjectileTrailProbability>1</ProjectileTrailProbability>
+        <ProjectileHeadShotDamage>90</ProjectileHeadShotDamage>
+        <HeadShot>true</HeadShot>
+      </ProjectileProperties>
+    </Ammo>
+    <Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+      <Id>
+        <TypeId>AmmoDefinition</TypeId>
+        <SubtypeId>Class3MGPlasmaGunProjectile</SubtypeId>
+      </Id>
+      <BasicProperties>
+        <DesiredSpeed>800</DesiredSpeed>
+        <SpeedVariance>0</SpeedVariance>
+        <MaxTrajectory>1800</MaxTrajectory>
+        <BackkickForce>25</BackkickForce>
+        <PhysicalMaterial>GunBullet</PhysicalMaterial>
+      </BasicProperties>
+      <ProjectileProperties>
+        <ProjectileHitImpulse>80</ProjectileHitImpulse>
+        <ProjectileMassDamage>300</ProjectileMassDamage>
+        <ProjectileHealthDamage>90</ProjectileHealthDamage>
+		<ProjectileTrailScale>0.5</ProjectileTrailScale>
+		<ProjectileTrailColor x="0.30" y="1.44" z="2.55" />
+		<ProjectileTrailProbability>1</ProjectileTrailProbability>
+		<HeadShot>true</HeadShot>
+        <ProjectileHeadShotDamage>120</ProjectileHeadShotDamage>
+      </ProjectileProperties>
+    </Ammo>
+	
+<!--God Gun -->
+	<Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+      <Id>
+        <TypeId>AmmoDefinition</TypeId>
+        <SubtypeId>Class4LaserBeamProjectile</SubtypeId>
+      </Id>
+      <BasicProperties>
+        <DesiredSpeed>12000000</DesiredSpeed>
+        <SpeedVariance>0</SpeedVariance>
+        <MaxTrajectory>0</MaxTrajectory>
+        <BackkickForce>0</BackkickForce>
+      </BasicProperties>
+      <ProjectileProperties>
+        <ProjectileHitImpulse>0.0001</ProjectileHitImpulse>
+        <ProjectileMassDamage>20</ProjectileMassDamage>
+        <ProjectileHealthDamage>32</ProjectileHealthDamage>
+		<ProjectileTrailScale>3.5</ProjectileTrailScale>
+		<ProjectileTrailColor x="2.1" y="0.08" z="0.08" />
+		<ProjectileTrailProbability>1</ProjectileTrailProbability>
+      </ProjectileProperties>
+    </Ammo>
+
+<!--End God Gun-->
+
+ <!--   <Ammo>
+      <Id>
+        <TypeId>AmmoDefinition</TypeId>
+        <SubtypeId>Shrapnel</SubtypeId>
+      </Id>
+      <BasicProperties>
+        <DesiredSpeed>100</DesiredSpeed>
+        <SpeedVariance>0</SpeedVariance>
+        <MaxTrajectory>1000</MaxTrajectory>
+        <Impulse>10</Impulse>
+        <Mass>1</Mass>
+      </BasicProperties>
+      <DamageProperties DamageType="Bullet" AmmoType="HighSpeed">
+        <MassDamage>10</MassDamage>
+        <HealthDamage>10</HealthDamage>
+      </DamageProperties>
+      <AdditionalProperties>
+        <OnHitMaterialParticlesType>Small</OnHitMaterialParticlesType>
+        <OnHitParticlesType>BasicSmall</OnHitParticlesType>
+        <TrailScale>0.1</TrailScale>
+      </AdditionalProperties>
+    </Ammo> -->
+  </Ammos>
+</Definitions>

@@ -1,0 +1,328 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<PirateAntennas>
+
+
+<Antenna>
+	<Id>
+		<TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+		<SubtypeId>RTX8372_Antenna</SubtypeId>
+	</Id>
+	<Name>RTX8372</Name>
+	<SpawnDistance>1000</SpawnDistance>
+	<SpawnTimeMs>1200000</SpawnTimeMs>
+	<FirstSpawnTimeMs>180000</FirstSpawnTimeMs>
+	<MaxDrones>8</MaxDrones>
+	<SpawnGroups>
+		<Group>(VSHA)RT2973B03</Group>
+		<Group>(VSHA)RTX3975P02</Group>
+	</SpawnGroups>
+</Antenna>
+
+<Antenna>
+	<Id>
+		<TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+		<SubtypeId>RTXC3295P_Antenna</SubtypeId>
+	</Id>
+	<Name>RTXC3295P</Name>
+	<SpawnDistance>200</SpawnDistance>
+	<SpawnTimeMs>6000</SpawnTimeMs> <!--60000-->
+	<FirstSpawnTimeMs>1800</FirstSpawnTimeMs>
+	<MaxDrones>6</MaxDrones>
+	<SpawnGroups>
+		<Group>(VSHA)RT47TRNS</Group>
+		<Group>(VSHA)RT4739I</Group>
+	</SpawnGroups>
+</Antenna>
+
+<Antenna>
+	<Id>
+		<TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+		<SubtypeId>RTL2T75AX_Antenna</SubtypeId>
+	</Id>
+	<Name>RTL2T75AX</Name>
+	<SpawnDistance>200</SpawnDistance>
+	<SpawnTimeMs>300000</SpawnTimeMs>
+	<FirstSpawnTimeMs>18000</FirstSpawnTimeMs>
+	<MaxDrones>3</MaxDrones>
+	<SpawnGroups>
+		<Group>(VSHA)RT47TRNS</Group>
+	</SpawnGroups>
+</Antenna>
+
+<Antenna>
+	<Id>
+		<TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+		<SubtypeId>RT47TRNS_Antenna</SubtypeId>
+	</Id>
+	<Name>RT47TRNS</Name>
+	<SpawnDistance>200</SpawnDistance>
+	<SpawnTimeMs>120000</SpawnTimeMs>
+	<FirstSpawnTimeMs>1800</FirstSpawnTimeMs>
+	<MaxDrones>2</MaxDrones>
+	<SpawnGroups>
+		<Group>(VSHA)RT2B43AX</Group>
+	</SpawnGroups>
+</Antenna>
+
+<Antenna>
+	<Id>
+		<TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+		<SubtypeId>RT2B43AX_Antenna</SubtypeId>
+	</Id>
+	<Name>RT2B43AX</Name>
+	<SpawnDistance>200</SpawnDistance>
+	<SpawnTimeMs>120000</SpawnTimeMs>
+	<FirstSpawnTimeMs>1800</FirstSpawnTimeMs>
+	<MaxDrones>1</MaxDrones>
+	<SpawnGroups>
+		<Group>(VSHA)RT2B43AX</Group>
+	</SpawnGroups>
+</Antenna>
+
+<Antenna>
+	<Id>
+		<TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+		<SubtypeId>RTC2956_Antenna</SubtypeId>
+	</Id>
+	<Name>RTC2956</Name>
+	<SpawnDistance>2000</SpawnDistance>
+	<SpawnTimeMs>1200000</SpawnTimeMs>
+	<FirstSpawnTimeMs>1800</FirstSpawnTimeMs>
+	<MaxDrones>8</MaxDrones>
+	<SpawnGroups>
+		<Group>(VSHA)RX2938H</Group>
+		<Group>(VSHA)RX2939H</Group>
+		<Group>(VSHA)RT2973B02</Group>
+		<Group>(VSHA)RT3021A01</Group>
+	</SpawnGroups>
+</Antenna>
+
+<Antenna>
+	<Id>
+		<TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+		<SubtypeId>RTXC3296B_Antenna</SubtypeId>
+	</Id>
+	<Name>RTXC3296B</Name>
+	<SpawnDistance>1000</SpawnDistance>
+	<SpawnTimeMs>12000</SpawnTimeMs>
+	<FirstSpawnTimeMs>1800</FirstSpawnTimeMs>
+	<MaxDrones>4</MaxDrones>
+	<SpawnGroups>
+		<Group>(VSHA)RT2973B02</Group>
+		<Group>(VSHA)RT3021A01</Group>
+	</SpawnGroups>
+</Antenna>
+
+<Antenna>
+	<Id>
+		<TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+		<SubtypeId>RTXC3297T_Antenna</SubtypeId>
+	</Id>
+	<Name>RTXC3297T</Name>
+	<SpawnDistance>80</SpawnDistance>
+	<SpawnTimeMs>18000</SpawnTimeMs>
+	<FirstSpawnTimeMs>1800</FirstSpawnTimeMs>
+	<MaxDrones>1</MaxDrones>
+	<SpawnGroups>
+		<Group>(VSHA)RTX0027T</Group>
+	</SpawnGroups>
+</Antenna>
+
+<Antenna>
+	<Id>
+		<TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+		<SubtypeId>RTXC3298S_Antenna</SubtypeId>
+	</Id>
+	<Name>RTXC3298S</Name>
+	<SpawnDistance>5000</SpawnDistance>
+	<SpawnTimeMs>1200000</SpawnTimeMs>
+	<FirstSpawnTimeMs>1800</FirstSpawnTimeMs>
+	<MaxDrones>1</MaxDrones>
+	<SpawnGroups>
+		<Group>(VSHA)RT4379S</Group>
+	</SpawnGroups>
+</Antenna>
+
+<Antenna>
+	<Id>
+		<TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+		<SubtypeId>RT4379S_Antenna</SubtypeId>
+	</Id>
+	<Name>RT4379S</Name>
+	<SpawnDistance>2000</SpawnDistance>
+	<SpawnTimeMs>1200000</SpawnTimeMs>
+	<FirstSpawnTimeMs>1800</FirstSpawnTimeMs>
+	<MaxDrones>2</MaxDrones>
+	<SpawnGroups>
+		<Group>(VSHA)RX2938H</Group>
+		<Group>(VSHA)RX2939H</Group>
+	</SpawnGroups>
+</Antenna>
+
+<Antenna>
+	<Id>
+		<TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+		<SubtypeId>RT2973C00_Antenna</SubtypeId>
+	</Id>
+	<Name>RT2973C00</Name>
+	<SpawnDistance>1000</SpawnDistance>
+	<SpawnTimeMs>12000</SpawnTimeMs>
+	<FirstSpawnTimeMs>600</FirstSpawnTimeMs>
+	<MaxDrones>2</MaxDrones>
+	<SpawnGroups>
+		<Group>(VSHA)RT2973C00</Group>
+		<Group>(VSHA)RT2973B02</Group>
+		<Group>(VSHA)RT2973B03</Group>
+	</SpawnGroups>
+</Antenna>
+
+<Antenna>
+	<Id>
+		<TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+		<SubtypeId>RTX9929P_Antenna</SubtypeId>
+	</Id>
+	<Name>RTX9929P</Name>
+	<SpawnDistance>1000</SpawnDistance>
+	<SpawnTimeMs>1200000</SpawnTimeMs>
+	<FirstSpawnTimeMs>1800</FirstSpawnTimeMs>
+	<MaxDrones>1</MaxDrones>
+	<SpawnGroups>
+		<!--<Group>(VSHA)RX2938H</Group>-->
+		<!--<Group>(VSHA)RX2939H</Group>-->
+		<!--<Group>(VSHA)RT2973B02</Group>-->
+		<Group>(VSHA)RTX3975P</Group>
+	</SpawnGroups>
+</Antenna>
+
+<Antenna>
+	<Id>
+		<TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+		<SubtypeId>RTX8386P_Antenna</SubtypeId>
+	</Id>
+	<Name>RTX8386P</Name>
+	<SpawnDistance>200</SpawnDistance>
+	<SpawnTimeMs>1800000</SpawnTimeMs>
+	<FirstSpawnTimeMs>1800</FirstSpawnTimeMs>
+	<MaxDrones>1</MaxDrones>
+	<SpawnGroups>
+		<Group>(VSHA)RTC2956</Group>
+	</SpawnGroups>
+</Antenna>
+
+<Antenna>
+	<Id>
+		<TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+		<SubtypeId>RTX8386P2_Antenna</SubtypeId>
+	</Id>
+	<Name>RTX8387P</Name>
+	<SpawnDistance>8000</SpawnDistance>
+	<SpawnTimeMs>1200000</SpawnTimeMs>
+	<FirstSpawnTimeMs>1800</FirstSpawnTimeMs>
+	<MaxDrones>1</MaxDrones>
+	<SpawnGroups>
+		<Group>(VSHA)RTC2956</Group>
+	</SpawnGroups>
+</Antenna>
+
+<Antenna>
+	<Id>
+		<TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+		<SubtypeId>RTX8388P_Antenna</SubtypeId>
+	</Id>
+	<Name>RTX8388P</Name>
+	<SpawnDistance>3000</SpawnDistance>
+	<SpawnTimeMs>1200000</SpawnTimeMs>
+	<FirstSpawnTimeMs>1800</FirstSpawnTimeMs>
+	<MaxDrones>1</MaxDrones>
+	<SpawnGroups>
+		<Group>(VSHA)RX2938H</Group>
+	</SpawnGroups>
+</Antenna>
+
+<Antenna>
+	<Id>
+		<TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+		<SubtypeId>RT2973B02_Antenna</SubtypeId>
+	</Id>
+	<Name>RT2973B02</Name>
+	<SpawnDistance>1000</SpawnDistance>
+	<SpawnTimeMs>12000</SpawnTimeMs>
+	<FirstSpawnTimeMs>600</FirstSpawnTimeMs>
+	<MaxDrones>2</MaxDrones>
+	<SpawnGroups>
+		<Group>(VSHA)RT2973B02</Group>
+		<Group>(VSHA)RT2973B03</Group>
+		<Group>(VSHA)RT2973B05</Group>
+		<Group>(VSHA)RT2973B06</Group>
+		<Group>(VSHA)RT2973B07</Group>
+		<Group>(VSHA)RT2973B08</Group>
+		<Group>(VSHA)RT2973B09</Group>
+		<Group>(VSHA)RT2973B10</Group>
+	</SpawnGroups>
+</Antenna>
+
+<Antenna>
+	<Id>
+		<TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+		<SubtypeId>RT3021A_Antenna</SubtypeId>
+	</Id>
+	<Name>RT3021A</Name>
+	<SpawnDistance>1000</SpawnDistance>
+	<SpawnTimeMs>6000</SpawnTimeMs>
+	<FirstSpawnTimeMs>600</FirstSpawnTimeMs>
+	<MaxDrones>3</MaxDrones>
+	<SpawnGroups>
+		<Group>(VSHA)RT3021A01</Group>
+		<Group>(VSHA)RT2973B02</Group>
+		<Group>(VSHA)RT2973B03</Group>
+	</SpawnGroups>
+</Antenna>
+
+<Antenna>
+	<Id>
+		<TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+		<SubtypeId>RX2938H_Antenna</SubtypeId>
+	</Id>
+	<Name>RX2938H</Name>
+	<SpawnDistance>300</SpawnDistance>
+	<SpawnTimeMs>60000</SpawnTimeMs>
+	<FirstSpawnTimeMs>6000</FirstSpawnTimeMs>
+	<MaxDrones>3</MaxDrones>
+	<SpawnGroups>
+		<Group>(VSHA)RT2973B02</Group>
+	</SpawnGroups>
+</Antenna>
+
+<Antenna>
+	<Id>
+		<TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+		<SubtypeId>RX2939H_Antenna</SubtypeId>
+	</Id>
+	<Name>RX2939H</Name>
+	<SpawnDistance>1000</SpawnDistance>
+	<SpawnTimeMs>60000</SpawnTimeMs>
+	<FirstSpawnTimeMs>6000</FirstSpawnTimeMs>
+	<MaxDrones>3</MaxDrones>
+	<SpawnGroups>
+		<Group>(VSHA)RT3021A01</Group>
+	</SpawnGroups>
+</Antenna>
+
+<Antenna>
+	<Id>
+		<TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+		<SubtypeId>RCSP - Challenger_Antenna</SubtypeId>
+	</Id>
+	<Name>RCSP - Challenger</Name>
+	<SpawnDistance>8000</SpawnDistance>
+	<SpawnTimeMs>30000</SpawnTimeMs>
+	<FirstSpawnTimeMs>60000</FirstSpawnTimeMs>
+	<MaxDrones>2</MaxDrones>
+	<SpawnGroups>
+		<Group>(MOSF)RCSPValkyrieMk-V</Group>
+	</SpawnGroups>
+</Antenna>
+
+</PirateAntennas>
+</Definitions>

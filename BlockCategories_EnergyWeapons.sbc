@@ -1,0 +1,130 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CategoryClasses>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <Name>LargeBlocks</Name>
+      <ItemIds>
+        <string>InteriorTurret/LargeBlockSmallBlasterTurret</string>
+		<string>InteriorTurret/LargeBlockSmallLaserTurret</string>
+		<string>Assembler/GunSmith</string>
+		<string>Assembler/ADVGunSmith</string>
+		<string>Assembler/MSTGunSmith</string>
+		<string>Assembler/LargeAssembler</string>
+		<string>Assembler/LargeAssembler2</string>
+		<string>Assembler/ADVLargeAssembler</string>
+		<string>Assembler/MSTLargeAssembler</string>
+		<string>Assembler/C5LargeAssembler</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_Production</DisplayName>
+      <Name>Production</Name>
+      <ItemIds>
+		<string>Assembler/GunSmith</string>
+		<string>Assembler/ADVGunSmith</string>
+		<string>Assembler/MSTGunSmith</string>
+		<string>Assembler/LargeAssembler</string>
+		<string>Assembler/LargeAssembler2</string>
+		<string>Assembler/ADVLargeAssembler</string>
+		<string>Assembler/MSTLargeAssembler</string>
+		<string>Assembler/C5LargeAssembler</string>
+		<string>Assembler/Database</string>
+		<string>Assembler/SMDatabase</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_Production</DisplayName>
+      <Name>Research</Name>
+      <ItemIds>
+		<string>Assembler/Database</string>
+		<string>Assembler/SMDatabase</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_ShipWeaponsTools</DisplayName>
+      <Name>WeaponsTools</Name>
+      <ItemIds>
+        <string>InteriorTurret/CythonLargeBlockSmallPlasmaTurret</string>
+		<string>InteriorTurret/CythonLargeBlockSmallBlasterTurret</string>
+		<string>InteriorTurret/CythonLargeBlockSmallLaserTurret</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_ShipWeaponsTools</DisplayName>
+      <Name>ShipWeaponsTools</Name>
+      <SearchBlocks>false</SearchBlocks>
+      <IsShipCategory>true</IsShipCategory>
+      <IsBlockCategory>false</IsBlockCategory>
+      <IsToolCategory>true</IsToolCategory>
+      <ItemIds>
+      <string>Fixed_Blaster</string>
+	  <string>Fixed_BlasterCX3</string>
+      </ItemIds>
+	</Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_CharacterTools</DisplayName>
+      <Name>CharacterTools</Name>
+      <SearchBlocks>false</SearchBlocks>
+      <IsToolCategory>true</IsToolCategory>
+      <ItemIds>
+		<string>EmergencyBlaster</string>
+        <string>Bullpup</string>
+		<string>Bullpup_Picatinny</string>
+		<string>Bullpup_Picatinny_Laser</string>
+		<string>Bullpup_Picatinny_Grip</string>
+		<string>Bullpup_Picatinny_Grip_Laser</string>
+      </ItemIds>
+    </Category>
+	<!--TS Drives-->
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>Gravity Drive</DisplayName>
+      <Name>Gravity Drive</Name>
+      <ItemIds>
+	    <string>Thrust/GravDriveSmall</string>
+		<string>Thrust/GravDrive</string>
+		<string>Thrust/GravDriveSmallSlow</string>
+		<string>Thrust/GravDriveSlow</string>
+      </ItemIds>
+    </Category>
+	<!--Crates-->
+	<Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_ConveyorBlocks</DisplayName>
+      <Name>Conveyors</Name>
+      <ItemIds>
+	    <string>CargoContainer/ToughBox</string>
+      </ItemIds>
+    </Category>
+  </CategoryClasses>
+</Definitions>

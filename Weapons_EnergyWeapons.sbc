@@ -1,0 +1,603 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Weapons>
+  
+      <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>EmergencyBlasterGun</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="160" ShootSoundName="BlasterMG2" />
+      <!--    <MissileAmmoData RateOfFire="60" ShootSoundName="WepShipSmallMissileShot" /> -->
+      <NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+      <DeviateShotAngle>1.2</DeviateShotAngle>
+      <ReleaseTimeAfterFire>100</ReleaseTimeAfterFire>
+      <MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+      <UseDefaultMuzzleFlash>false</UseDefaultMuzzleFlash>
+      <Effects>
+        <Effect Action="Shoot" Dummy="muzzle_projectile" Particle="Muzzle_Flash" Loop="true" />
+        <Effect Action="Shoot" Dummy="Shell_Casings" Particle="Shell_Casings" />
+      </Effects>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Class1PlasmaGunCharge" />
+        <!--  <AmmoMagazine Subtype="Missile200mm" />  -->
+      </AmmoMagazines>
+	  <ReloadTime>2000</ReloadTime>
+    </Weapon>
+      <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>Bullpup_Rifle</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="60" ShootSoundName="BlasterMG2" />
+      <!--    <MissileAmmoData RateOfFire="60" ShootSoundName="WepShipSmallMissileShot" /> -->
+      <NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+      <DeviateShotAngle>0.3</DeviateShotAngle>
+      <ReleaseTimeAfterFire>100</ReleaseTimeAfterFire>
+      <MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+      <UseDefaultMuzzleFlash>false</UseDefaultMuzzleFlash>
+      <Effects>
+        <Effect Action="Shoot" Dummy="muzzle_projectile" Particle="Muzzle_Flash" Loop="true" />
+      </Effects>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Class1PlasmaGunCharge" />
+		<AmmoMagazine Subtype="Class2PlasmaGunCharge" />
+		<AmmoMagazine Subtype="Class3PlasmaGunCharge" />
+        <!--  <AmmoMagazine Subtype="Missile200mm" />  -->
+      </AmmoMagazines>
+	  <ReloadTime>2000</ReloadTime>
+    </Weapon>
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>Bullpup_Rifle_Picatinny</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="240" ShootSoundName="BlasterMG2" />
+      <!--    <MissileAmmoData RateOfFire="60" ShootSoundName="WepShipSmallMissileShot" /> -->
+      <NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+      <DeviateShotAngle>0.5</DeviateShotAngle>
+      <ReleaseTimeAfterFire>100</ReleaseTimeAfterFire>
+      <MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+      <UseDefaultMuzzleFlash>false</UseDefaultMuzzleFlash>
+      <Effects>
+        <Effect Action="Shoot" Dummy="muzzle_projectile" Particle="Muzzle_Flash" Loop="true" />
+      </Effects>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Class1PlasmaGunCharge" />
+		<AmmoMagazine Subtype="Class2PlasmaGunCharge" />
+		<AmmoMagazine Subtype="Class3PlasmaGunCharge" />
+        <!--  <AmmoMagazine Subtype="Missile200mm" />  -->
+      </AmmoMagazines>
+	  <ReloadTime>2000</ReloadTime>
+    </Weapon>
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>Bullpup_Rifle_Picatinny_Laser</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="240" ShootSoundName="BlasterMG2" />
+      <!--    <MissileAmmoData RateOfFire="60" ShootSoundName="WepShipSmallMissileShot" /> -->
+      <NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+      <DeviateShotAngle>0.25</DeviateShotAngle>
+      <ReleaseTimeAfterFire>100</ReleaseTimeAfterFire>
+      <MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+      <UseDefaultMuzzleFlash>false</UseDefaultMuzzleFlash>
+      <Effects>
+        <Effect Action="Shoot" Dummy="muzzle_projectile" Particle="Muzzle_Flash" Loop="true" />
+      </Effects>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Class1PlasmaGunCharge" />
+		<AmmoMagazine Subtype="Class2PlasmaGunCharge" />
+		<AmmoMagazine Subtype="Class3PlasmaGunCharge" />
+        <!--  <AmmoMagazine Subtype="Missile200mm" />  -->
+      </AmmoMagazines>
+	  <ReloadTime>2000</ReloadTime>
+    </Weapon>
+	
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>Bullpup_Rifle_Picatinny_Grip</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="240" ShootSoundName="BlasterMG2" />
+      <!--    <MissileAmmoData RateOfFire="60" ShootSoundName="WepShipSmallMissileShot" /> -->
+      <NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+      <DeviateShotAngle>0.25</DeviateShotAngle>
+      <ReleaseTimeAfterFire>100</ReleaseTimeAfterFire>
+      <MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+      <UseDefaultMuzzleFlash>false</UseDefaultMuzzleFlash>
+      <Effects>
+        <Effect Action="Shoot" Dummy="muzzle_projectile" Particle="Muzzle_Flash" Loop="true" />
+      </Effects>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Class1PlasmaGunCharge" />
+		<AmmoMagazine Subtype="Class2PlasmaGunCharge" />
+		<AmmoMagazine Subtype="Class3PlasmaGunCharge" />
+        <!--  <AmmoMagazine Subtype="Missile200mm" />  -->
+      </AmmoMagazines>
+	  <ReloadTime>2000</ReloadTime>
+    </Weapon>
+	
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>Bullpup_Rifle_Picatinny_Grip_Laser</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="240" ShootSoundName="BlasterMG2" />
+      <!--    <MissileAmmoData RateOfFire="60" ShootSoundName="WepShipSmallMissileShot" /> -->
+      <NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+      <DeviateShotAngle>0.15</DeviateShotAngle>
+      <ReleaseTimeAfterFire>100</ReleaseTimeAfterFire>
+      <MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+      <UseDefaultMuzzleFlash>false</UseDefaultMuzzleFlash>
+      <Effects>
+        <Effect Action="Shoot" Dummy="muzzle_projectile" Particle="Muzzle_Flash" Loop="true" />
+      </Effects>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Class1PlasmaGunCharge" />
+		<AmmoMagazine Subtype="Class2PlasmaGunCharge" />
+		<AmmoMagazine Subtype="Class3PlasmaGunCharge" />
+        <!--  <AmmoMagazine Subtype="Missile200mm" />  -->
+      </AmmoMagazines>
+	  <ReloadTime>2000</ReloadTime>
+    </Weapon>
+
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>LargeShipSmallPlasmaTurret</SubtypeId>
+      </Id>
+      <MissileAmmoData RateOfFire="12" ShootSoundName="SmallPlasmaTurretFire" />
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+	  <DeviateShotAngle>0.3</DeviateShotAngle>
+      <ReleaseTimeAfterFire>0.5</ReleaseTimeAfterFire>
+      <MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Class3PlasmaPulseCharge" />
+      </AmmoMagazines>
+    </Weapon>
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>WPN_CX3PlasmaCannon</SubtypeId>
+      </Id>
+      <MissileAmmoData RateOfFire="6" ShootSoundName="PlasmaCannon" />
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+	  <DeviateShotAngle>0.5</DeviateShotAngle>
+      <ReleaseTimeAfterFire>0.5</ReleaseTimeAfterFire>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Class3PlasmaPulseCharge" />
+      </AmmoMagazines>
+    </Weapon>
+	<Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>LargeShipSmallLaserTurret</SubtypeId>
+      </Id>
+	  <ProjectileAmmoData RateOfFire="3600" ShootSoundName="SmallLaserTurretFire" />
+      <ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Class1LaserBeamCharge" />
+      </AmmoMagazines>
+    </Weapon>
+	<Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>LargeShipSmallLaserTurretC2</SubtypeId>
+      </Id>
+	  <ProjectileAmmoData RateOfFire="3600" ShootSoundName="SmallLaserTurretFire" />
+      <ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Class2LaserBeamCharge" />
+      </AmmoMagazines>
+    </Weapon>
+	<Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>SmallShipSmallLaserTurretC1</SubtypeId>
+      </Id>
+	  <ProjectileAmmoData RateOfFire="3600" ShootSoundName="SmallLaserTurretFire" />
+      <ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Class1SMLaserBeamCharge" />
+      </AmmoMagazines>
+    </Weapon>
+	<Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>SmallShipSmallLaserTurret</SubtypeId>
+      </Id>
+	  <ProjectileAmmoData RateOfFire="3600" ShootSoundName="SmallLaserTurretFire" />
+      <ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Class2SMLaserBeamCharge" />
+      </AmmoMagazines>
+    </Weapon>
+	<Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>SmallShipSmallLaserTurretC3</SubtypeId>
+      </Id>
+	  <ProjectileAmmoData RateOfFire="3600" ShootSoundName="SmallLaserTurretFire" />
+      <ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Class3SMLaserBeamCharge" />
+      </AmmoMagazines>
+    </Weapon>
+ 	<Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>SmallShipSmallBlasterTurretC1</SubtypeId>
+      </Id>
+	  <ProjectileAmmoData RateOfFire="500" ShootSoundName="BlasterMG" />
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+	  <DeviateShotAngle>3.0</DeviateShotAngle>
+      <ReleaseTimeAfterFire>3000</ReleaseTimeAfterFire>
+	  <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Class1PlasmaGunCharge" />
+      </AmmoMagazines>
+	  <ReloadTime>6000</ReloadTime>
+    </Weapon>
+ 	<Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>SmallShipSmallBlasterTurret</SubtypeId>
+      </Id>
+	  <ProjectileAmmoData RateOfFire="500" ShootSoundName="BlasterMG" />
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+	  <DeviateShotAngle>3.0</DeviateShotAngle>
+      <ReleaseTimeAfterFire>3000</ReleaseTimeAfterFire>
+	  <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Class2PlasmaGunCharge" />
+      </AmmoMagazines>
+	  <ReloadTime>6000</ReloadTime>
+    </Weapon>
+ 	<Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>SmallShipSmallBlasterTurretC3</SubtypeId>
+      </Id>
+	  <ProjectileAmmoData RateOfFire="500" ShootSoundName="BlasterMG" />
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+	  <DeviateShotAngle>3.0</DeviateShotAngle>
+      <ReleaseTimeAfterFire>3000</ReleaseTimeAfterFire>
+	  <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Class3PlasmaGunCharge" />
+      </AmmoMagazines>
+	  <ReloadTime>6000</ReloadTime>
+    </Weapon>
+ 	<Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>LargeShipSmallBlasterTurret</SubtypeId>
+      </Id>
+	  <ProjectileAmmoData RateOfFire="500" ShootSoundName="BlasterMG" />
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+	  <DeviateShotAngle>3.0</DeviateShotAngle>
+      <ReleaseTimeAfterFire>3000</ReleaseTimeAfterFire>
+	  <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+		<AmmoMagazine Subtype="Class1MGPlasmaGunCharge" />
+      </AmmoMagazines>
+	  <ReloadTime>6000</ReloadTime>
+    </Weapon>
+ 	<Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>LargeShipSmallBlasterTurretC2</SubtypeId>
+      </Id>
+	  <ProjectileAmmoData RateOfFire="500" ShootSoundName="BlasterMG" />
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+	  <DeviateShotAngle>3.0</DeviateShotAngle>
+      <ReleaseTimeAfterFire>3000</ReleaseTimeAfterFire>
+	  <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+		<AmmoMagazine Subtype="Class2MGPlasmaGunCharge" />
+      </AmmoMagazines>
+	  <ReloadTime>6000</ReloadTime>
+    </Weapon>
+ 	<Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>LargeShipSmallBlasterTurretC3</SubtypeId>
+      </Id>
+	  <ProjectileAmmoData RateOfFire="500" ShootSoundName="BlasterMG" />
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+	  <DeviateShotAngle>3.0</DeviateShotAngle>
+      <ReleaseTimeAfterFire>3000</ReleaseTimeAfterFire>
+	  <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+		<AmmoMagazine Subtype="Class3MGPlasmaGunCharge" />
+      </AmmoMagazines>
+	  <ReloadTime>6000</ReloadTime>
+    </Weapon>
+ 	<Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>WPN_CX3LG_SM_Blaster</SubtypeId>
+      </Id>
+	  <ProjectileAmmoData RateOfFire="500" ShootSoundName="BlasterMG" />
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+	  <DeviateShotAngle>3.0</DeviateShotAngle>
+      <ReleaseTimeAfterFire>3000</ReleaseTimeAfterFire>
+	  <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+		<AmmoMagazine Subtype="Class3MGPlasmaGunCharge" />
+      </AmmoMagazines>
+	  <ReloadTime>6000</ReloadTime>
+    </Weapon>
+	<Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>FixedBlasterW</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="800" ShootSoundName="BlasterMG" ShotsInBurst="7" />
+      <ReleaseTimeAfterFire>3000</ReleaseTimeAfterFire>
+	  <DeviateShotAngle>1.0</DeviateShotAngle>
+      <MuzzleFlashLifeSpan>-1</MuzzleFlashLifeSpan>
+      <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <SecondarySoundName />
+      <AmmoMagazines>
+		<AmmoMagazine Subtype="Class1MGPlasmaGunCharge" />
+      </AmmoMagazines>
+      <ReloadTime>4000</ReloadTime>
+    </Weapon>
+	<Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>FixedBlasterCX3W</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="800" ShootSoundName="BlasterMG" ShotsInBurst="7" />
+      <ReleaseTimeAfterFire>3000</ReleaseTimeAfterFire>
+	  <DeviateShotAngle>1.0</DeviateShotAngle>
+      <MuzzleFlashLifeSpan>-1</MuzzleFlashLifeSpan>
+      <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <SecondarySoundName />
+      <AmmoMagazines>
+		<AmmoMagazine Subtype="Class3MGPlasmaGunCharge" />
+      </AmmoMagazines>
+      <ReloadTime>4000</ReloadTime>
+    </Weapon>
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>CX3LanceW</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="3600" ShootSoundName="SmallLaserTurretFire" ShotsInBurst="0" />
+      <ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+	    <DeviateShotAngle>0</DeviateShotAngle>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <SecondarySoundName>WepShipGatlingRotation</SecondarySoundName>
+      <AmmoMagazines>
+		<AmmoMagazine Subtype="CX3LanceMag" />
+      </AmmoMagazines>
+      <ReloadTime>4000</ReloadTime>
+    </Weapon>
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>CX3LanceW_SM</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="3600" ShootSoundName="SmallLaserTurretFire" ShotsInBurst="0" />
+      <ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+	    <DeviateShotAngle>0</DeviateShotAngle>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <SecondarySoundName>WepShipGatlingRotation</SecondarySoundName>
+      <AmmoMagazines>
+		<AmmoMagazine Subtype="CX3LanceMag" />
+      </AmmoMagazines>
+      <ReloadTime>4000</ReloadTime>
+    </Weapon>
+
+	
+	<!--Vanilla Rifles-->
+	
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>AutomaticRifleGun</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="200" ShootSoundName="WepPlayRifleShot" />
+      <!--    <MissileAmmoData RateOfFire="60" ShootSoundName="WepShipSmallMissileShot" /> -->
+      <NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+      <DeviateShotAngle>3</DeviateShotAngle>
+      <ReleaseTimeAfterFire>100</ReleaseTimeAfterFire>
+      <MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+      <UseDefaultMuzzleFlash>false</UseDefaultMuzzleFlash>
+      <Effects>
+        <Effect Action="Shoot" Dummy="muzzle_projectile" Particle="Muzzle_Flash" Loop="true" />
+        <Effect Action="Shoot" Dummy="Shell_Casings" Particle="Shell_Casings" />
+      </Effects>
+      <AmmoMagazines>
+		<AmmoMagazine Subtype="NATO_5p56x45mm" />
+      <!--  <AmmoMagazine Subtype="Missile200mm" />  -->
+      </AmmoMagazines>
+    </Weapon>
+
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>PreciseAutomaticRifleGun</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="200" ShootSoundName="WepPlayRifleShot" />
+      <!--    <MissileAmmoData RateOfFire="60" ShootSoundName="WepShipSmallMissileShot" /> -->
+      <NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+      <DeviateShotAngle>1</DeviateShotAngle>
+      <ReleaseTimeAfterFire>100</ReleaseTimeAfterFire>
+      <MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+      <UseDefaultMuzzleFlash>false</UseDefaultMuzzleFlash>
+      <Effects>
+        <Effect Action="Shoot" Dummy="muzzle_projectile" Particle="Muzzle_Flash" Loop="true" />
+        <Effect Action="Shoot" Dummy="Shell_Casings" Particle="Shell_Casings" />
+      </Effects>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="NATO_5p56x45mm" />
+        <!--  <AmmoMagazine Subtype="Missile200mm" />  -->
+      </AmmoMagazines>
+    </Weapon>
+
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>RapidFireAutomaticRifleGun</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="500" ShootSoundName="WepPlayRifleShot" />
+      <!--    <MissileAmmoData RateOfFire="60" ShootSoundName="WepShipSmallMissileShot" /> -->
+      <NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+      <DeviateShotAngle>5</DeviateShotAngle>
+      <ReleaseTimeAfterFire>100</ReleaseTimeAfterFire>
+      <MuzzleFlashLifeSpan>10</MuzzleFlashLifeSpan>
+      <UseDefaultMuzzleFlash>false</UseDefaultMuzzleFlash>
+      <Effects>
+        <Effect Action="Shoot" Dummy="muzzle_projectile" Particle="Muzzle_Flash" Loop="true" />
+        <Effect Action="Shoot" Dummy="Shell_Casings" Particle="Shell_Casings" />
+      </Effects>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="NATO_5p56x45mm" />
+        <!--  <AmmoMagazine Subtype="Missile200mm" />  -->
+      </AmmoMagazines>
+    </Weapon>
+
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>UltimateAutomaticRifleGun</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="500" ShootSoundName="WepPlayRifleShot" />
+      <!--    <MissileAmmoData RateOfFire="60" ShootSoundName="WepShipSmallMissileShot" /> -->
+      <NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+      <DeviateShotAngle>2</DeviateShotAngle>
+      <ReleaseTimeAfterFire>100</ReleaseTimeAfterFire>
+      <MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+      <UseDefaultMuzzleFlash>false</UseDefaultMuzzleFlash>
+      <Effects>
+        <Effect Action="Shoot" Dummy="muzzle_projectile" Particle="Muzzle_Flash" Loop="true" />
+        <Effect Action="Shoot" Dummy="Shell_Casings" Particle="Shell_Casings" />
+      </Effects>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="NATO_5p56x45mm" />
+        <!--  <AmmoMagazine Subtype="Missile200mm" />  -->
+      </AmmoMagazines>
+    </Weapon>
+	
+	<!--End Vanilla Rifles-->
+	
+	<!--Vanilla Turrets-->
+	
+	<Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>LargeGatlingTurret</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="600" ShootSoundName="WepGatlingTurretShot" ShotsInBurst="180" />
+      <ReleaseTimeAfterFire>3000</ReleaseTimeAfterFire>
+      <DeviateShotAngle>2.0</DeviateShotAngle>
+      <MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="NATO_25x184mm" />
+      </AmmoMagazines>
+      <ReloadTime>60000</ReloadTime>
+    </Weapon>
+
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>SmallGatlingTurret</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="300" ShootSoundName="WepGatlingTurretShot" ShotsInBurst="180" />
+      <ReleaseTimeAfterFire>3000</ReleaseTimeAfterFire>
+      <DeviateShotAngle>2.0</DeviateShotAngle>
+      <MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="NATO_25x184mm" />
+      </AmmoMagazines>
+      <ReloadTime>3000</ReloadTime>
+    </Weapon>
+    
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>LargeInteriorTurret</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="600" ShootSoundName="WepTurretInteriorFire" />
+      <DeviateShotAngle>1.2</DeviateShotAngle>
+      <MuzzleFlashLifeSpan>30</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="NATO_5p56x45mm" />
+      </AmmoMagazines>
+    </Weapon>
+	
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>LargeMissileTurret</SubtypeId>
+      </Id>
+      <MissileAmmoData RateOfFire="90" ShootSoundName="WepTurretMissileShot" ShotsInBurst="6" />
+      <DeviateShotAngle>0.5</DeviateShotAngle>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Missile200mm" />
+      </AmmoMagazines>
+      <ReloadTime>4000</ReloadTime>
+    </Weapon>
+    
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>SmallMissileTurret</SubtypeId>
+      </Id>
+      <MissileAmmoData RateOfFire="90" ShootSoundName="WepTurretMissileShot" ShotsInBurst="2" />
+      <DeviateShotAngle>0.5</DeviateShotAngle>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Missile200mm" />
+      </AmmoMagazines>
+	  <ReloadTime>60000</ReloadTime>
+    </Weapon>
+	
+	<!--End Vanilla Turrets-->
+	
+<!--God Gun-->
+	<Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>LargeShipSmallLaserTurretC3</SubtypeId>
+      </Id>
+	  <ProjectileAmmoData RateOfFire="3600" ShootSoundName="SmallLaserTurretFire" />
+      <ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+		<AmmoMagazine Subtype="Class3LaserBeamCharge" />
+      </AmmoMagazines>
+    </Weapon>
+	<Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>WPN_CX3LG_SM_Laser</SubtypeId>
+      </Id>
+	  <ProjectileAmmoData RateOfFire="3600" ShootSoundName="SmallLaserTurretFire" />
+      <ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+		<AmmoMagazine Subtype="Class3LaserBeamCharge" />
+      </AmmoMagazines>
+    </Weapon>
+	
+  </Weapons>
+</Definitions>

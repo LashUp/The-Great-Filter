@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>HydroCarbon</SubtypeId>
+      </Id>
+
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>HydroCarbonOre</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>false</CanBeHarvested>
+      <IsRare>true</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>0.4</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+	  
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.498</SpecularShininess>
+
+      <ColorMetalXZnY>Textures\Voxels\HydroCarbon_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\HydroCarbon_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\HydroCarbon_add.dds</ExtXZnY>
+            
+    </VoxelMaterial>
+  </VoxelMaterials>
+</Definitions>

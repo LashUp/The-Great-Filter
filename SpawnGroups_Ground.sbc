@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<SpawnGroups>
+
+<!--=========== SMALL STATIONS ==============-->
+
+<SpawnGroup>
+	<Id>
+		<TypeId>SpawnGroupDefinition</TypeId>
+		<SubtypeId>(Inst-1)IMDCWasp</SubtypeId>
+	</Id>
+	<Icon>Textures\GUI\Icons\Fake.dds</Icon>
+	<Frequency>1.0</Frequency>
+	<IsPirate>true</IsPirate>
+	<Prefabs>
+		<Prefab SubtypeId="IMDCWasp">
+			<Position>
+				<X>0.0</X>
+				<Y>0.0</Y>
+				<Z>0.0</Z>
+			</Position>
+			<BeaconText>IMDC Wasp Interceptor (Wrecked)</BeaconText>
+			<Speed>0.0</Speed>
+		</Prefab>
+	</Prefabs>
+</SpawnGroup>
+
+<SpawnGroup>
+	<Id>
+		<TypeId>SpawnGroupDefinition</TypeId>
+		<SubtypeId>(Inst-2)RTXRELAY(VSHA)</SubtypeId>
+	</Id>
+	<Icon>Textures\GUI\Icons\Fake.dds</Icon>
+	<Frequency>2.0</Frequency>
+	<IsPirate>true</IsPirate>
+	<Prefabs>
+		<Prefab SubtypeId="RTXRELAY">
+			<Position>
+				<X>0.0</X>
+				<Y>-3.0</Y>
+				<Z>0.0</Z>
+			</Position>
+			<BeaconText>RTXRELAY</BeaconText>
+			<Speed>0.0</Speed>
+		</Prefab>
+	</Prefabs>
+</SpawnGroup>
+
+<SpawnGroup>
+	<Id>
+		<TypeId>SpawnGroupDefinition</TypeId>
+		<SubtypeId>(Inst-2)RTXP2119</SubtypeId>
+	</Id>
+	<Icon>Textures\GUI\Icons\Fake.dds</Icon>
+	<Frequency>3.0</Frequency>
+	<IsPirate>true</IsPirate>
+	<Prefabs>
+		<Prefab SubtypeId="RTXP2119">
+			<Position>
+				<X>0.0</X>
+				<Y>17.0</Y>
+				<Z>0.0</Z>
+			</Position>
+			<BeaconText>RTXP2119</BeaconText>
+			<Speed>0.0</Speed>
+		</Prefab>
+	</Prefabs>
+</SpawnGroup>
+
+<!--=========== MEDIUM STATIONS ==============-->
+
+<SpawnGroup>
+	<Id>
+		<TypeId>SpawnGroupDefinition</TypeId>
+		<SubtypeId>(Inst-2)IMDCAtlas</SubtypeId>
+	</Id>
+	<Icon>Textures\GUI\Icons\Fake.dds</Icon>
+	<Frequency>3.0</Frequency>
+	<IsPirate>true</IsPirate>
+	<Prefabs>
+		<Prefab SubtypeId="IMDCAtlas">
+			<Position>
+				<X>0.0</X>
+				<Y>17.0</Y>
+				<Z>0.0</Z>
+			</Position>
+			<BeaconText>IMDC Atlas Frigate (Wrecked)</BeaconText>
+			<Speed>0.0</Speed>
+		</Prefab>
+	</Prefabs>
+</SpawnGroup>
+
+<SpawnGroup>
+	<Id>
+		<TypeId>SpawnGroupDefinition</TypeId>
+		<SubtypeId>(Inst-2)IMDCCondor</SubtypeId>
+	</Id>
+	<Icon>Textures\GUI\Icons\Fake.dds</Icon>
+	<Frequency>4.0</Frequency>
+	<IsPirate>true</IsPirate>
+	<Prefabs>
+		<Prefab SubtypeId="IMDCCondor">
+			<Position>
+				<X>0.0</X>
+				<Y>3.0</Y>
+				<Z>0.0</Z>
+			</Position>
+			<BeaconText>IMDC V-55a Condor (Wrecked)</BeaconText>
+			<Speed>0.0</Speed>
+		</Prefab>
+	</Prefabs>
+</SpawnGroup>
+
+<SpawnGroup>
+	<Id>
+		<TypeId>SpawnGroupDefinition</TypeId>
+		<SubtypeId>(Inst-3)IMDCCerberus</SubtypeId>
+	</Id>
+	<Icon>Textures\GUI\Icons\Fake.dds</Icon>
+	<Frequency>5.0</Frequency>
+	<IsPirate>true</IsPirate>
+	<Prefabs>
+		<Prefab SubtypeId="IMDCCerberus">
+			<Position>
+				<X>0.0</X>
+				<Y>29.0</Y>
+				<Z>0.0</Z>
+			</Position>
+			<BeaconText>IMDC Cerberus Destroyer Mk. III [updated] (Wrecked)</BeaconText>
+			<Speed>0.0</Speed>
+		</Prefab>
+	</Prefabs>
+</SpawnGroup>
+
+<SpawnGroup>
+	<Id>
+		<TypeId>SpawnGroupDefinition</TypeId>
+		<SubtypeId>(Inst-3)(Unique) RTXCP1339(VSHA)</SubtypeId>
+	</Id>
+	<Icon>Textures\GUI\Icons\Fake.dds</Icon>
+	<Frequency>5.0</Frequency>
+	<IsPirate>true</IsPirate>
+	<Prefabs>
+		<Prefab SubtypeId="RTXCP1339">
+			<Position>
+				<X>0.0</X>
+				<Y>20.0</Y>
+				<Z>0.0</Z>
+			</Position>
+			<BeaconText>RTXCP1339</BeaconText>
+			<Speed>0.0</Speed>
+		</Prefab>
+	</Prefabs>
+</SpawnGroup>
+
+<!--=========== LARGE STATIONS ==============-->
+
+
+
+<!--=========== DRONES ==============-->
+
+</SpawnGroups>
+</Definitions>
+
