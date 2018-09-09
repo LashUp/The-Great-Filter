@@ -1,0 +1,100 @@
+List<IMyTerminalBlock> list = new List<IMyTerminalBlock>();
+    
+public bool GetEnemies(out List<MyDetectedEntityInfo> enemyList)
+{
+	enemyList = Me.GetValue<Func<double,List<MyDetectedEntityInfo>>>("GetEnemies")(5000);
+	return enemyList.Count != 0 || enemyList != null;
+}
+public Vector3D TrackEntityById(long entityId)
+{
+	return Me.GetValue<Func<long,Vector3D>>("TrackEntityById")(entityId);
+}
+public bool receivedBroadcast = false; 
+float tango = 0;
+public float signalTimer = 0;
+MyDetectedEntityInfo EnemyS;
+List<MyDetectedEntityInfo> targets;
+readonly Random rnd = new Random();
+readonly Random rndDistance = new Random();
+Vector3D TargetV3D = new Vector3D(0, 0, 0); 
+		
+void Main(string argument) 
+	{ 
+                if (argument.Contains("BRDCST") == true) 
+                {
+				receivedBroadcast = true;
+				signalTimer = (signalTimer + 10);
+				} 
+	}
+		
+		
+public void Main()
+	{
+	if (signalTimer <= 0)
+		{
+		receivedBroadcast = false;
+		signalTimer = 0;
+		}
+	if (receivedBroadcast)
+		{
+		if (signalTimer >= 10)
+			{
+			GridTerminalSystem.GetBlocksOfType<IMyRemoteControl>(list);
+			if (list.Count > 0)
+				{
+				var remote = list[0] as IMyRemoteControl;
+				remote.ClearWaypoints();
+				int distanceModifier = rndDistance.Next(120, 400);
+				signalTimer = (signalTimer + 1);
+				remote.AddWaypoint(TargetV3D + distanceModifier + remote.GetTotalGravity() * -10f, "TargetV3D");
+				remote.SetAutoPilotEnabled(true);
+				remote.ApplyAction("CollisionAvoidance_On");
+				}
+			}
+		else
+			{
+						signalTimer--;
+			}
+		}
+//----------------//
+	if (!receivedBroadcast)
+		{
+		if (tango <= 1)
+			{
+			if(GetEnemies(out targets))
+				{
+				GridTerminalSystem.GetBlocksOfType<IMyRemoteControl>(list);
+				if (list.Count > 0)
+					{
+					var remote = list[0] as IMyRemoteControl;
+					remote.ClearWaypoints();
+					if(targets.Count > 0)
+						{
+						int selection = rnd.Next(targets.Count);
+						EnemyS = targets[selection];
+						tango = (tango + 10);
+						var entityId = EnemyS.EntityId;
+						var targetVector = TrackEntityById(entityId);
+						GridTerminalSystem.GetBlocksOfType<IMyUserControllableGun>(list);     
+						if (list.Count > 0)     
+							{      
+							remote.AddWaypoint(targetVector + remote.GetTotalGravity() * -10f, "targetVector");
+							remote.SetAutoPilotEnabled(true);
+							remote.ApplyAction("CollisionAvoidance_On");
+							}
+					else
+						{
+						remote.AddWaypoint(targetVector - 1, "targetVector");
+						remote.ApplyAction("CollisionAvoidance_Off");
+						remote.SetAutoPilotEnabled(true);
+						}
+						}
+					}
+				}
+			}
+		else
+			{
+			tango--;
+			}
+			}
+	}

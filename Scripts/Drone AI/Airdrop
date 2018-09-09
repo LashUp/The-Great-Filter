@@ -1,0 +1,97 @@
+List<IMyTerminalBlock> list = new List<IMyTerminalBlock>();
+string mergeConnectorOrRotorName = "ADVROT";
+
+double altitude = 0;
+List<IMyShipMergeBlock> merges = new List<IMyShipMergeBlock>();
+
+bool drop = false;
+
+T GetClosestBlockOfType<T>(string name = "", string ignoreName = "") where T : class, IMyTerminalBlock 
+{ 
+    var allBlocks = new List<T>(); 
+ 
+    if (name == "") 
+    { 
+        if (ignoreName == "") 
+            GridTerminalSystem.GetBlocksOfType(allBlocks); 
+        else 
+            GridTerminalSystem.GetBlocksOfType(allBlocks, block => !block.CustomName.ToLower().Contains(ignoreName.ToLower())); 
+    } 
+    else 
+    { 
+        if (ignoreName == "") 
+            GridTerminalSystem.GetBlocksOfType(allBlocks, block => block.CustomName.ToLower().Contains(name.ToLower())); 
+        else 
+            GridTerminalSystem.GetBlocksOfType(allBlocks, block => block.CustomName.ToLower().Contains(name.ToLower()) && !block.CustomName.ToLower().Contains(ignoreName.ToLower())); 
+    } 
+ 
+    if (allBlocks.Count == 0) 
+    { 
+        return null; 
+    } 
+ 
+    var closestBlock = allBlocks[0]; 
+    var shortestDistance = Vector3D.DistanceSquared(Me.GetPosition(), closestBlock.GetPosition()); 
+    allBlocks.Remove(closestBlock); //remove this block from the list 
+ 
+    foreach (T thisBlock in allBlocks) 
+    { 
+        var thisDistance = Vector3D.DistanceSquared(Me.GetPosition(), thisBlock.GetPosition()); 
+ 
+        if (thisDistance < shortestDistance) 
+        { 
+            closestBlock = thisBlock; 
+            shortestDistance = thisDistance; 
+        } 
+        //otherwise move to next one 
+    } 
+ 
+    return closestBlock; 
+} 
+  
+void Main(string argument) 
+{ 
+    Vector3D origin = new Vector3D(0, 0, 0); 
+    if (this.Storage == null || this.Storage == "") 
+    { 
+        origin = Me.GetPosition(); 
+        this.Storage = origin.ToString(); 
+    } 
+    else 
+    { 
+        Vector3D.TryParse(this.Storage, out origin); 
+    } 
+ 
+    GridTerminalSystem.GetBlocksOfType<IMyRemoteControl>(list); 
+    if (list.Count > 0) 
+    { 
+        var remote = list[0] as IMyRemoteControl; 
+        Vector3D player = new Vector3D(0, 0, 0); 
+		altitude = 0; 
+		remote.TryGetPlanetElevation(MyPlanetElevation.Surface, out altitude); 
+		var thisMerge = GetClosestBlockOfType<IMyShipMergeBlock>(mergeConnectorOrRotorName);
+		var thisRotor = GetClosestBlockOfType<IMyMotorStator>(mergeConnectorOrRotorName); 
+        bool success = remote.GetNearestPlayer(out player); 
+        if (success) 
+        { 	
+                if (Vector3D.DistanceSquared(player, origin) < 5000 * 5000) 
+					{
+    if (!drop)
+{
+				remote.ClearWaypoints(); 
+                remote.AddWaypoint(player + remote.GetTotalGravity() * -0.01f, "Player");
+				remote.SetAutoPilotEnabled(true);
+}
+				if (altitude < 800) 
+					{ 
+						if (thisRotor != null) 
+						thisRotor.Detach();
+						remote.ClearWaypoints(); 
+						remote.AddWaypoint(player + 30000 + remote.GetTotalGravity() * 73000f, "Player");
+						remote.SetAutoPilotEnabled(true);
+drop = true;
+					}
+}
+        } 
+    } 
+}

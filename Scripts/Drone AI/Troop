@@ -1,0 +1,451 @@
+        		List<IMyTerminalBlock> list = new List<IMyTerminalBlock>();
+
+        List<long> GetAllEnemyGrids(string specificFaction = "None", double distanceToCheck = 5000)
+			{
+
+				try
+				{
+
+					Me.CustomData = specificFaction + "\n" + distanceToCheck.ToString();
+					return Me.GetValue<List<long>>("NpcExtender-GetAllEnemies");
+
+				}
+				catch (Exception exc)
+				{
+
+					Echo("NpcExtender-GetAllEnemy Hard Fail");
+					return new List<long>();
+
+				}
+
+			}
+        Vector3D GetTrackedEntityPosition(long entityId)
+			{
+
+				try
+				{
+
+					Me.CustomData = entityId.ToString();
+					return Me.GetValue<Vector3D>("NpcExtender-TrackEntity");
+
+				}
+				catch (Exception exc)
+				{
+
+					return new Vector3D(0, 0, 0);
+
+				}
+			}
+        MyDetectedEntityInfo GetMDEI(long entityId)
+			{
+
+				try
+				{
+
+					Me.CustomData = entityId.ToString();
+					return Me.GetValue<MyDetectedEntityInfo>("NpcExtender-GetDetectedEntityInfo");
+
+				}
+				catch (Exception exc)
+				{
+
+					Echo("Hard fail NpcExtender-GetDetectedEntityInfo");
+					return new MyDetectedEntityInfo();
+
+				}
+
+			}
+		
+		public List<Vector3D> GenerateCircularPoints(Vector3D vec, int points, double radius)
+        {
+			vecList.Clear();
+			Vector3D gravity = new Vector3D(0, 0, 0);
+			Vector3D Gravity = new Vector3D(0, 0, 0);
+            GridTerminalSystem.GetBlocksOfType<IMyRemoteControl>(list);
+            var remote = list[0] as IMyRemoteControl;
+            gravity = remote.GetNaturalGravity();
+			Gravity = Vector3D.Normalize(gravity);
+            
+			double incrementAngle = (MathHelper.TwoPi / points);
+
+            MatrixD rotationMatrix = MatrixD.CreateFromAxisAngle(Gravity, -incrementAngle);
+
+            Vector3D tangent = Vector3D.CalculatePerpendicularVector(Gravity) * radius;
+
+            for (int i = 0; i < points; i++)
+            {
+                tangent = Vector3D.TransformNormal(tangent, rotationMatrix);
+                vecList.Add(tangent + vec);
+            }
+			//vecList.RemoveRange(0, 60);
+            return vecList;
+        }
+		
+		
+		
+        bool receivedBroadcast = false;
+        bool success = false;
+        bool combatZero = false;
+        bool SAR = false;
+        float tango = 0;
+        double tangoPOS = 1;
+        float ping = 15;
+        float signalTimer = 0;
+        float FlankChance = 0;
+        List<Vector3D> vecList = new List<Vector3D>();
+        long EntityId = 0;
+        List<long> targets = new List<long>();
+        readonly Random rnd = new Random();
+        readonly Random rndDistance = new Random();
+        readonly Random diceRoll = new Random();
+        Vector3D TargetV3D = new Vector3D(0, 0, 0);
+        Vector3D targetVector = new Vector3D(0, 0, 0);
+        string OUT = "";
+        string TGT = "";
+        string KEY = "";
+        string Key = "";
+        string Protocol = "";
+        string KeyStore = "";
+
+        public void Main(string argument)
+        {
+            string Ping = ping.ToString("G");
+            ping++;
+            Echo("Last Ping " + Ping);
+            Echo("Protocol: " + Protocol);
+            if (success)
+            {
+                Echo("Signal Established");
+            }
+            if (!success && ping > 17)
+            {
+                if (Key != "")
+                {
+                    KeyStore = Key;
+                    Key = "";
+                    KEY = "";
+                    Storage = "";
+                }
+                else
+                {
+                    string[] DATA = Storage.Split('*');
+                    if (DATA.Length > 1)
+                    {
+                        Key = DATA[1];
+                        KeyStore = Key;
+                        Key = "";
+                        KEY = "";
+                        Storage = "";
+                    }
+                }
+            }
+
+            if (argument.Contains("CKR2C") == true && argument.Contains("*5503") == true)
+            {
+                string[] INFO = argument.Split('*');
+                if (INFO.Length > 1 && signalTimer <= 1)
+                {
+                    Vector3D.TryParse(INFO[0], out TargetV3D);
+                    if (KEY == "" || KEY == INFO[1] || KeyStore == INFO[1])
+                    {
+                        Key = INFO[1];
+                        KEY = Key;
+                        TGT = TargetV3D.ToString();
+                        OUT = string.Join("*", TGT ?? "", KEY, KeyStore);
+                        Storage = OUT;
+                        receivedBroadcast = true;
+                        ping = 0;
+                        Protocol = "5503";
+                    }
+                }
+            }
+
+            if (argument.Contains("CKR2C") == true && argument.Contains("*5521") == true)
+            {
+                string[] INFO = argument.Split('*');
+                if (INFO.Length > 1 && signalTimer <= 1)
+                {
+                    Vector3D.TryParse(INFO[0], out TargetV3D);
+                    if (KEY == "" || KEY == INFO[1] || KeyStore == INFO[1])
+                    {
+                        Key = INFO[1];
+                        KEY = Key;
+                        TGT = TargetV3D.ToString();
+                        OUT = string.Join("*", TGT ?? "", KEY, KeyStore);
+                        Storage = OUT;
+                        receivedBroadcast = true;
+                        ping = 0;
+                        Protocol = "5521";
+                    }
+                }
+            }
+
+            if (argument.Contains("CKR2C") == true && argument.Contains("*2196") == true)
+            {
+                string[] INFO = argument.Split('*');
+                if (INFO.Length > 1)
+                {
+                    if (KEY == INFO[1] || KeyStore == INFO[1])
+                    {
+                        OUT = string.Join("*", TGT ?? "", KEY, KeyStore);
+                        receivedBroadcast = true;
+                        ping = 0;
+                        Protocol = "ERROR";
+                        List<IMyBatteryBlock> Batteries = new List<IMyBatteryBlock>();
+                        List<IMyReactor> Reactors = new List<IMyReactor>();
+                        GridTerminalSystem.GetBlocksOfType<IMyBatteryBlock>(Batteries);
+                        GridTerminalSystem.GetBlocksOfType<IMyReactor>(Reactors);
+                        foreach (var item in Batteries)
+                        {
+                            int disableChance = diceRoll.Next(0, 6);
+                            if (disableChance > 5)
+                            {
+                                IMyBatteryBlock Battery = (item as IMyBatteryBlock);
+                                Battery.ApplyAction("OnOff_Off");
+                            }
+                        }
+                        foreach (var item in Reactors)
+                        {
+                            int disableChance = diceRoll.Next(0, 6);
+                            if (disableChance > 3)
+                            {
+                                IMyReactor Reactor = (item as IMyReactor);
+                                Reactor.ApplyAction("OnOff_Off");
+                            }
+                        }
+                    }
+                }
+            }
+
+            if (argument.Contains("CKR2C") == true && argument.Contains("*2197") == true)
+            {
+                combatZero = true;
+                receivedBroadcast = true;
+                ping = 0;
+                Protocol = "2197";
+                List<IMyBatteryBlock> Batteries = new List<IMyBatteryBlock>();
+                List<IMyReactor> Reactors = new List<IMyReactor>();
+                GridTerminalSystem.GetBlocksOfType<IMyBatteryBlock>(Batteries);
+                GridTerminalSystem.GetBlocksOfType<IMyReactor>(Reactors);
+                foreach (var item in Batteries)
+                {
+                    IMyBatteryBlock Battery = (item as IMyBatteryBlock);
+                    Battery.ApplyAction("OnOff_On");
+                }
+                foreach (var item in Reactors)
+                {
+                    IMyReactor Reactor = (item as IMyReactor);
+                    Reactor.ApplyAction("OnOff_On");
+                }
+            }
+
+            if (combatZero)
+            {
+                KEY = "";
+                Key = "";
+                KeyStore = "";
+            }
+
+            if (receivedBroadcast && signalTimer <= 0)
+            {
+                if (TGT != "")
+                {
+                    GridTerminalSystem.GetBlocksOfType<IMyRemoteControl>(list);
+                    var remote = list[0] as IMyRemoteControl;
+                    GridTerminalSystem.GetBlocksOfType<IMyUserControllableGun>(list);
+                    if (list.Count > 0 && tangoPOS <= 0)
+                        {
+                            var myPOS = Me.GetPosition();
+							tangoPOS = 0;
+							receivedBroadcast = false;
+							signalTimer = 10;
+							success = true;
+							FlankChance = diceRoll.Next(1, 6);
+                            if (Vector3D.DistanceSquared(TargetV3D, myPOS) < 1200 * 1200)
+								{
+                                    if (FlankChance >= 5)
+                                    {
+										remote.ClearWaypoints();
+                                        remote.AddWaypoint((myPOS - myPOS + TargetV3D) / 1.5, "Flank A");
+                                        remote.ApplyAction("CollisionAvoidance_On");
+                                        remote.SetAutoPilotEnabled(true);
+										tangoPOS = 3;
+                                    }
+                                    else if (FlankChance <= 2)
+                                    {
+										remote.ClearWaypoints();
+                                        remote.AddWaypoint(myPOS + myPOS - TargetV3D, "Flank B");
+                                        remote.ApplyAction("CollisionAvoidance_On");
+                                        remote.SetAutoPilotEnabled(true);
+										tangoPOS = 3;
+                                    }
+                                    else
+                                    {
+										GenerateCircularPoints(TargetV3D, 8, 600);
+										remote.ClearWaypoints();
+										foreach (var point in vecList)
+											{
+												remote.AddWaypoint(point, "Encircle");
+												tangoPOS = (tangoPOS + 5.5);
+											}
+										remote.ApplyAction("CollisionAvoidance_On");
+                                        remote.SetAutoPilotEnabled(true);
+                                    }
+									
+                                }
+                                else if (Vector3D.DistanceSquared(TargetV3D, myPOS) > 1200 * 1200)
+                                {
+									remote.ClearWaypoints();
+                                    remote.AddWaypoint(TargetV3D, "Target -- Zero Deviation");
+                                    remote.ApplyAction("CollisionAvoidance_On");
+                                    remote.SetAutoPilotEnabled(true);
+									tangoPOS = 5;
+                                }
+                        }
+						else
+						{
+							remote.ClearWaypoints();
+							remote.AddWaypoint(TargetV3D, "Ramming Speed");
+							remote.ApplyAction("CollisionAvoidance_Off");
+							remote.SetAutoPilotEnabled(true);
+						}
+                }
+            }
+            else
+            {
+                signalTimer--;
+				tangoPOS--;
+            }
+
+            //-------AUTONOMOUS LOGIC FOLLOWS--------//
+
+            if (!receivedBroadcast && ping >= 15)
+            {
+                success = false;
+                Protocol = "2198";
+                if (SAR)
+                {
+                    GridTerminalSystem.GetBlocksOfType<IMyRemoteControl>(list);
+                    if (list.Count > 0)
+                    {
+                        var remote = list[0] as IMyRemoteControl;
+                        string[] INFO = Storage.Split('*');
+                        if (INFO.Length > 1)
+                        {
+                            Vector3D.TryParse(INFO[4], out TargetV3D);
+                            remote.ClearWaypoints();
+                            remote.AddWaypoint(TargetV3D, "Target");
+                            remote.ApplyAction("CollisionAvoidance_On");
+                            remote.SetAutoPilotEnabled(true);
+                        }
+                    }
+                }
+                if (tango == 0)
+                {
+                    GridTerminalSystem.GetBlocksOfType<IMyRemoteControl>(list);
+                    if (list.Count > 0)
+                    {
+                        var remote = list[0] as IMyRemoteControl;
+                        int statusCheck = diceRoll.Next(0, 6);
+                        if (statusCheck <= 4)
+                        {
+                            targets = GetAllEnemyGrids();
+                            if (targets.Count > 0)
+                            {
+                                EntityId = targets[rnd.Next(0, targets.Count)];
+                                tango = (tango + 120);
+                            }
+                            else if (targets.Count == 0)
+                            {
+                                tango = (tango + 50);
+                                targetVector = Me.GetPosition();
+                                TGT = targetVector.ToString();
+                                OUT = string.Join("*", TGT ?? "", KEY, KeyStore);
+                                Storage = OUT;
+                                remote.ClearWaypoints();
+                                int distanceModifier = rndDistance.Next(-120, 120);
+                                remote.AddWaypoint(targetVector + distanceModifier, "Patrol");
+                                remote.ApplyAction("CollisionAvoidance_On");
+                                remote.SetAutoPilotEnabled(true);
+                            }
+                        }
+                        else if (statusCheck >= 5)
+                        {
+                            SAR = true;
+                            tango = (tango + 300);
+                        }
+                    }
+                }
+                else
+                {
+                    tango--;
+                    tangoPOS--;
+                    if (tangoPOS <= 0)
+                    {
+                        GridTerminalSystem.GetBlocksOfType<IMyRemoteControl>(list);
+                        targetVector = GetTrackedEntityPosition(EntityId);
+                        TGT = targetVector.ToString();
+                        OUT = string.Join("*", TGT ?? "", KEY, KeyStore);
+                        Storage = OUT;
+                        tangoPOS = 0;
+                        if (list.Count > 0)
+                        {
+                            var remote = list[0] as IMyRemoteControl;
+                            GridTerminalSystem.GetBlocksOfType<IMyUserControllableGun>(list);
+                            if (list.Count > 0)
+                            {
+                                var myPOS = Me.GetPosition();
+								FlankChance = diceRoll.Next(1, 6);
+                                if (Vector3D.DistanceSquared(targetVector, myPOS) < 1200 * 1200)
+                                {
+                                    if (FlankChance >= 5)
+                                    {
+										remote.ClearWaypoints();
+                                        remote.AddWaypoint((myPOS - myPOS + targetVector) / 1.5, "Flank A");
+                                        remote.ApplyAction("CollisionAvoidance_On");
+                                        remote.SetAutoPilotEnabled(true);
+										tangoPOS = 3;
+                                    }
+                                    else if (FlankChance <= 2)
+                                    {
+										remote.ClearWaypoints();
+                                        remote.AddWaypoint(myPOS + myPOS - targetVector, "Flank B");
+                                        remote.ApplyAction("CollisionAvoidance_On");
+                                        remote.SetAutoPilotEnabled(true);
+										tangoPOS = 3;
+                                    }
+                                    else
+                                    {
+										GenerateCircularPoints(targetVector, 8, 600);
+										remote.ClearWaypoints();
+										foreach (var point in vecList)
+											{
+												remote.AddWaypoint(point, "Encircle");
+												tangoPOS = (tangoPOS + 5.5);
+											}
+										remote.ApplyAction("CollisionAvoidance_On");
+                                        remote.SetAutoPilotEnabled(true);
+                                    }
+									
+                                }
+                                else if (Vector3D.DistanceSquared(targetVector, myPOS) > 1200 * 1200)
+                                {
+									remote.ClearWaypoints();
+                                    remote.AddWaypoint(targetVector, "Target -- Zero Deviation");
+                                    remote.ApplyAction("CollisionAvoidance_On");
+                                    remote.SetAutoPilotEnabled(true);
+									tangoPOS = 5;
+                                }
+                            }
+                            else
+                            {
+                                remote.ClearWaypoints();
+                                remote.AddWaypoint(targetVector, "Ramming Speed");
+                                remote.ApplyAction("CollisionAvoidance_Off");
+                                remote.SetAutoPilotEnabled(true);
+                            }
+                        }
+                    }
+                }
+            }
+        }

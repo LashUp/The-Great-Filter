@@ -1,0 +1,14 @@
+public List<Vector3D> GenerateCircularPoints(Vector3D vec, int points, double radius)
+        {
+
+            List<Vector3D> vecList = new List<Vector3D>();
+            double slice = 2 * Math.PI / points;
+            for (int i = 0; i < points; i++)
+            {
+                double angle = slice * i;
+                vec.Y = (int)(vec.Y + radius * Math.Cos(angle));
+                vec.Z = (int)(vec.Z + radius * Math.Sin(angle));
+                vecList.Add(vec);
+            }
+            return vecList;
+        }

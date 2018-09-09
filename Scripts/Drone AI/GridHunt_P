@@ -1,0 +1,58 @@
+List<IMyTerminalBlock> list = new List<IMyTerminalBlock>();  
+      
+		public bool GetEnemies(out List<MyDetectedEntityInfo> enemyList)  
+		{  
+enemyList = Me.GetValue<Func<double,List<MyDetectedEntityInfo>>>("GetEnemies")(20000);  
+			return enemyList.Count != 0 || enemyList != null;  
+		}  
+		public Vector3D TrackEntityById(long entityId)  
+		{  
+			return Me.GetValue<Func<long,Vector3D>>("TrackEntityById")(entityId);  
+		}  
+		float tango = 0;  
+		MyDetectedEntityInfo EnemyS;  
+		List<MyDetectedEntityInfo> targets;  
+		readonly Random rnd = new Random();  
+		public void Main()  
+		{  
+			if (tango < 2)  
+				{  
+					if(GetEnemies(out targets))  
+						{  
+				GridTerminalSystem.GetBlocksOfType<IMyRemoteControl>(list);  
+				if (list.Count > 0)  
+							{  
+				var remote = list[0] as IMyRemoteControl;  
+				remote.ClearWaypoints();  
+				if(targets.Count > 0)  
+												{  
+					int selection = rnd.Next(targets.Count);  
+					EnemyS = targets[selection];  
+					tango = (tango + 40);  
+					var entityId = EnemyS.EntityId;  
+					var targetVector = TrackEntityById(entityId);  
+													            GridTerminalSystem.GetBlocksOfType<IMyUserControllableGun>(list);       
+																	if (list.Count > 0)       
+																		{        
+																		remote.AddWaypoint(targetVector + remote.GetTotalGravity() * 0.001f, "targetVector");  
+																		remote.SetAutoPilotEnabled(true);  
+																		remote.ApplyAction("CollisionAvoidance_Off");  
+																		}  
+																	else  
+																		{  
+														remote.AddWaypoint(targetVector + remote.GetTotalGravity() * 0.001f, "targetVector");  
+														remote.ApplyAction("CollisionAvoidance_Off");  
+														remote.SetAutoPilotEnabled(true);  
+																		}  
+												}  
+							}  
+						}  
+				}  
+					else  
+						{  
+							tango--;  
+						}  
+		}  
+    
+    
+    

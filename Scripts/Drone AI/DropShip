@@ -1,0 +1,79 @@
+List<IMyTerminalBlock> list = new List<IMyTerminalBlock>();
+List<IMyFunctionalBlock> blocks = new List<IMyFunctionalBlock>();
+List<IMyMotorStator> rotors = new List<IMyMotorStator>();
+List<IMyAirtightHangarDoor> bayDoors = new List<IMyAirtightHangarDoor>();
+double altitude = 0;
+bool drop = false;
+float time = 0;
+readonly Random diceRoll = new Random();
+  
+void Main(string argument) 
+{ 
+    Vector3D origin = new Vector3D(0, 0, 0); 
+        origin = Me.GetPosition();
+ 
+    GridTerminalSystem.GetBlocksOfType<IMyRemoteControl>(list);
+    if (list.Count > 0) 
+    { 
+        var remote = list[0] as IMyRemoteControl; 
+        Vector3D player = new Vector3D(0, 0, 0); 
+		altitude = 0; 
+		remote.TryGetPlanetElevation(MyPlanetElevation.Surface, out altitude);
+		GridTerminalSystem.GetBlocksOfType<IMyMotorStator>(rotors); 
+        bool success = remote.GetNearestPlayer(out player); 
+        if (success) 
+        { 	
+		if (Vector3D.DistanceSquared(player, origin) < 7000 * 7000) 
+			{
+					if (!drop)
+						{
+				Vector3D gv = new Vector3D(0, 0, 0);
+				gv = (remote.GetTotalGravity() * -20f);
+				remote.ClearWaypoints(); 
+                remote.AddWaypoint(player + 3000 + gv, "Player");
+				remote.SetAutoPilotEnabled(true);
+						}
+				if (altitude < 3000)
+				{
+					GridTerminalSystem.GetBlocksOfType<IMyAirtightHangarDoor>(bayDoors);
+					foreach (var door in bayDoors)
+                        {
+                            door.OpenDoor();
+                        }
+				if (altitude < 150) 
+					{ 
+						time = (time + 1);
+						remote.ClearWaypoints();
+						if (time > 12)
+							{
+								GridTerminalSystem.GetBlocksOfType(blocks);
+								foreach (var block in blocks)
+									{
+										if (!block.Enabled)
+										{
+											block.Enabled = true;
+										}
+									}
+								foreach (var rotor in rotors)
+									{
+										rotor.Detach();
+									}
+									if (time > 18)
+									{
+										remote.ClearWaypoints();
+										Vector3D gv = new Vector3D(0, 0, 0);
+										Vector3D myPos = new Vector3D(0, 0, 0);
+										myPos = remote.GetPosition();
+										gv = (remote.GetTotalGravity() * -730f);
+										myPos = ((myPos + myPos - player) * 30f);
+										remote.AddWaypoint(myPos + gv, "Orbit");
+										remote.SetAutoPilotEnabled(true);
+										drop = true;
+									}
+							}
+					}
+				}
+			}
+        } 
+    } 
+}

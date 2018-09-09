@@ -1,0 +1,396 @@
+string textpanelname = "ENTER TEXT/LCD BLOCK NAME HERE"; // CONFIGURE TEXT/LCD PANEL NAME HERE 
+string timerblock = "TIMER BLOCK NAME HERE"; // CONFIGURE TIMER BLOCK NAME 
+string timercount = "Remaining Time: "; // CONFIGURE TEXT SHOWN ON LCD 
+string textdisplayed = "Time Is Up!"; // CONFIGURE WHAT IS DISPLAYED AFTER TIMER REACHES 0 
+int targetInput = 0; 
+int time = 0; 
+int ticks = 0; 
+bool inTransmission = false; 
+
+List<IMyProgrammableBlock> pbList = new List<IMyProgrammableBlock>(); 
+
+void Main(string argument)
+{ 
+ 
+	IMyTextPanel textpanel = GridTerminalSystem.GetBlockWithName(textpanelname) as IMyTextPanel; 
+	IMyTimerBlock timerBlock = GridTerminalSystem.GetBlockWithName(timerblock) as IMyTimerBlock; 
+	
+	if(pbList.Count == 0)
+	{				 
+		return; 
+	} 
+	 
+	var pb = pbList[0]; 
+	
+	if(argument == "inTransmission" && time > 0)
+	{	 
+		inTransmission = true; 
+		targetInput++; 
+	} 
+ 
+	if(argument == "inTransmission" && targetInput >= 10)
+	{	 
+		inTransmission = false; 
+		targetInput = 0; 
+	} 
+
+	if(argument == "Hour")
+	{	 
+		time += 3600; 
+		pb.CustomData = time.ToString() + "\n"; 
+		textpanel.WritePublicText(timercount + TimeSpan.FromSeconds(timer).ToString()); 
+	} 
+
+	if(inTransmission == true && time > 0)
+	{ 
+ 		Runtime.UpdateFrequency = UpdateFrequency.Update1;	 
+		int seconds_delay = 1; 
+		ticks++; 
+		 
+			if(ticks >= seconds_delay * 60)
+			{ 
+				time -= 1; 
+				ticks = 0; 
+				textpanel.WritePublicText(timercount + TimeSpan.FromSeconds(time).ToString()); 
+			} 
+	} 
+	 
+	if(inTransmission == true && time <= 1)
+	{ 
+		textpanel.WritePublicText(textdisplayed); 
+		inTransmission = false; 
+		targetInput = 0; 
+		 
+		if(timerBlock != null)
+		{ 
+			timerBlock.ApplyAction("TriggerNow"); 
+		} 
+		 
+		return; 
+	}  
+}
+
+
+
+List<IMyTerminalBlock> list = new List<IMyTerminalBlock>();
+    
+public bool GetEnemies(out List<MyDetectedEntityInfo> enemyList)
+{
+	enemyList = Me.GetValue<Func<double,List<MyDetectedEntityInfo>>>("GetEnemies")(5000);
+	return enemyList.Count != 0 || enemyList != null;
+}
+public Vector3D TrackEntityById(long entityId)
+{
+	return Me.GetValue<Func<long,Vector3D>>("TrackEntityById")(entityId);
+}
+public bool receivedBroadcast = false; 
+float tango = 0;
+public float signalTimer = 0;
+MyDetectedEntityInfo EnemyS;
+List<MyDetectedEntityInfo> targets;
+readonly Random rnd = new Random();
+readonly Random rndDistance = new Random();
+TargetV3D = new Vector3D(0, 0, 0); 
+		
+void Main(string argument) 
+	{ 
+                if (argument.Contains("BRDCST") == true) 
+                {
+				receivedBroadcast = true;
+				signalTimer = (signalTimer + 10);
+				} 
+	}
+		
+		
+public void Main()
+	{
+	if (signalTimer <= 0)
+		{
+		receivedBroadcast = false;
+		signalTimer = 0;
+		}
+	if (receivedBroadcast)
+		{
+		if (signalTimer >= 10)
+			{
+			GridTerminalSystem.GetBlocksOfType<IMyRemoteControl>(list);
+			if (list.Count > 0)
+				{
+				var remote = list[0] as IMyRemoteControl;
+				remote.ClearWaypoints();
+				int distanceModifier = rndDistance.Next(120, 400);
+				signalTimer = (signalTimer + 1);
+				remote.AddWaypoint(TargetV3D + distanceModifier + remote.GetTotalGravity() * -10f, "TargetV3D");
+				remote.SetAutoPilotEnabled(true);
+				remote.ApplyAction("CollisionAvoidance_On");
+				}
+			}
+		else
+			{
+						signalTimer--;
+			}
+		}
+//----------------//
+	if (!receivedBroadcast)
+		{
+		if (tango <= 1)
+			{
+			if(GetEnemies(out targets))
+				{
+				GridTerminalSystem.GetBlocksOfType<IMyRemoteControl>(list);
+				if (list.Count > 0)
+					{
+					var remote = list[0] as IMyRemoteControl;
+					remote.ClearWaypoints();
+					if(targets.Count > 0)
+						{
+						int selection = rnd.Next(targets.Count);
+						EnemyS = targets[selection];
+						tango = (tango + 10);
+						var entityId = EnemyS.EntityId;
+						var targetVector = TrackEntityById(entityId);
+						GridTerminalSystem.GetBlocksOfType<IMyUserControllableGun>(list);     
+						if (list.Count > 0)     
+							{      
+							remote.AddWaypoint(targetVector + remote.GetTotalGravity() * -10f, "targetVector");
+							remote.SetAutoPilotEnabled(true);
+							remote.ApplyAction("CollisionAvoidance_On");
+							}
+					else
+						{
+						remote.AddWaypoint(targetVector - 1, "targetVector");
+						remote.ApplyAction("CollisionAvoidance_Off");
+						remote.SetAutoPilotEnabled(true);
+						}
+						}
+					}
+				}
+			}
+		else
+			{
+			tango--;
+			}
+			}
+	}
+	
+	//--------SENDER--------//						Me.CustomData = targetVector;
+	
+List<IMyTerminalBlock> list = new List<IMyTerminalBlock>();
+    
+public bool GetEnemies(out List<MyDetectedEntityInfo> enemyList)
+{
+	enemyList = Me.GetValue<Func<double,List<MyDetectedEntityInfo>>>("GetEnemies")(20000);
+	return enemyList.Count != 0 || enemyList != null;
+}
+public Vector3D TrackEntityById(long entityId)
+{
+	return Me.GetValue<Func<long,Vector3D>>("TrackEntityById")(entityId);
+}
+
+float tango = 0;
+float ping = 0;
+MyDetectedEntityInfo EnemyS;
+List<MyDetectedEntityInfo> targets;
+readonly Random rnd = new Random();
+readonly Random KeyGen = new Random();
+Vector3D TGT = new Vector3D(0, 0, 0); 
+string TVECT = "";
+string Key = "";
+
+public void Main()
+	{
+			
+		if (Key == "")
+		{
+			int KeyGen1 = KeyGen.Next(1001, 9999);
+			int KeyGen2 = KeyGen.Next(1001, 9999);
+			int KeyGen3 = KeyGen.Next(1001, 9999);
+			int KeyGen4 = KeyGen.Next(1001, 9999);
+			Key = KeyGen1 + ("-") + KeyGen2 + ("-") + KeyGen3 + ("-") + KeyGen4;
+		}
+		
+		if (tango <= 0)
+			{
+			if(GetEnemies(out targets))
+				{
+					if(targets.Count > 0)
+						{
+							GridTerminalSystem.GetBlocksOfType<IMyRadioAntenna>(list);
+							if (list.Count > 0)
+								{
+									var ant = list[0] as IMyRadioAntenna;
+									Me.CustomData = ""; //Clear CustomData
+									int selection = rnd.Next(targets.Count);
+									EnemyS = targets[selection];
+									tango = (tango + 300);
+									var entityId = EnemyS.EntityId;
+									var targetVector = TrackEntityById(entityId);
+									TVECT = targetVector.ToString();
+									Me.CustomData = Key + "*" + TVECT;
+									ant.SetValue("OnOff", true); 
+									ant.TransmitMessage(Me.CustomData, MyTransmitTarget.Everyone);
+								}
+						}
+				}
+			}
+		else
+			{
+				tango--;
+				ping--;
+				Echo("Target Engaged"); 
+			}
+
+		if (ping == 0)
+			{
+				GridTerminalSystem.GetBlocksOfType<IMyRadioAntenna>(list);
+				if (list.Count > 0)
+				{
+					var ant = list[0] as IMyRadioAntenna;
+					//--Key = "BRDCST";--//
+					ant.TransmitMessage(Key, MyTransmitTarget.Everyone);
+					ping = 10;
+					Echo(Key);
+				}
+			}
+
+			
+			
+	}
+	
+   class MAINDATA 
+        { 
+            public string KEY;
+            public Vector3D TGT;
+            public string OUT;
+ 
+            //Standardised System Of Updating And Saving Drone Data 
+				public static MAINDATA(string IN_ARG, MAINDATA DATA, bool[] ITEM) 
+					{
+					//--splitString = Me.CustomData.Split('*');--//
+					string[] COMDATA = Me.CustomData.Split('*');
+					DATA.KEY = (ITEM[0] != true) ? DATA.KEY : COMKEY[0]; 
+					if (ITEM[1] == true) { Vector3D.TryParse(COMDATA[1], out DATA.TGT); } 
+					return DATA;
+					}
+            public static MAINDATA SAVE(MAINDATA DATA) 
+            { 
+                DATA.OUT = string.Join("*", DATA.KEY, DATA.TGT);  
+                return DATA; 
+            } 
+		}
+	
+public string GetKey(String Key)
+{
+    		if (useLCDStorage == true)
+    		{
+        			strData = lcdData.GetPublicText();	
+    		}
+    		else
+    		{
+        			strData = Storage;	
+    		}
+		
+    	int splitCount;
+    	splitString = strData.Split('\n');
+    	splitCount = splitString.Length;
+			
+    	for (int i = 0; i < splitCount -1; i++)
+    	{
+    	       	string[] tmpString = splitString[i].Split('=');
+		
+		          if (tmpString[0] == Key)
+        	   	{			
+                					storagedebug(Key + " Found with Value: " + tmpString[1]);
+        	   	     	return tmpString[1];
+    	       	} 
+    	}
+	
+	return "";
+}
+
+			//-------------------//
+
+		public void WriteToSelf(string msg) 
+		{ 
+			string[] lines = Me.CustomData.Split('\n'); 
+			string customData = msg; 
+			Me.CustomData = COMID; 
+		} 
+		
+		public void Main(string argument) 
+		{ 
+			WriteToSelf(argument); 
+			// Forward our information 
+			if (transmitModeOn) 
+			{ 
+				UpdateTransmitter(); 
+				if (transmitter != null) 
+					transmitter.TransmitMessage(argument); 
+			} 
+		}
+
+	
+	
+	//--------------Extra Samples 						Vector3D.Parse(string input)
+	Vector3D.TryParse(VDATA, out TRIALV);
+	
+class INFO 
+    { 
+        public string ID; //Controller ID
+        public Vector3D TGT; //Target
+        public string OUTPUT;   // String Drone Data Output
+ 
+        //Standardised System Of Updating And Saving Drone Data 
+        public static INFO(string IN_ARG, INFO COM_INFO, bool[] ITEM) 
+            { 
+                //Retrieves Data From Store 
+                string[] COM_INF = IN_ARG.Split('*'); 
+                COM_INFO.ID = ; 
+                Vector3D.TryParse(targetVector, out COM_INFO.TGT); } 
+                return COM_INFO; 
+            } 
+ 
+        public static INFO SAVE(INFO COM_INFO) 
+            { 
+                COM_INFO.OUTPUT = string.Join("*", COM_INFO.TGT, "#" + COM_INFO.ID);  
+                return COM_INFO; 
+            } 
+	    try 
+            { 
+				public var ant = GridTerminalSystem.GetBlockWithName("XY2F-LV63-C2RM") as IMyRadioAntenna;
+                ant.SetValue<long>("PBList", Me.EntityId);  
+            } 
+    }  
+        void SYST_UPDATE() 
+			{
+                //Output Handler 
+                //------------------------------------------- 
+                StringBuilder OUTPUT = new StringBuilder(); 
+                OUTPUT.Append("BRDCST");
+				OUTPUT.Append(item.Value.OUTPUT); 
+                ant.TransmitMessage(OUTPUT.ToString(), MyTransmitTarget.Owned);
+			}
+
+Me.CustomData = ""; //Clear CustomData
+string COMID = Me.CustomData;
+string text = p.CustomData; 
+			
+			
+	void Main(string argument)
+{
+   var ant = GridTerminalSystem.GetBlockWithName("XY2F-LV63-C2RM") as IMyRadioAntenna;
+   ant.TransmitMessage(OUTPUT.ToString(), MyTransmitTarget.Everyone);
+}
+	
+	{ MEINFO.LAST_PING = DateTime.Now; MEINFO = INFO.SAVE(MEINFO); RADIO.TransmitMessage(MEINFO.OUTPUT, MyTransmitTarget.Owned); }  
+	if (ITEM[4] == true) { Vector3D.TryParse(COM_INF[4], out COM_INFO.VEL); }
+	Vector3D.TryParse(MEINFO.GLOC.Split('^')[i], out TEMP_COORD); 
+	
+            //Delogs Drones 
+            //------------------------------ 
+            List<string> KEYS = new List<string>(DRONES.Keys); 
+            for (int i = 0; i < DRONES.Count; i++) 
+            { 
+                if (DateTime.Now.Ticks - ((DateTime)(DRONES[KEYS[i]]).LAST_PING).Ticks > 50000000) 
+                { DRONES.Remove(KEYS[i]); continue; } 
+            } 

@@ -1,0 +1,155 @@
+List<IMyTerminalBlock> list = new List<IMyTerminalBlock>();
+    
+public bool GetEnemies(out List<MyDetectedEntityInfo> enemyList)
+{
+	enemyList = Me.GetValue<Func<double,List<MyDetectedEntityInfo>>>("GetEnemies")(20000);
+	return enemyList.Count != 0 || enemyList != null;
+}
+public Vector3D TrackEntityById(long entityId)
+{
+	return Me.GetValue<Func<long,Vector3D>>("TrackEntityById")(entityId);
+}
+
+float tango = 0;
+float CEW = 0;
+float ping = 0;
+long entityId = 0;
+MyDetectedEntityInfo EnemyS;
+List<MyDetectedEntityInfo> targets;
+readonly Random rnd = new Random();
+readonly Random KeyGen = new Random();
+readonly Random rndDistance = new Random();
+Vector3D TGT = new Vector3D(0, 0, 0);
+Vector3D POS = new Vector3D(0, 0, 0);
+Vector3D player = new Vector3D(0, 0, 0);
+Vector3D origin = new Vector3D(0, 0, 0);
+string Origin = "";
+string lastPOS = "";
+string TVECT = "";
+string Key = "";
+string KEY = "";
+string OUT = "";
+string Protocol = "";
+bool Broadcast = false;
+
+public void Main(string argument) 
+	{
+	
+	if (argument.Contains("CKR2C") == true && argument.Contains("*2196") == true)
+		{
+			string[] INFO = argument.Split('*');
+			
+			if (INFO.Length > 1)
+				{
+					if (KEY == INFO[1])
+						{
+							CEW++;
+							if (CEW > 30)
+								{
+									Protocol = "2197";
+									CEW = 0;
+								}
+						}
+				}			
+		}
+		
+		if (this.Storage == null || this.Storage == "")
+			{
+				origin = Me.GetPosition();
+				Origin = origin.ToString();
+			}
+		
+		if (Key == "" || KEY == "" || Protocol == "2197")
+			{
+				if (KEY == "" && Key != "")
+					{
+						KEY = Key;
+					}
+				else if (Key == "" && KEY != "")
+					{
+						Key = KEY;
+					}
+				else
+					{
+						int KeyGen1 = KeyGen.Next(1001, 9999);
+						int KeyGen2 = KeyGen.Next(1001, 9999);
+						int KeyGen3 = KeyGen.Next(1001, 9999);
+						int KeyGen4 = KeyGen.Next(1001, 9999);
+						Key = KeyGen1 + ("-") + KeyGen2 + ("-") + KeyGen3 + ("-") + KeyGen4;
+					}
+			}
+
+		if (Protocol == "2197" && CEW == 0)
+			{
+				List<IMyRadioAntenna> list = new List<IMyRadioAntenna>();
+				GridTerminalSystem.GetBlocksOfType<IMyRadioAntenna>(list);
+					foreach (var item in list)
+						{
+							IMyRadioAntenna CSant = (item as IMyRadioAntenna);
+							CSant.ApplyAction("OnOff_On");
+							Broadcast = true;
+						}
+			}
+
+		if (Broadcast)
+			{
+				GridTerminalSystem.GetBlocksOfType<IMyRadioAntenna>(list);
+				var POS = Me.GetPosition();
+				lastPOS = POS.ToString();
+				if (list.Count > 0)
+					{
+					OUT = string.Join("*", TVECT, Key, "\nCKR2C\n", Protocol, lastPOS, Origin);
+					Storage = OUT;
+					var ant = list[0] as IMyRadioAntenna;
+					ant.SetValue("OnOff", true); 
+					ant.TransmitMessage(OUT, MyTransmitTarget.Everyone);
+					Broadcast = false;
+					}
+			}
+		
+		if (tango <= 0)
+			{
+				POS = Me.GetPosition();
+				if(GetEnemies(out targets))
+					{
+						if(targets.Count > 0)
+							{
+								int selection = rnd.Next(targets.Count);
+								EnemyS = targets[selection];
+								entityId = EnemyS.EntityId;
+								var targetVector = TrackEntityById(entityId);
+								TVECT = targetVector.ToString();
+								Protocol = "5503";
+								Broadcast = true;
+								tango = (tango + 120);
+							}
+						else if(targets.Count == 0)
+							{
+								string[] INFO = Storage.Split('*');
+								if (INFO.Length > 1)
+									{
+										Vector3D.TryParse(INFO[5], out origin);
+										tango = (tango + 20);
+										var POS = Me.GetPosition();
+										lastPOS = POS.ToString();
+										TVECT = lastPOS;
+										Broadcast = true;
+									}
+							}
+					}
+			}
+		else
+			{
+				tango--;
+				ping--;
+				Echo("Target Engaged: Ping = " + ping);
+			}
+
+		if (ping == 0)
+			{
+				ping = 10;
+				var targetVector = TrackEntityById(entityId);
+				TVECT = targetVector.ToString();
+				Broadcast = true;
+			} 
+	}

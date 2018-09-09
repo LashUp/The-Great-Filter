@@ -1,0 +1,52 @@
+List<IMyTerminalBlock> list = new List<IMyTerminalBlock>();   
+  
+		public bool GetEntities(out List<MyDetectedEntityInfo> entityList)  
+		{  
+			entityList = Me.GetValue<List<MyDetectedEntityInfo>>("GetEntities");  
+			return entityList.Count != 0 || entityList != null;  
+		}  
+		  
+		public bool GetEnemies(out List<MyDetectedEntityInfo> enemyList)  
+		{  
+			enemyList = Me.GetValue<List<MyDetectedEntityInfo>>("GetEnemies");		  
+			return enemyList.Count != 0 || enemyList != null;  
+		}  
+		  
+		public Vector3D TrackEntityById(long entityId)  
+		{  
+			Me.SetValue<long>("SetTargetEntityID", entityId);  
+			return Me.GetValue<Vector3D>("TrackEntityById");  
+		}  
+		 
+    
+MyDetectedEntityInfo Enemy; 
+List<MyDetectedEntityInfo> targets; 
+readonly Random rnd = new Random(); 
+public void Main() 
+{ 
+    if(GetEnemies(out targets)) 
+    { 
+        int selection = rnd.Next(targets.Count); 
+        Enemy = targets[selection]; 
+        Echo(Enemy.Name); 
+    } 
+} 
+ 
+ 
+    
+void Main(string argument)   
+{   
+
+var entityId = Enemy.EntityId
+var targetVector = TrackEntityById(entityId)
+ 
+    
+    
+        var remote = list[0] as IMyRemoteControl;   
+        remote.ClearWaypoints();   
+        Vector3D Enemy = new Vector3D(0, 0, 0);   
+                remote.AddWaypoint(Enemy + remote.GetTotalGravity() * -2f, "Enemy");//20 metres above player  
+            
+            remote.SetAutoPilotEnabled(true);   
+           
+    }  

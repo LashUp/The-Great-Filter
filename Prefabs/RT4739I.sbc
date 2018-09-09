@@ -1,0 +1,2015 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Prefabs>
+    <Prefab xsi:type="MyObjectBuilder_PrefabDefinition">
+      <Id Type="MyObjectBuilder_PrefabDefinition" Subtype="RT4739I" />
+      <CubeGrids>
+        <CubeGrid>
+          <SubtypeName />
+          <EntityId>136186020345282610</EntityId>
+          <PersistentFlags>CastShadows InScene</PersistentFlags>
+          <PositionAndOrientation>
+            <Position x="-355286.9337260623" y="357200.17221804208" z="-1749964.5554256227" />
+            <Forward x="4.93484265E-07" y="2.69969075E-10" z="1" />
+            <Up x="2.95617031E-10" y="1" z="-2.69969241E-10" />
+            <Orientation>
+              <X>1.47808543E-10</X>
+              <Y>1</Y>
+              <Z>-1.34984579E-10</Z>
+              <W>-2.46742133E-07</W>
+            </Orientation>
+          </PositionAndOrientation>
+          <GridSizeEnum>Small</GridSizeEnum>
+          <CubeBlocks>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Reactor">
+              <SubtypeName>SmallBlockSmallGenerator</SubtypeName>
+              <EntityId>129580742837862808</EntityId>
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+              
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <Items>
+                        <MyObjectBuilder_InventoryItem>
+                          <Amount>9.962204</Amount>
+                          <PhysicalContent xsi:type="MyObjectBuilder_Ingot">
+                            <SubtypeName>Uranium</SubtypeName>
+                          </PhysicalContent>
+                          <ItemId>0</ItemId>
+                        </MyObjectBuilder_InventoryItem>
+                      </Items>
+                      <nextItemId>1</nextItemId>
+                      <Volume>0.125</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>Small Reactor</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <Enabled>true</Enabled>
+              <Inventory>
+                <Items>
+                  <MyObjectBuilder_InventoryItem>
+                    <Amount>9.962204</Amount>
+                    <PhysicalContent xsi:type="MyObjectBuilder_Ingot">
+                      <SubtypeName>Uranium</SubtypeName>
+                    </PhysicalContent>
+                    <ItemId>0</ItemId>
+                  </MyObjectBuilder_InventoryItem>
+                </Items>
+                <nextItemId>1</nextItemId>
+                <Volume>0.125</Volume>
+                <Mass>9223372036854.775807</Mass>
+                <MaxItemCount>2147483647</MaxItemCount>
+                <Size xsi:nil="true" />
+                <InventoryFlags>CanReceive</InventoryFlags>
+                <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+              </Inventory>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>GravDriveSmall</SubtypeName>
+              <EntityId>141324795928532842</EntityId>
+              <Min x="0" y="0" z="1" />
+              <BlockOrientation Forward="Backward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+              
+              <ShareMode>Faction</ShareMode>
+              <CustomName>GravDriveSmall</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>GravDriveSmall</SubtypeName>
+              <EntityId>110039722560788694</EntityId>
+              <Min x="1" y="0" z="0" />
+              <BlockOrientation Forward="Right" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+              
+              <ShareMode>Faction</ShareMode>
+              <CustomName>GravDriveSmall 8</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>GravDriveSmall</SubtypeName>
+              <EntityId>104953597038393633</EntityId>
+              <Min x="-1" y="0" z="0" />
+              <BlockOrientation Forward="Left" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+              
+              <ShareMode>Faction</ShareMode>
+              <CustomName>GravDriveSmall 7</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>GravDriveSmall</SubtypeName>
+              <EntityId>119765014153499607</EntityId>
+              <Min x="0" y="0" z="-1" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+              
+              <ShareMode>Faction</ShareMode>
+              <CustomName>GravDriveSmall 2</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>GravDriveSmall</SubtypeName>
+              <EntityId>81511847129513775</EntityId>
+              <Min x="1" y="0" z="-1" />
+              <BlockOrientation Forward="Up" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+              
+              <ShareMode>Faction</ShareMode>
+              <CustomName>GravDriveSmall 10</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>GravDriveSmall</SubtypeName>
+              <EntityId>125384356254409482</EntityId>
+              <Min x="-1" y="0" z="-1" />
+              <BlockOrientation Forward="Down" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+              
+              <ShareMode>Faction</ShareMode>
+              <CustomName>GravDriveSmall 9</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_TimerBlock">
+              <SubtypeName>TimerBlockSmall</SubtypeName>
+              <EntityId>129829218558164603</EntityId>
+              <Min x="0" y="0" z="-2" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+              
+              <ShareMode>Faction</ShareMode>
+              <CustomName>Timer Block 3</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <Enabled>false</Enabled>
+              <Toolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+              </Toolbar>
+              <Delay>10000</Delay>
+              <CurrentTime>0</CurrentTime>
+              <IsCountingDown>false</IsCountingDown>
+              <Silent>false</Silent>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_RadioAntenna">
+              <SubtypeName>SmallBlockRadioAntenna</SubtypeName>
+              <EntityId>73643036442830050</EntityId>
+              <Min x="0" y="-1" z="-2" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+              
+              <ShareMode>Faction</ShareMode>
+              <CustomName>RT4739I</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <Enabled>true</Enabled>
+              <BroadcastRadius>500</BroadcastRadius>
+              <ShowShipName>false</ShowShipName>
+              <EnableBroadcasting>true</EnableBroadcasting>
+              <AttachedPB>123874207007458136</AttachedPB>
+              <IgnoreAllied>false</IgnoreAllied>
+              <IgnoreOther>false</IgnoreOther>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_RemoteControl">
+              <SubtypeName>SmallBlockRemoteControl</SubtypeName>
+              <EntityId>126014810969034607</EntityId>
+              <Min x="0" y="-1" z="0" />
+              <BlockOrientation Forward="Backward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+              
+              <ShareMode>Faction</ShareMode>
+              <CustomName>Remote Control</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <UseSingleWeaponMode>false</UseSingleWeaponMode>
+              <Toolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+              </Toolbar>
+              <SelectedGunId xsi:nil="true" />
+              <BuildToolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+              </BuildToolbar>
+              <PreviousControlledEntityId xsi:nil="true" />
+              <AutoPilotEnabled>false</AutoPilotEnabled>
+              <FlightMode>0</FlightMode>
+              <BindedCamera>0</BindedCamera>
+              <CurrentWaypointIndex>-1</CurrentWaypointIndex>
+              <Waypoints />
+              <Direction>0</Direction>
+              <DockingModeEnabled>false</DockingModeEnabled>
+              <CollisionAvoidance>false</CollisionAvoidance>
+              <Coords />
+              <Names />
+              <WaypointThresholdDistance>0</WaypointThresholdDistance>
+              <IsMainRemoteControl>false</IsMainRemoteControl>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_MyProgrammableBlock">
+              <SubtypeName>SmallProgrammableBlock</SubtypeName>
+              <EntityId>123874207007458136</EntityId>
+              <Min x="-1" y="0" z="-2" />
+              <BlockOrientation Forward="Right" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+              
+              <ShareMode>Faction</ShareMode>
+              <CustomName>Programmable block 3</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <Enabled>true</Enabled>
+              <Program>        //Interceptor Drone Script
+
+        //Configuration Values
+
+        string scriptUpdateName = "StarWarsArenaScript-RebelFighter";
+
+        bool useDroneSleepMode = false;
+        bool useDroneDespawn = true;
+        double sleepDistance = 50000;
+        double despawnDistance = 50000;
+
+        double remainDistance = 8000;
+
+        double targetBreakawayDistance = 450;
+        int targetBreakAwayCancelTimerTrigger = 10;
+
+        int targetTrackingLimit = 30; //How long a drone will pursue a target before refreshing.
+
+        string preferredRemoteControl = "Remote Control";
+
+        ////////////////////////////////////////
+        //======DO NOT EDIT BELOW HERE==========
+        ////////////////////////////////////////
+
+        //Block Individuals and Lists
+        IMyRemoteControl remoteControl;
+        List&lt;IMyGyro&gt; gyroList = new List&lt;IMyGyro&gt;();
+        List&lt;IMyThrust&gt; thrustList = new List&lt;IMyThrust&gt;();
+        List&lt;IMyUserControllableGun&gt; weaponList = new List&lt;IMyUserControllableGun&gt;();
+        List&lt;IMyCameraBlock&gt; forwardCameraList = new List&lt;IMyCameraBlock&gt;();
+        bool weaponsFiring = false;
+
+        //Locations
+        Vector3D dronePosition = new Vector3D(0, 0, 0);
+        Vector3D closestPlayer = new Vector3D(0, 0, 0);
+        Vector3D originPosition = new Vector3D(0, 0, 0);
+
+        //Distances
+        double distanceDroneToPlayer = 0;
+        double distanceDroneToOrigin = 0;
+
+        //Velocity Info
+
+        //Planetary Data
+        bool inNaturalGravity = false;
+        double distanceSealevel = 0;
+        double distanceSurface = 0;
+        Vector3D planetPosition = new Vector3D(0, 0, 0);
+
+        //Custom Targeting
+        long EntityId = 0;
+        List&lt;long&gt; targets = new List&lt;long&gt;();
+        Vector3D targetPosition = new Vector3D(0, 0, 0);
+
+        //RotationMode / AttackMode
+        bool rotationModeActivated = false;
+        Vector3D rotationTarget = new Vector3D(0, 0, 0);
+        Vector3D breakawayPosition = new Vector3D(0, 0, 0);
+        double minGRotation = 0.025;
+        double maxGRotation = 0.6;
+        int breakawayTimer = 0;
+
+        //Misc
+        bool scriptInit = false;
+        bool scriptInitFailed = false;
+        string lastChatSent = "Default";
+        int tickCounter = -180;
+        int tickIncrement = 10;
+        int iceRefillTimer = 0;
+        string currentMode = "GetTargets";
+        int targetTracking = 0;
+        Random rnd = new Random();
+
+        public Program()
+        {
+
+            Runtime.UpdateFrequency = UpdateFrequency.Update10;
+
+        }
+
+        void DroneBehavior(string argument)
+        {
+
+            minGRotation = 0.025;
+            maxGRotation = 0.5;
+
+            if (distanceDroneToOrigin &gt; remainDistance &amp;&amp; currentMode != "Retreat")
+            {
+
+                currentMode = "ReturnToArea";
+
+            }
+
+            if (weaponsFiring == true)
+            {
+
+                weaponsFiring = false;
+                WeaponFireMode(false, Vector3D.Zero, weaponList);
+
+            }
+
+            if (currentMode == "GetTargets")
+            {
+                targets = GetAllEnemyGrids();
+
+                for (int i = targets.Count - 1; i &gt;= 0; i--)
+                {
+
+                    if (TargetPowered(targets[i]) == false) // || TargetIsBroadcasting(targets[i]) == false
+                    {
+
+                        targets.RemoveAt(i);
+                        continue;
+
+                    }
+
+                }
+
+                if (targets.Count &gt; 0)
+                {
+
+                    EntityId = targets[rnd.Next(0, targets.Count)];
+                    currentMode = "PursueTarget";
+
+                }
+                else
+                {
+
+                    currentMode = "Retreat";
+
+                }
+
+            }
+
+            if (currentMode == "PursueTarget")
+            {
+
+                targetTracking++;
+                targetPosition = GetTrackedEntityPosition(EntityId);
+
+                if (targetPosition != new Vector3D(0, 0, 0) &amp;&amp; targetTracking &lt; targetTrackingLimit) //TargetIsBroadcasting(EntityId) == true &amp;&amp; 
+                {
+
+                    if (ApproximateTarget(targetPosition, dronePosition, remoteControl.WorldMatrix.Forward, 7, 1200) == true)
+                    {
+
+                        weaponsFiring = true;
+                        WeaponFireMode(true, Vector3D.Zero, weaponList);
+
+                    }
+
+                    if (Vector3D.Distance(dronePosition, targetPosition) &lt; targetBreakawayDistance)
+                    {
+
+                        breakawayTimer = 0;
+                        targetTracking = 0;
+                        currentMode = "BreakAway";
+
+                    }
+
+                }
+                else
+                {
+
+                    targetTracking = 0;
+                    currentMode = "GetTargets";
+
+                }
+
+                if (inNaturalGravity == true &amp;&amp; distanceSurface &lt; 300)
+                {
+
+                    breakawayTimer = 0;
+                    targetTracking = 0;
+                    currentMode = "BreakAway";
+
+                }
+
+            }
+
+            if (currentMode == "BreakAway")
+            {
+
+                //minGRotation = 0.2;
+                //maxGRotation = 0.8;
+
+                breakawayTimer++;
+
+                targetPosition = GetTrackedEntityPosition(EntityId);
+
+                if (inNaturalGravity == false)
+                {
+
+                    var breakAwayCoords = CreateDirectionAndTarget(targetPosition, dronePosition, dronePosition, 1000);
+                    targetPosition = breakAwayCoords;
+
+                }
+                else
+                {
+
+                    var upDir = Vector3D.Normalize(dronePosition - planetPosition);
+                    var forwardDir = Vector3D.CalculatePerpendicularVector(upDir);
+                    var breakawayMatrix = MatrixD.CreateWorld(dronePosition, forwardDir, upDir);
+                    var offset = Vector3D.Zero;
+                    offset.X = (double)rnd.Next(-1500, 1500);
+                    offset.Y = 1000;
+                    offset.Z = (double)rnd.Next(-1500, 1500);
+                    targetPosition = Vector3D.Transform(offset, breakawayMatrix);
+
+                }
+
+                if (targetPosition == Vector3D.Zero || breakawayTimer &gt;= targetBreakAwayCancelTimerTrigger)
+                {
+
+                    targetTracking = 0;
+                    currentMode = "GetTargets";
+
+                }
+
+            }
+
+            if (currentMode == "ReturnToArea")
+            {
+
+                targetPosition = originPosition;
+
+                if (distanceDroneToOrigin &gt; remainDistance)
+                {
+
+                    targetTracking = 0;
+                    currentMode = "GetTargets";
+
+                }
+
+            }
+
+            if (currentMode == "Retreat")
+            {
+
+                if (inNaturalGravity == false)
+                {
+
+                    targetPosition = CreateDirectionAndTarget(closestPlayer, dronePosition, dronePosition, 4000);
+
+                }
+                else
+                {
+
+                    targetPosition = CreateDirectionAndTarget(planetPosition, dronePosition, dronePosition, 4000);
+
+                }
+
+                if (distanceDroneToOrigin &gt; 20000)
+                {
+
+                    AttemptDespawn();
+
+                }
+
+            }
+
+            rotationTarget = targetPosition;
+            rotationModeActivated = true;
+
+            Echo(targetPosition.ToString());
+            Echo(rotationTarget.ToString());
+            //TODO: Add Thrust Override Control Here
+
+        }
+
+        void Main(string argument)
+        {
+
+            if (scriptInit == false)
+            {
+
+                scriptInit = true;
+                ScriptInitialized();
+
+            }
+
+            if (scriptInitFailed == true)
+            {
+
+                return;
+
+            }
+
+            if (closestPlayer != Vector3D.Zero)
+            {
+
+                SetRotationTowardsCoordinates(rotationModeActivated, remoteControl, rotationTarget, gyroList, minGRotation, 1, maxGRotation);
+                OverrideThrust(true, remoteControl.WorldMatrix.Forward, 100, thrustList);
+
+            }
+
+            tickCounter += tickIncrement;
+
+            if (tickCounter &lt; 60)
+            {
+
+                return;
+
+            }
+
+            tickCounter = 0;
+
+            closestPlayer = new Vector3D(0, 0, 0);
+
+            if (remoteControl.GetNearestPlayer(out closestPlayer) == false)
+            {
+
+                return;
+
+            }
+
+            dronePosition = remoteControl.GetPosition();
+            distanceDroneToPlayer = Vector3D.Distance(closestPlayer, remoteControl.GetPosition());
+
+            if (useDroneDespawn == true &amp;&amp; distanceDroneToPlayer &gt; despawnDistance)
+            {
+
+                AttemptDespawn();
+
+            }
+
+            if (useDroneSleepMode == true &amp;&amp; distanceDroneToPlayer &gt; sleepDistance)
+            {
+
+                return;
+
+            }
+
+            if (remoteControl.TryGetPlanetPosition(out planetPosition) == true)
+            {
+
+                inNaturalGravity = true;
+                var surface = remoteControl.TryGetPlanetElevation(MyPlanetElevation.Surface, out distanceSurface);
+                var sealevel = remoteControl.TryGetPlanetElevation(MyPlanetElevation.Sealevel, out distanceSealevel);
+
+            }
+
+            distanceDroneToOrigin = Vector3D.Distance(originPosition, remoteControl.GetPosition());
+
+            DroneBehavior(argument);
+
+        }
+
+        void ScriptInitialized()
+        {
+
+            //Check For Script Update
+            var update = UpdateProgramBlockScript(scriptUpdateName);
+
+            //Get Remote
+            if (preferredRemoteControl != "")
+            {
+
+                remoteControl = GridTerminalSystem.GetBlockWithName(preferredRemoteControl) as IMyRemoteControl;
+				originPosition = remoteControl.GetPosition();
+
+            }
+
+            if (remoteControl == null)
+            {
+
+                var remoteList = new List&lt;IMyRemoteControl&gt;();
+                GridTerminalSystem.GetBlocksOfType&lt;IMyRemoteControl&gt;(remoteList);
+
+                foreach (var remote in remoteList)
+                {
+
+                    if (remote.IsFunctional == true)
+                    {
+
+                        remoteControl = remote;
+						originPosition = remoteControl.GetPosition();
+                        break;
+
+                    }
+
+                }
+
+                if (remoteControl == null)
+                {
+
+                    scriptInitFailed = true;
+                    return;
+
+                }
+
+            }
+
+            //Get Forward Weapons
+            weaponList.Clear();
+            GridTerminalSystem.GetBlocksOfType&lt;IMyUserControllableGun&gt;(weaponList);
+
+            //Get Forward Cameras
+            GridTerminalSystem.GetBlocksOfType&lt;IMyCameraBlock&gt;(forwardCameraList);
+
+            //Get Thrust
+            GridTerminalSystem.GetBlocksOfType&lt;IMyThrust&gt;(thrustList);
+
+            //Filter Out Non-Forward Cameras
+
+            if (forwardCameraList.Count &gt; 0)
+            {
+
+                for (int i = forwardCameraList.Count - 1; i &gt;= 0; i--)
+                {
+
+                    if (forwardCameraList[i].WorldMatrix.Forward != remoteControl.WorldMatrix.Forward)
+                    {
+
+                        forwardCameraList.RemoveAt(i);
+
+                    }
+
+                }
+
+            }
+
+            //Get Gyros
+            gyroList.Clear();
+            GridTerminalSystem.GetBlocksOfType&lt;IMyGyro&gt;(gyroList);
+
+        }
+
+        bool ApproximateTarget(Vector3D targetCoords, Vector3D myShipPosition, Vector3D myShipForward, double maxAccuracyVariance, double maxTargetDistance = 850)
+        {
+
+            double distanceToTarget = Vector3D.Distance(targetCoords, myShipPosition);
+
+            if (distanceToTarget &gt; maxTargetDistance)
+            {
+
+                return false;
+
+            }
+
+            var impactPosition = distanceToTarget * myShipForward + myShipPosition;
+            var accuracyDistance = Vector3D.Distance(impactPosition, targetCoords);
+
+            if (accuracyDistance &lt; maxAccuracyVariance)
+            {
+
+                return true;
+
+            }
+
+            return false;
+
+        }
+
+        Vector3D CreateDirectionAndTarget(Vector3D startDirCoords, Vector3D endDirCoords, Vector3D startPathCoords, double pathDistance)
+        {
+
+            var direction = Vector3D.Normalize(endDirCoords - startDirCoords);
+            var coords = direction * pathDistance + startPathCoords;
+            return coords;
+
+        }
+
+        void OverrideThrust(bool enableOverride, Vector3D direction, float thrustModifier, List&lt;IMyThrust&gt; thisThrustList, double currentSpeed = 100, double maximumSpeed = 110)
+        {
+
+            foreach (var thruster in thisThrustList)
+            {
+
+                if (thruster == null)
+                {
+
+                    continue;
+
+                }
+
+                if (thruster.IsFunctional == false)
+                {
+
+                    continue;
+
+                }
+
+                if (enableOverride == true &amp;&amp; currentSpeed &lt; maximumSpeed)
+                {
+
+                    if (thruster.WorldMatrix.Forward == direction * -1)
+                    {
+
+                        thruster.Enabled = true;
+                        float maxthrust = thruster.MaxThrust;
+                        thruster.ThrustOverridePercentage = thrustModifier;
+
+                    }
+
+                    if (thruster.WorldMatrix.Forward == direction)
+                    {
+
+                        thruster.Enabled = false; //default false
+
+                    }
+
+                }
+                else
+                {
+
+                    thruster.Enabled = true;
+                    thruster.SetValueFloat("Override", 0);
+
+                }
+
+            }
+
+        }
+
+        void SetRotationTowardsCoordinates(bool enableRotation, IMyTerminalBlock referenceBlock, Vector3D targetCoords, List&lt;IMyGyro&gt; gyroRotateList, double minRotation = 0.1, double rotationAccuracy = 1, double rotationStrength = 1)
+        {
+
+            Vector3D gyroRotation = new Vector3D(0, 0, 0);
+            double totalAxisDifference = 0;
+            var refMatrix = referenceBlock.WorldMatrix;
+            var pitchDirections = new Dictionary&lt;Vector3D, Vector3D&gt;();
+            var yawDirections = new Dictionary&lt;Vector3D, Vector3D&gt;();
+
+            if (enableRotation == true)
+            {
+
+                double maxRotation = 3.14;
+
+                if (referenceBlock.CubeGrid.GridSizeEnum == MyCubeSize.Small)
+                {
+
+                    maxRotation *= 2;
+
+                }
+
+                var forwardDir = Vector3D.Normalize(targetCoords - referenceBlock.GetPosition()); //Direction To The Target
+                var targetCheck = forwardDir * 100 + Vector3D.Zero;
+                var realForwardCheck = Vector3D.Distance(targetCheck, referenceBlock.WorldMatrix.Forward * 100 + Vector3D.Zero);
+                var upDistCheck = Vector3D.Distance(targetCheck, referenceBlock.WorldMatrix.Up * 100 + Vector3D.Zero);
+                var downDistCheck = Vector3D.Distance(targetCheck, referenceBlock.WorldMatrix.Down * 100 + Vector3D.Zero);
+                var leftDistCheck = Vector3D.Distance(targetCheck, referenceBlock.WorldMatrix.Left * 100 + Vector3D.Zero);
+                var rightDistCheck = Vector3D.Distance(targetCheck, referenceBlock.WorldMatrix.Right * 100 + Vector3D.Zero);
+
+                double pitchPowerModifier = 1;
+                double pitchAxisDifference = 0;
+                double yawPowerModifier = 1;
+                double yawAxisDifference = 0;
+
+                //Pitch
+                if (upDistCheck &lt; downDistCheck)
+                {
+
+                    gyroRotation.X = -1 * maxRotation;
+                    pitchAxisDifference = downDistCheck - upDistCheck;
+
+                }
+                else
+                {
+
+                    gyroRotation.X = maxRotation;
+                    pitchAxisDifference = upDistCheck - downDistCheck;
+
+                }
+
+                if (realForwardCheck &lt; 142)
+                {
+
+                    pitchPowerModifier = pitchAxisDifference / 200;
+
+                }
+                else
+                {
+
+                    pitchAxisDifference = 100;
+
+                }
+
+                if (pitchPowerModifier &lt; minRotation)
+                {
+
+                    pitchPowerModifier = minRotation;
+
+                }
+
+                //Yaw
+                if (leftDistCheck &lt; rightDistCheck)
+                {
+
+                    gyroRotation.Y = -1 * maxRotation;
+                    yawAxisDifference = rightDistCheck - leftDistCheck;
+
+                }
+                else
+                {
+
+                    gyroRotation.Y = maxRotation;
+                    yawAxisDifference = leftDistCheck - rightDistCheck;
+
+                }
+
+                if (realForwardCheck &lt; 142)
+                {
+
+                    yawPowerModifier = yawAxisDifference / 200;
+
+                }
+                else
+                {
+
+                    yawAxisDifference = 100;
+
+                }
+
+                if (yawPowerModifier &lt; minRotation &amp;&amp; realForwardCheck &lt; 142)
+                {
+
+                    yawPowerModifier = minRotation;
+
+                }
+
+                //Apply Rotation To Gyros
+
+                if (pitchAxisDifference &gt; rotationAccuracy)
+                {
+
+                    gyroRotation.X *= pitchPowerModifier;
+                    gyroRotation.X *= rotationStrength;
+
+                }
+                else
+                {
+
+                    gyroRotation.X = 0;
+
+                }
+
+                if (yawAxisDifference &gt; rotationAccuracy)
+                {
+
+                    gyroRotation.Y *= yawPowerModifier;
+                    gyroRotation.Y *= rotationStrength;
+
+                }
+                else
+                {
+
+                    gyroRotation.Y = 0;
+
+                }
+
+                totalAxisDifference = yawAxisDifference + pitchAxisDifference;
+                pitchDirections.Add(refMatrix.Forward, refMatrix.Up);
+                pitchDirections.Add(refMatrix.Up, refMatrix.Backward);
+                pitchDirections.Add(refMatrix.Backward, refMatrix.Down);
+                pitchDirections.Add(refMatrix.Down, refMatrix.Forward);
+
+                yawDirections.Add(refMatrix.Forward, refMatrix.Right);
+                yawDirections.Add(refMatrix.Right, refMatrix.Backward);
+                yawDirections.Add(refMatrix.Backward, refMatrix.Left);
+                yawDirections.Add(refMatrix.Left, refMatrix.Forward);
+
+            }
+
+            var pitchDirectionsList = pitchDirections.Keys.ToList();
+            var yawDirectionsList = yawDirections.Keys.ToList();
+
+            foreach (var gyro in gyroRotateList)
+            {
+
+                if (gyro == null)
+                {
+
+                    continue;
+
+                }
+
+                if (gyro.IsWorking == false || gyro.IsFunctional == false || gyro.CubeGrid != referenceBlock.CubeGrid)
+                {
+
+                    continue;
+
+                }
+
+                if (enableRotation == false)
+                {
+
+                    gyro.GyroOverride = false;
+                    continue;
+
+                }
+
+                if (totalAxisDifference &lt; rotationAccuracy)
+                {
+
+                    gyro.Yaw = 0;
+                    gyro.Pitch = 0;
+                    gyro.Roll = 0;
+                    continue;
+
+                }
+
+                var gyroMatrix = gyro.WorldMatrix;
+                double[] localRotation = { 0, 0, 0 };
+                int pitchIndex = 0;
+                int yawIndex = 0;
+
+                var localPitchDirections = new Dictionary&lt;Vector3D, Vector3D&gt;();
+                var localYawDirections = new Dictionary&lt;Vector3D, Vector3D&gt;();
+                var localRollDirections = new Dictionary&lt;Vector3D, Vector3D&gt;();
+
+                var gyroPitchDirections = new Dictionary&lt;Vector3D, Vector3D&gt;();
+                var gyroYawDirections = new Dictionary&lt;Vector3D, Vector3D&gt;();
+
+                localPitchDirections.Add(gyroMatrix.Forward, gyroMatrix.Up);
+                localPitchDirections.Add(gyroMatrix.Up, gyroMatrix.Backward);
+                localPitchDirections.Add(gyroMatrix.Backward, gyroMatrix.Down);
+                localPitchDirections.Add(gyroMatrix.Down, gyroMatrix.Forward);
+
+                localYawDirections.Add(gyroMatrix.Forward, gyroMatrix.Right);
+                localYawDirections.Add(gyroMatrix.Right, gyroMatrix.Backward);
+                localYawDirections.Add(gyroMatrix.Backward, gyroMatrix.Left);
+                localYawDirections.Add(gyroMatrix.Left, gyroMatrix.Forward);
+
+                localRollDirections.Add(gyroMatrix.Up, gyroMatrix.Right);
+                localRollDirections.Add(gyroMatrix.Right, gyroMatrix.Down);
+                localRollDirections.Add(gyroMatrix.Down, gyroMatrix.Left);
+                localRollDirections.Add(gyroMatrix.Left, gyroMatrix.Up);
+
+                //Get Pitch Axis
+                var checkPitchPitch = pitchDirectionsList.Except(localPitchDirections.Keys.ToList()).ToList();
+                if (checkPitchPitch.Count == 0)
+                {
+
+                    pitchIndex = 0;
+                    gyroPitchDirections = localPitchDirections;
+
+                }
+
+                var checkPitchYaw = pitchDirectionsList.Except(localYawDirections.Keys.ToList()).ToList();
+                if (checkPitchYaw.Count == 0)
+                {
+
+                    pitchIndex = 1;
+                    gyroPitchDirections = localYawDirections;
+
+                }
+
+                var checkPitchRoll = pitchDirectionsList.Except(localRollDirections.Keys.ToList()).ToList();
+                if (checkPitchRoll.Count == 0)
+                {
+
+                    pitchIndex = 2;
+                    gyroPitchDirections = localRollDirections;
+
+                }
+
+                //Get Yaw Axis
+                var checkYawPitch = yawDirectionsList.Except(localPitchDirections.Keys.ToList()).ToList();
+                if (checkYawPitch.Count == 0)
+                {
+
+                    yawIndex = 0;
+                    gyroYawDirections = localPitchDirections;
+
+                }
+
+                var checkYawYaw = yawDirectionsList.Except(localYawDirections.Keys.ToList()).ToList();
+                if (checkYawYaw.Count == 0)
+                {
+
+                    yawIndex = 1;
+                    gyroYawDirections = localYawDirections;
+
+                }
+
+                var checkYawRoll = yawDirectionsList.Except(localRollDirections.Keys.ToList()).ToList();
+                if (checkYawRoll.Count == 0)
+                {
+
+                    yawIndex = 2;
+                    gyroYawDirections = localRollDirections;
+
+                }
+
+                //Assign Pitch
+                if (pitchDirections[refMatrix.Forward] == gyroPitchDirections[refMatrix.Forward])
+                {
+
+                    localRotation[pitchIndex] = gyroRotation.X;
+
+                }
+                else
+                {
+
+                    localRotation[pitchIndex] = gyroRotation.X * -1;
+
+                }
+
+                if (pitchIndex == 1 || pitchIndex == 2)
+                {
+
+                    localRotation[pitchIndex] *= -1;
+
+                }
+
+                //Assign Yaw
+                if (yawDirections[refMatrix.Forward] == gyroYawDirections[refMatrix.Forward])
+                {
+
+                    localRotation[yawIndex] = gyroRotation.Y;
+
+                }
+                else
+                {
+
+                    localRotation[yawIndex] = gyroRotation.Y * -1;
+
+                }
+
+                if (yawIndex == 0)
+                {
+
+                    localRotation[yawIndex] *= -1;
+
+                }
+
+                //Apply To Gyros
+                gyro.Pitch = (float)localRotation[0];
+                gyro.Yaw = (float)localRotation[1];
+                gyro.Roll = (float)localRotation[2];
+                gyro.GyroOverride = true;
+                break;
+
+            }
+
+        }
+
+        void WeaponFireMode(bool fireWeapons, Vector3D weaponDirection, List&lt;IMyUserControllableGun&gt; fixedWeaponList = null)
+        {
+
+            if (fixedWeaponList == null)
+            {
+
+                return;
+
+            }
+
+            foreach (var weapon in fixedWeaponList)
+            {
+
+                if (weapon == null)
+                {
+
+                    continue;
+
+                }
+
+                if (weapon as IMyLargeTurretBase != null)
+                {
+
+                    continue;
+
+                }
+
+                if (weapon.IsFunctional == false || weapon.IsWorking == false)
+                {
+
+                    continue;
+
+                }
+
+                if (weapon.WorldMatrix.Forward != weaponDirection &amp;&amp; weaponDirection != Vector3D.Zero)
+                {
+
+                    continue;
+
+                }
+
+                if (fireWeapons == true)
+                {
+
+                    weapon.ApplyAction("Shoot_On");
+
+                }
+                else
+                {
+
+                    weapon.ApplyAction("Shoot_Off");
+
+                }
+
+            }
+
+        }
+
+        //Special Methods Using Custom PB Commands
+
+        bool AttemptDespawn()
+        {
+
+            try
+            {
+
+                return Me.GetValue&lt;bool&gt;("NpcExtender-DespawnDrone");
+
+            }
+            catch (Exception exc)
+            {
+
+                return false;
+
+            }
+
+        }
+
+        List&lt;long&gt; GetAllEnemyGrids(string specificFaction = "None", double distanceToCheck = 15000)
+        {
+
+            try
+            {
+
+                Me.CustomData = specificFaction + "\n" + distanceToCheck.ToString();
+                return Me.GetValue&lt;List&lt;long&gt;&gt;("NpcExtender-GetAllEnemies");
+
+            }
+            catch (Exception exc)
+            {
+
+                Echo("NpcExtender-GetAllEnemy Hard Fail");
+                return new List&lt;long&gt;();
+
+            }
+
+        }
+
+        MyDetectedEntityInfo GetMDEI(long entityId)
+        {
+
+            try
+            {
+
+                Me.CustomData = entityId.ToString();
+                return Me.GetValue&lt;MyDetectedEntityInfo&gt;("NpcExtender-GetDetectedEntityInfo");
+
+            }
+            catch (Exception exc)
+            {
+
+                Echo("Hard fail NpcExtender-GetDetectedEntityInfo");
+                return new MyDetectedEntityInfo();
+
+            }
+
+
+        }
+
+        Vector3D GetTrackedEntityPosition(long entityId)
+        {
+
+            try
+            {
+
+                Me.CustomData = entityId.ToString();
+                return Me.GetValue&lt;Vector3D&gt;("NpcExtender-TrackEntity");
+
+            }
+            catch (Exception exc)
+            {
+
+                return new Vector3D(0, 0, 0);
+
+            }
+
+        }
+
+        bool SendChatMessage(string message, string author, string audioClip = "")
+        {
+
+            if (message == lastChatSent)
+            {
+
+                return false;
+
+            }
+
+            lastChatSent = message;
+
+            double broadcastDistance = 500;
+            var antennaList = new List&lt;IMyRadioAntenna&gt;();
+            GridTerminalSystem.GetBlocksOfType&lt;IMyRadioAntenna&gt;(antennaList);
+
+            foreach (var antenna in antennaList)
+            {
+
+                if (antenna.IsFunctional == false || antenna.Enabled == false || antenna.EnableBroadcasting == false)
+                {
+
+                    continue;
+
+                }
+
+                var antennaRange = (double)antenna.Radius;
+
+                if (antennaRange &gt; broadcastDistance)
+                {
+
+                    broadcastDistance = antennaRange;
+
+                }
+
+            }
+
+            if (broadcastDistance == 0)
+            {
+
+                return false;
+
+            }
+
+            try
+            {
+
+                string sendData = message + "\n" + author + "\n" + broadcastDistance.ToString() + "\n" + audioClip;
+                Me.CustomData = sendData;
+                return Me.GetValue&lt;bool&gt;("NpcExtender-ChatToPlayers");
+
+            }
+            catch (Exception exc)
+            {
+
+                return false;
+
+            }
+
+        }
+
+        /*bool TargetIsBroadcasting(long entityId, bool checkAntennas = true, bool checkBeacons = true)
+        {
+
+            try
+            {
+
+                Me.CustomData = entityId.ToString() + "\n" + checkAntennas.ToString() + "\n" + checkBeacons.ToString();
+                return Me.GetValue&lt;bool&gt;("NpcExtender-TargetIsBroadcasting");
+
+            }
+            catch (Exception exc)
+            {
+
+                return false;
+
+            }
+
+        }*/
+
+        bool TargetPowered(long entityId)
+        {
+
+            try
+            {
+
+                Me.CustomData = entityId.ToString();
+                return Me.GetValue&lt;bool&gt;("NpcExtender-TargetPowered");
+
+            }
+            catch (Exception exc)
+            {
+
+                return false;
+
+            }
+
+        }
+
+        bool UpdateProgramBlockScript(string scriptName)
+        {
+
+            try
+            {
+
+                Me.CustomData = scriptName;
+                return Me.GetValue&lt;bool&gt;("NpcExtender-UpdateProgramBlockScript");
+
+            }
+            catch (Exception exc)
+            {
+
+                return false;
+
+            }
+
+        }</Program>
+              <Storage />
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Base</SubtypeName>
+              <Min x="-1" y="-1" z="0" />
+              <BlockOrientation Forward="Up" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
+              <SubtypeName>SmallBlockGyro</SubtypeName>
+              <EntityId>80823847352957910</EntityId>
+              <Min x="1" y="0" z="-2" />
+              <BlockOrientation Forward="Up" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+              
+              <ShareMode>Faction</ShareMode>
+              <CustomName>Gyroscope 5</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Base</SubtypeName>
+              <Min x="1" y="-1" z="0" />
+              <BlockOrientation Forward="Up" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorInvCorner2Base</SubtypeName>
+              <Min x="1" y="-1" z="-1" />
+              <BlockOrientation Forward="Down" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorInvCorner2Base</SubtypeName>
+              <Min x="-1" y="-1" z="-1" />
+              <BlockOrientation Forward="Down" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="2" y="1" z="-2" />
+              <BlockOrientation Forward="Left" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="-2" y="1" z="-2" />
+              <BlockOrientation Forward="Right" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallThrust</SubtypeName>
+              <EntityId>84691865260566431</EntityId>
+              <Min x="-2" y="0" z="-3" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+              <CustomName>Ion Thrusters</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallThrust</SubtypeName>
+              <EntityId>123804128207871615</EntityId>
+              <Min x="2" y="0" z="-3" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+              <CustomName>Ion Thrusters 2</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorInvCorner2Base</SubtypeName>
+              <Min x="1" y="-1" z="-3" />
+              <BlockOrientation Forward="Down" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorInvCorner2Base</SubtypeName>
+              <Min x="-1" y="-1" z="-3" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Base</SubtypeName>
+              <Min x="-1" y="-1" z="-4" />
+              <BlockOrientation Forward="Backward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorBlock</SubtypeName>
+              <Min x="1" y="-1" z="-2" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorBlock</SubtypeName>
+              <Min x="-1" y="-1" z="-2" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="1" y="-2" z="-2" />
+              <BlockOrientation Forward="Left" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="-1" y="-2" z="-2" />
+              <BlockOrientation Forward="Right" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfArmorBlock</SubtypeName>
+              <Min x="0" y="-2" z="-2" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfArmorBlock</SubtypeName>
+              <Min x="0" y="-2" z="-1" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfArmorBlock</SubtypeName>
+              <Min x="0" y="-2" z="0" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorBlock</SubtypeName>
+              <Min x="0" y="0" z="-3" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfSlopeArmorBlock</SubtypeName>
+              <Min x="-1" y="-2" z="-1" />
+              <BlockOrientation Forward="Up" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfSlopeArmorBlock</SubtypeName>
+              <Min x="1" y="-2" z="-1" />
+              <BlockOrientation Forward="Up" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Tip</SubtypeName>
+              <Min x="-1" y="-2" z="0" />
+              <BlockOrientation Forward="Forward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Tip</SubtypeName>
+              <Min x="1" y="-2" z="0" />
+              <BlockOrientation Forward="Forward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Base</SubtypeName>
+              <Min x="1" y="-1" z="-4" />
+              <BlockOrientation Forward="Left" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorBlock</SubtypeName>
+              <Min x="0" y="-1" z="-3" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Base</SubtypeName>
+              <Min x="0" y="-1" z="-4" />
+              <BlockOrientation Forward="Up" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfSlopeArmorBlock</SubtypeName>
+              <Min x="0" y="-2" z="-4" />
+              <BlockOrientation Forward="Backward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfArmorBlock</SubtypeName>
+              <Min x="0" y="-2" z="-3" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Tip</SubtypeName>
+              <Min x="-1" y="-2" z="-3" />
+              <BlockOrientation Forward="Right" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Tip</SubtypeName>
+              <Min x="1" y="-2" z="-3" />
+              <BlockOrientation Forward="Left" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfSlopeArmorBlock</SubtypeName>
+              <Min x="0" y="-2" z="1" />
+              <BlockOrientation Forward="Forward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorBlock</SubtypeName>
+              <Min x="0" y="-1" z="1" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Base</SubtypeName>
+              <Min x="-1" y="-1" z="1" />
+              <BlockOrientation Forward="Right" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Base</SubtypeName>
+              <Min x="1" y="-1" z="1" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Base</SubtypeName>
+              <Min x="0" y="-1" z="2" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorBlock</SubtypeName>
+              <Min x="0" y="0" z="2" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfSlopeArmorBlock</SubtypeName>
+              <Min x="2" y="0" z="1" />
+              <BlockOrientation Forward="Left" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfSlopeArmorBlock</SubtypeName>
+              <Min x="-2" y="0" z="1" />
+              <BlockOrientation Forward="Right" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfArmorBlock</SubtypeName>
+              <Min x="2" y="0" z="0" />
+              <BlockOrientation Forward="Left" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfArmorBlock</SubtypeName>
+              <Min x="-2" y="0" z="0" />
+              <BlockOrientation Forward="Right" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Base</SubtypeName>
+              <Min x="-2" y="0" z="-1" />
+              <BlockOrientation Forward="Forward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Base</SubtypeName>
+              <Min x="2" y="0" z="-1" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorBlock</SubtypeName>
+              <Min x="-1" y="0" z="-3" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorBlock</SubtypeName>
+              <Min x="1" y="0" z="-3" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="-1" y="0" z="-4" />
+              <BlockOrientation Forward="Backward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="1" y="0" z="-4" />
+              <BlockOrientation Forward="Backward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorBlock</SubtypeName>
+              <Min x="0" y="0" z="-4" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Base</SubtypeName>
+              <Min x="-1" y="0" z="1" />
+              <BlockOrientation Forward="Right" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Base</SubtypeName>
+              <Min x="1" y="0" z="1" />
+              <BlockOrientation Forward="Left" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CameraBlock">
+              <SubtypeName>SmallCameraBlock</SubtypeName>
+              <EntityId>83753354554152754</EntityId>
+              <Min x="0" y="0" z="3" />
+              <BlockOrientation Forward="Backward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+              
+              <ShareMode>Faction</ShareMode>
+              <CustomName>Camera</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <Enabled>true</Enabled>
+              <IsActive>false</IsActive>
+              <Fov>1.04719758</Fov>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfArmorBlock</SubtypeName>
+              <Min x="1" y="1" z="-2" />
+              <BlockOrientation Forward="Down" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Base</SubtypeName>
+              <Min x="0" y="1" z="2" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfArmorBlock</SubtypeName>
+              <Min x="0" y="1" z="-2" />
+              <BlockOrientation Forward="Down" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorBlock</SubtypeName>
+              <Min x="0" y="1" z="0" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfArmorBlock</SubtypeName>
+              <Min x="-1" y="1" z="0" />
+              <BlockOrientation Forward="Down" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Tip</SubtypeName>
+              <Min x="-1" y="1" z="1" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorBlock</SubtypeName>
+              <Min x="0" y="1" z="1" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfArmorBlock</SubtypeName>
+              <Min x="1" y="1" z="-1" />
+              <BlockOrientation Forward="Down" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Base</SubtypeName>
+              <Min x="0" y="1" z="-1" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfSlopeArmorBlock</SubtypeName>
+              <Min x="-2" y="1" z="-1" />
+              <BlockOrientation Forward="Right" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfSlopeArmorBlock</SubtypeName>
+              <Min x="2" y="1" z="-1" />
+              <BlockOrientation Forward="Left" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfSlopeArmorBlock</SubtypeName>
+              <Min x="-2" y="1" z="0" />
+              <BlockOrientation Forward="Right" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfSlopeArmorBlock</SubtypeName>
+              <Min x="2" y="1" z="0" />
+              <BlockOrientation Forward="Left" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_SmallGatlingGun">
+              <SubtypeName>Fixed_BlasterCX3</SubtypeName>
+              <EntityId>133473238803977565</EntityId>
+              <Min x="0" y="2" z="0" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+              
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <Items />
+                      <nextItemId>0</nextItemId>
+                      <Volume>1.14</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>CX3 Blaster Cannon 3</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <Enabled>true</Enabled>
+              <IsShooting>false</IsShooting>
+              <IsShootingFromTerminal>false</IsShootingFromTerminal>
+              <IsLargeTurret>false</IsLargeTurret>
+              <MinFov>0.1</MinFov>
+              <MaxFov>1.04719758</MaxFov>
+              <Inventory>
+                <Items />
+                <nextItemId>0</nextItemId>
+                <Volume>1.14</Volume>
+                <Mass>9223372036854.775807</Mass>
+                <MaxItemCount>2147483647</MaxItemCount>
+                <Size xsi:nil="true" />
+                <InventoryFlags>CanReceive</InventoryFlags>
+                <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+              </Inventory>
+              <GunBase>
+                <RemainingAmmo>23</RemainingAmmo>
+                <CurrentAmmoMagazineName>Class3MGPlasmaGunCharge</CurrentAmmoMagazineName>
+                <RemainingAmmosList />
+                <LastShootTime>636717502574048382</LastShootTime>
+              </GunBase>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Tip</SubtypeName>
+              <Min x="1" y="1" z="1" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfArmorBlock</SubtypeName>
+              <Min x="-1" y="1" z="-1" />
+              <BlockOrientation Forward="Down" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfArmorBlock</SubtypeName>
+              <Min x="1" y="1" z="0" />
+              <BlockOrientation Forward="Down" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfArmorBlock</SubtypeName>
+              <Min x="-1" y="1" z="-2" />
+              <BlockOrientation Forward="Down" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="0" y="1" z="-4" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="-1" y="1" z="-3" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="1" y="1" z="-3" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfArmorBlock</SubtypeName>
+              <Min x="0" y="1" z="-3" />
+              <BlockOrientation Forward="Down" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_MotorRotor">
+              <SubtypeName>SmallRotor</SubtypeName>
+              <EntityId>116094936212575870</EntityId>
+              <Min x="0" y="0" z="-5" />
+              <BlockOrientation Forward="Left" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+              <ParentEntityId>0</ParentEntityId>
+              <YieldLastComponent>true</YieldLastComponent>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Base</SubtypeName>
+              <Min x="-2" y="-1" z="-2" />
+              <BlockOrientation Forward="Right" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Base</SubtypeName>
+              <Min x="2" y="-1" z="-2" />
+              <BlockOrientation Forward="Left" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
+              <SubtypeName>SmallBlockGyro</SubtypeName>
+              <EntityId>133893510084808385</EntityId>
+              <Min x="-1" y="0" z="2" />
+              <BlockOrientation Forward="Forward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+              
+              <ShareMode>Faction</ShareMode>
+              <CustomName>Gyroscope 4</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
+              <SubtypeName>SmallBlockGyro</SubtypeName>
+              <EntityId>83057479271129833</EntityId>
+              <Min x="1" y="0" z="2" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.99" z="-0.35" />
+              
+              
+              <ShareMode>Faction</ShareMode>
+              <CustomName>Gyroscope 5</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+          </CubeBlocks>
+          <XMirroxPlane x="0" y="0" z="0" />
+          <DisplayName>RT4739I</DisplayName>
+          <DestructibleBlocks>true</DestructibleBlocks>
+          <IsRespawnGrid>false</IsRespawnGrid>
+          <LocalCoordSys>0</LocalCoordSys>
+          <TargetingTargets />
+        </CubeGrid>
+      </CubeGrids>
+    </Prefab>
+  </Prefabs>
+</Definitions>
